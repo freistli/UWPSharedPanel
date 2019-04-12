@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\freistli\\source\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj": {}
+    "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\freistli\\source\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj": {
+    "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\freistli\\source\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj",
+        "projectUniqueName": "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj",
         "projectName": "UWPSharedPanel",
-        "projectPath": "C:\\Users\\freistli\\source\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj",
+        "projectPath": "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj",
         "packagesPath": "C:\\Users\\freistli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\freistli\\source\\repos\\UWPSharedPanel\\UWPSharedPanel\\obj\\",
+        "outputPath": "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
