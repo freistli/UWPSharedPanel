@@ -25,7 +25,7 @@
             <RatingControl Grid.Row="4" Margin="15" x:Name="Total" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Total" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Total Rating"/>
             <TextBlock Grid.Row="5" VerticalAlignment="Top" Height="30" HorizontalAlignment="Left" >Notes</TextBlock>
         </Grid>
-        <Button x:Name="AnalyzeButton" Margin="10" VerticalAlignment="Top"  HorizontalAlignment="Left" Click="AnalyzeButton_Click" >Analyze</Button>
+        <Button x:Name="AnalyzeButton" Margin="10" VerticalAlignment="Top"  HorizontalAlignment="Left" Click="AnalyzeButton_Click" >Recognize</Button>
         <TextBox x:Name="recognitionResult" Margin="10,0,10,0"/>
         <Grid x:Name="outputGrid" Margin="10,20,10,20" Background="LightGray" Height="520">
             <Canvas x:Name="RecognitionCanvas"   Margin="15,5,5,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />

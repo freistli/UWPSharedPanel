@@ -153,6 +153,7 @@
 
   <PropertyGroup>
     <HostFrameworkProject>TestWPFApp</HostFrameworkProject>
+    <HostFrameworkProject2>ContosoExpenses</HostFrameworkProject2>
   </PropertyGroup>
   <PropertyGroup>
     <!-- Copy source and build output files to hostapp folders -->
@@ -162,6 +163,11 @@
       xcopy "$(ProjectDir)*.xaml"          "$(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)\" /Y
       xcopy "$(ProjectDir)*.xaml.cs"       "$(SolutionDir)$(HostFrameworkProject)\$(ProjectName)\" /Y
       xcopy "$(ProjectDir)$(IntermediateOutputPath)*.g.*" "$(SolutionDir)$(HostFrameworkProject)\$(ProjectName)\" /Y
+
+      xcopy "$(TargetDir)*.xbf"            "$(SolutionDir)$(HostFrameworkProject2)\bin\$(Configuration)\$(ProjectName)\" /Y
+      xcopy "$(ProjectDir)*.xaml"          "$(SolutionDir)$(HostFrameworkProject2)\bin\$(Configuration)\$(ProjectName)\" /Y
+      xcopy "$(ProjectDir)*.xaml.cs"       "$(SolutionDir)$(HostFrameworkProject2)\$(ProjectName)\" /Y
+      xcopy "$(ProjectDir)$(IntermediateOutputPath)*.g.*" "$(SolutionDir)$(HostFrameworkProject2)\$(ProjectName)\" /Y
     </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
