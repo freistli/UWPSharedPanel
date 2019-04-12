@@ -26,7 +26,8 @@ namespace UWPSharedPanel
     /// </summary>
     public sealed partial class RealEstateComponent : Page
     {
-        public string TotalRating { get; set; }
+        public double[] Ratings = new double[] { 5, 5, 5, 5 };
+        public string Notes = "";
 
         InkAnalyzer inkAnalyzer = new InkAnalyzer();
         IReadOnlyList<InkStroke> inkStrokes = null;
@@ -44,17 +45,22 @@ namespace UWPSharedPanel
             drawingAttributes.Color = Windows.UI.Colors.Blue;
             drawingAttributes.IgnorePressure = false;
             drawingAttributes.FitToCurve = true;
-            InputCanvas.InkPresenter.UpdateDefaultDrawingAttributes(drawingAttributes);
+            InputCanvas.InkPresenter.UpdateDefaultDrawingAttributes(drawingAttributes);            
 
             SetRating();
         }
 
-        void SetRating()
+        public void SetRating()
         {
-            Home.PlaceholderValue = 5;
-            Convenience.PlaceholderValue = 4.5;
-            Location.PlaceholderValue = 5;
-            Total.PlaceholderValue = 3.5;
+            Home.PlaceholderValue = Ratings[0];           
+            Location.PlaceholderValue = Ratings[1];
+            Convenience.PlaceholderValue = Ratings[2];
+            Total.PlaceholderValue = Ratings[3];
+        }
+
+        public void SetNotes()
+        {
+            recognitionResult.Text = Notes;
         }
 
         /// <summary>
@@ -149,12 +155,13 @@ namespace UWPSharedPanel
                         var selectionIndex = recognitionResult.SelectionStart;
                         recognitionResult.Text = recognitionResult.Text.Insert(selectionIndex, str);
                         recognitionResult.SelectionStart = selectionIndex + str.Length;
+                        Notes = recognitionResult.Text;
                         // Clear the ink canvas once recognition is complete.
                         InputCanvas.InkPresenter.StrokeContainer.Clear();
                     }
                     else
                     {
-                        recognitionResult.Text = "No recognition results.";
+                       recognitionResult.Text = "No recognition results.";
                     }
                 }
                 else
@@ -165,7 +172,7 @@ namespace UWPSharedPanel
             }
             else
             {
-                recognitionResult.Text = "No ink strokes to recognize.";
+               // recognitionResult.Text = "No ink strokes to recognize.";
             }
         }
 

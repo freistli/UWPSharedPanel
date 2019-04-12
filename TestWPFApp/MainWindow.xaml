@@ -9,7 +9,7 @@
         Closed="Window_Closed"
         Title="MainWindow" Height="810" Width="800">
     <Grid Margin="10,0,10,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="41,92,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="41,92,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
 
         <XamlHost:WindowsXamlHost x:Name="SharedXamlHost"   HorizontalAlignment="Stretch"  Margin="380,20,10,20" VerticalAlignment="Stretch"  InitialTypeName="UWPSharedPanel.RealEstateComponent" ChildChanged="SharedXamlHost_ChildChanged"/>
 

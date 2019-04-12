@@ -147,17 +147,15 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[3];
             _typeNameTable[0] = "UWPSharedPanel.RealEstateComponent";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "String";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[3];
             _typeTable[0] = typeof(global::UWPSharedPanel.RealEstateComponent);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::System.String);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -207,7 +205,6 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
             case 0:   //  UWPSharedPanel.RealEstateComponent
                 userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_RealEstateComponent;
-                userType.AddMemberName("TotalRating");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -219,40 +216,16 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
-
-            case 3:   //  String
-                xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
             }
             return xamlType;
         }
 
 
-        private object get_0_RealEstateComponent_TotalRating(object instance)
-        {
-            var that = (global::UWPSharedPanel.RealEstateComponent)instance;
-            return that.TotalRating;
-        }
-        private void set_0_RealEstateComponent_TotalRating(object instance, object Value)
-        {
-            var that = (global::UWPSharedPanel.RealEstateComponent)instance;
-            that.TotalRating = (global::System.String)Value;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember xamlMember = null;
-            global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType userType;
-
-            switch (longMemberName)
-            {
-            case "UWPSharedPanel.RealEstateComponent.TotalRating":
-                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPSharedPanel.RealEstateComponent");
-                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "TotalRating", "String");
-                xamlMember.Getter = get_0_RealEstateComponent_TotalRating;
-                xamlMember.Setter = set_0_RealEstateComponent_TotalRating;
-                break;
-            }
+            // No Local Properties
             return xamlMember;
         }
     }

@@ -38,5 +38,15 @@ namespace TestWPFApp
         {
             SharedXamlHost.Dispose();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            UWPSharedPanel.RealEstateComponent sharedPanel =
+                (UWPSharedPanel.RealEstateComponent)SharedXamlHost.Child;
+            sharedPanel.Ratings = new double[] { 5, 4, 3, 4 };
+            sharedPanel.SetRating();
+            sharedPanel.Notes = "This house is spacious and bright.";
+            sharedPanel.SetNotes();
+        }
     }
 }
