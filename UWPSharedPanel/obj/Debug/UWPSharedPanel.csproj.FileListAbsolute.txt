@@ -56,3 +56,4 @@ D:\repos\UWPSharedPanel\UWPSharedPanel\obj\Debug\pri.resfiles.intermediate
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\Debug\qualifiers.txt
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\Debug\qualifiers.txt.intermediate
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\repos\UWPSharedPanel\UWPSharedPanel\obj\Debug\UWPSharedPanel.csprojAssemblyReference.cache

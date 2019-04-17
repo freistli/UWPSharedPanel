@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>FAUNA-189</Machine>
+    <WindowsUser>freistli</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ed7df091-9db6-4712-af0a-72e469b0026c</PackageIdentityName>
+    <PackageIdentityPublisher>CN=freistli</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\repos\UWPSharedPanel\packageproject\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>D:\repos\UWPSharedPanel\packageproject\bin\AnyCPU\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>6A356D7710B03F18C10586E3658F86F2CF46B338F03160F1513E7E31EF367A2B</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ed7df091-9db6-4712-af0a-72e469b0026c_1.0.1.0_neutral__2dhr6hz02r3tt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ed7df091-9db6-4712-af0a-72e469b0026c_2dhr6hz02r3tt!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ed7df091-9db6-4712-af0a-72e469b0026c</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=freistli</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.1.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\repos\UWPSharedPanel\packageproject\bin\AnyCPU\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-16T02:29:51.886</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\StoreLogo.png">
+      <PackagePath>Images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\bin\AnyCPU\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-04-16T02:29:51.698</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packages\Microsoft.Toolkit.Wpf.UI.Controls.5.1.1\lib\net462\Microsoft.Toolkit.Wpf.UI.Controls.dll">
+      <PackagePath>TestWPFApp\Microsoft.Toolkit.Wpf.UI.Controls.dll</PackagePath>
+      <Modified>2019-03-15T13:24:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packages\Microsoft.Toolkit.Wpf.UI.XamlHost.5.1.1\lib\net462\Microsoft.Toolkit.Wpf.UI.XamlHost.dll">
+      <PackagePath>TestWPFApp\Microsoft.Toolkit.Wpf.UI.XamlHost.dll</PackagePath>
+      <Modified>2019-03-15T13:24:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\TestWPFApp.exe">
+      <PackagePath>TestWPFApp\TestWPFApp.exe</PackagePath>
+      <Modified>2019-04-16T02:25:33.505</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\TestWPFApp.exe.config">
+      <PackagePath>TestWPFApp\TestWPFApp.exe.config</PackagePath>
+      <Modified>2019-04-11T09:05:48.929</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

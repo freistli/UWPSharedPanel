@@ -1,0 +1,1175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>FAUNA-189</Machine>
+    <WindowsUser>freistli</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>ed7df091-9db6-4712-af0a-72e469b0026c</PackageIdentityName>
+    <PackageIdentityPublisher>CN=freistli</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\repos\UWPSharedPanel\packageproject\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>D:\repos\UWPSharedPanel\packageproject\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>E199758478660ACD730AEAEA355DB979B87F981C4DFB88680B03635CF2656C75</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ed7df091-9db6-4712-af0a-72e469b0026c_1.0.1.0_x86__2dhr6hz02r3tt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ed7df091-9db6-4712-af0a-72e469b0026c_2dhr6hz02r3tt!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ed7df091-9db6-4712-af0a-72e469b0026c</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=freistli</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.1.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\repos\UWPSharedPanel\packageproject\bin\x86\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-17T02:44:01.717</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\StoreLogo.png">
+      <PackagePath>Images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-04-08T09:39:13.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\TestWPFApp\UWPSharedPanel\RealEstateComponent.xaml">
+      <PackagePath>TestWPFApp\UWPSharedPanel\RealEstateComponent.xaml</PackagePath>
+      <Modified>2019-04-12T09:52:35.141</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\TestWPFApp\UWPSharedPanel\RealEstateComponent.xbf">
+      <PackagePath>TestWPFApp\UWPSharedPanel\RealEstateComponent.xbf</PackagePath>
+      <Modified>2019-04-17T02:43:38.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-04-17T02:43:57.963</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\microsoft.toolkit.ui.xamlhost\6.0.0-preview3\lib\netcoreapp3.0\Microsoft.Toolkit.Win32.UI.XamlHost.dll">
+      <PackagePath>TestWPFApp\Microsoft.Toolkit.Win32.UI.XamlHost.dll</PackagePath>
+      <Modified>2019-03-15T13:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\microsoft.toolkit.wpf.ui.controls\6.0.0-preview3\lib\netcoreapp3.0\Microsoft.Toolkit.Wpf.UI.Controls.dll">
+      <PackagePath>TestWPFApp\Microsoft.Toolkit.Wpf.UI.Controls.dll</PackagePath>
+      <Modified>2019-03-15T13:42:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\microsoft.toolkit.wpf.ui.xamlhost\6.0.0-preview3\lib\netcoreapp3.0\Microsoft.Toolkit.Wpf.UI.XamlHost.dll">
+      <PackagePath>TestWPFApp\Microsoft.Toolkit.Wpf.UI.XamlHost.dll</PackagePath>
+      <Modified>2019-03-15T13:43:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\system.runtime.windowsruntime\4.6.0-preview3.19128.7\runtimes\win\lib\netcoreapp3.0\System.Runtime.WindowsRuntime.dll">
+      <PackagePath>TestWPFApp\System.Runtime.WindowsRuntime.dll</PackagePath>
+      <Modified>2019-02-28T12:06:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\system.runtime.windowsruntime.ui.xaml\4.6.0-preview3.19128.7\runtimes\win\lib\netcoreapp3.0\System.Runtime.WindowsRuntime.UI.Xaml.dll">
+      <PackagePath>TestWPFApp\System.Runtime.WindowsRuntime.UI.Xaml.dll</PackagePath>
+      <Modified>2019-02-28T12:06:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.CSharp.dll">
+      <PackagePath>TestWPFApp\Microsoft.CSharp.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.VisualBasic.Core.dll">
+      <PackagePath>TestWPFApp\Microsoft.VisualBasic.Core.dll</PackagePath>
+      <Modified>2019-03-03T08:45:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.VisualBasic.dll">
+      <PackagePath>TestWPFApp\Microsoft.VisualBasic.dll</PackagePath>
+      <Modified>2019-03-03T08:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.Win32.Primitives.dll">
+      <PackagePath>TestWPFApp\Microsoft.Win32.Primitives.dll</PackagePath>
+      <Modified>2019-03-03T08:45:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.Win32.Registry.dll">
+      <PackagePath>TestWPFApp\Microsoft.Win32.Registry.dll</PackagePath>
+      <Modified>2019-03-03T08:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\mscorlib.dll">
+      <PackagePath>TestWPFApp\mscorlib.dll</PackagePath>
+      <Modified>2019-02-28T11:58:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\netstandard.dll">
+      <PackagePath>TestWPFApp\netstandard.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\SOS.NETCore.dll">
+      <PackagePath>TestWPFApp\SOS.NETCore.dll</PackagePath>
+      <Modified>2019-03-03T08:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.AppContext.dll">
+      <PackagePath>TestWPFApp\System.AppContext.dll</PackagePath>
+      <Modified>2019-03-03T08:45:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Buffers.dll">
+      <PackagePath>TestWPFApp\System.Buffers.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.Concurrent.dll">
+      <PackagePath>TestWPFApp\System.Collections.Concurrent.dll</PackagePath>
+      <Modified>2019-03-03T08:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.dll">
+      <PackagePath>TestWPFApp\System.Collections.dll</PackagePath>
+      <Modified>2019-03-03T08:45:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.Immutable.dll">
+      <PackagePath>TestWPFApp\System.Collections.Immutable.dll</PackagePath>
+      <Modified>2019-03-03T08:45:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.NonGeneric.dll">
+      <PackagePath>TestWPFApp\System.Collections.NonGeneric.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.Specialized.dll">
+      <PackagePath>TestWPFApp\System.Collections.Specialized.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.Annotations.dll">
+      <PackagePath>TestWPFApp\System.ComponentModel.Annotations.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.DataAnnotations.dll">
+      <PackagePath>TestWPFApp\System.ComponentModel.DataAnnotations.dll</PackagePath>
+      <Modified>2019-03-03T08:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.dll">
+      <PackagePath>TestWPFApp\System.ComponentModel.dll</PackagePath>
+      <Modified>2019-03-03T08:45:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.EventBasedAsync.dll">
+      <PackagePath>TestWPFApp\System.ComponentModel.EventBasedAsync.dll</PackagePath>
+      <Modified>2019-03-03T08:45:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.Primitives.dll">
+      <PackagePath>TestWPFApp\System.ComponentModel.Primitives.dll</PackagePath>
+      <Modified>2019-03-03T08:45:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.TypeConverter.dll">
+      <PackagePath>TestWPFApp\System.ComponentModel.TypeConverter.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Configuration.dll">
+      <PackagePath>TestWPFApp\System.Configuration.dll</PackagePath>
+      <Modified>2019-03-03T08:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Console.dll">
+      <PackagePath>TestWPFApp\System.Console.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Core.dll">
+      <PackagePath>TestWPFApp\System.Core.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Data.Common.dll">
+      <PackagePath>TestWPFApp\System.Data.Common.dll</PackagePath>
+      <Modified>2019-03-03T08:45:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Data.dll">
+      <PackagePath>TestWPFApp\System.Data.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Contracts.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.Contracts.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Debug.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.Debug.dll</PackagePath>
+      <Modified>2019-03-03T08:45:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.DiagnosticSource.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.FileVersionInfo.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.FileVersionInfo.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Process.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.Process.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.StackTrace.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.StackTrace.dll</PackagePath>
+      <Modified>2019-03-03T08:45:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.TextWriterTraceListener.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.TextWriterTraceListener.dll</PackagePath>
+      <Modified>2019-03-03T08:45:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Tools.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.Tools.dll</PackagePath>
+      <Modified>2019-03-03T08:45:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.TraceSource.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.TraceSource.dll</PackagePath>
+      <Modified>2019-03-03T08:45:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Tracing.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.Tracing.dll</PackagePath>
+      <Modified>2019-03-03T08:45:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.dll">
+      <PackagePath>TestWPFApp\System.dll</PackagePath>
+      <Modified>2019-03-03T08:45:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Drawing.Primitives.dll">
+      <PackagePath>TestWPFApp\System.Drawing.Primitives.dll</PackagePath>
+      <Modified>2019-03-03T08:45:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Dynamic.Runtime.dll">
+      <PackagePath>TestWPFApp\System.Dynamic.Runtime.dll</PackagePath>
+      <Modified>2019-03-03T08:45:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Globalization.Calendars.dll">
+      <PackagePath>TestWPFApp\System.Globalization.Calendars.dll</PackagePath>
+      <Modified>2019-03-03T08:45:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Globalization.dll">
+      <PackagePath>TestWPFApp\System.Globalization.dll</PackagePath>
+      <Modified>2019-03-03T08:45:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Globalization.Extensions.dll">
+      <PackagePath>TestWPFApp\System.Globalization.Extensions.dll</PackagePath>
+      <Modified>2019-03-03T08:45:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Compression.Brotli.dll">
+      <PackagePath>TestWPFApp\System.IO.Compression.Brotli.dll</PackagePath>
+      <Modified>2019-03-03T08:45:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Compression.dll">
+      <PackagePath>TestWPFApp\System.IO.Compression.dll</PackagePath>
+      <Modified>2019-03-03T08:46:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Compression.FileSystem.dll">
+      <PackagePath>TestWPFApp\System.IO.Compression.FileSystem.dll</PackagePath>
+      <Modified>2019-03-03T08:46:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Compression.ZipFile.dll">
+      <PackagePath>TestWPFApp\System.IO.Compression.ZipFile.dll</PackagePath>
+      <Modified>2019-03-03T08:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.dll">
+      <PackagePath>TestWPFApp\System.IO.dll</PackagePath>
+      <Modified>2019-03-03T08:46:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.AccessControl.dll">
+      <PackagePath>TestWPFApp\System.IO.FileSystem.AccessControl.dll</PackagePath>
+      <Modified>2019-03-03T08:46:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.dll">
+      <PackagePath>TestWPFApp\System.IO.FileSystem.dll</PackagePath>
+      <Modified>2019-03-03T08:46:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.DriveInfo.dll">
+      <PackagePath>TestWPFApp\System.IO.FileSystem.DriveInfo.dll</PackagePath>
+      <Modified>2019-03-03T08:46:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.Primitives.dll">
+      <PackagePath>TestWPFApp\System.IO.FileSystem.Primitives.dll</PackagePath>
+      <Modified>2019-03-03T08:46:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.Watcher.dll">
+      <PackagePath>TestWPFApp\System.IO.FileSystem.Watcher.dll</PackagePath>
+      <Modified>2019-03-03T08:46:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.IsolatedStorage.dll">
+      <PackagePath>TestWPFApp\System.IO.IsolatedStorage.dll</PackagePath>
+      <Modified>2019-03-03T08:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.MemoryMappedFiles.dll">
+      <PackagePath>TestWPFApp\System.IO.MemoryMappedFiles.dll</PackagePath>
+      <Modified>2019-03-03T08:46:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Pipes.AccessControl.dll">
+      <PackagePath>TestWPFApp\System.IO.Pipes.AccessControl.dll</PackagePath>
+      <Modified>2019-03-03T08:46:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Pipes.dll">
+      <PackagePath>TestWPFApp\System.IO.Pipes.dll</PackagePath>
+      <Modified>2019-03-03T08:46:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.UnmanagedMemoryStream.dll">
+      <PackagePath>TestWPFApp\System.IO.UnmanagedMemoryStream.dll</PackagePath>
+      <Modified>2019-03-03T08:46:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Linq.dll">
+      <PackagePath>TestWPFApp\System.Linq.dll</PackagePath>
+      <Modified>2019-03-03T08:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Linq.Expressions.dll">
+      <PackagePath>TestWPFApp\System.Linq.Expressions.dll</PackagePath>
+      <Modified>2019-03-03T08:46:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Linq.Parallel.dll">
+      <PackagePath>TestWPFApp\System.Linq.Parallel.dll</PackagePath>
+      <Modified>2019-03-03T08:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Linq.Queryable.dll">
+      <PackagePath>TestWPFApp\System.Linq.Queryable.dll</PackagePath>
+      <Modified>2019-03-03T08:46:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Memory.dll">
+      <PackagePath>TestWPFApp\System.Memory.dll</PackagePath>
+      <Modified>2019-03-03T08:46:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.dll">
+      <PackagePath>TestWPFApp\System.Net.dll</PackagePath>
+      <Modified>2019-03-03T08:46:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Http.dll">
+      <PackagePath>TestWPFApp\System.Net.Http.dll</PackagePath>
+      <Modified>2019-03-03T08:46:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.HttpListener.dll">
+      <PackagePath>TestWPFApp\System.Net.HttpListener.dll</PackagePath>
+      <Modified>2019-03-03T08:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Mail.dll">
+      <PackagePath>TestWPFApp\System.Net.Mail.dll</PackagePath>
+      <Modified>2019-03-03T08:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.NameResolution.dll">
+      <PackagePath>TestWPFApp\System.Net.NameResolution.dll</PackagePath>
+      <Modified>2019-03-03T08:46:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.NetworkInformation.dll">
+      <PackagePath>TestWPFApp\System.Net.NetworkInformation.dll</PackagePath>
+      <Modified>2019-03-03T08:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Ping.dll">
+      <PackagePath>TestWPFApp\System.Net.Ping.dll</PackagePath>
+      <Modified>2019-03-03T08:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Primitives.dll">
+      <PackagePath>TestWPFApp\System.Net.Primitives.dll</PackagePath>
+      <Modified>2019-03-03T08:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Requests.dll">
+      <PackagePath>TestWPFApp\System.Net.Requests.dll</PackagePath>
+      <Modified>2019-03-03T08:46:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Security.dll">
+      <PackagePath>TestWPFApp\System.Net.Security.dll</PackagePath>
+      <Modified>2019-03-03T08:46:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.ServicePoint.dll">
+      <PackagePath>TestWPFApp\System.Net.ServicePoint.dll</PackagePath>
+      <Modified>2019-03-03T08:45:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Sockets.dll">
+      <PackagePath>TestWPFApp\System.Net.Sockets.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebClient.dll">
+      <PackagePath>TestWPFApp\System.Net.WebClient.dll</PackagePath>
+      <Modified>2019-03-03T08:45:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebHeaderCollection.dll">
+      <PackagePath>TestWPFApp\System.Net.WebHeaderCollection.dll</PackagePath>
+      <Modified>2019-03-03T08:45:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebProxy.dll">
+      <PackagePath>TestWPFApp\System.Net.WebProxy.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebSockets.Client.dll">
+      <PackagePath>TestWPFApp\System.Net.WebSockets.Client.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebSockets.dll">
+      <PackagePath>TestWPFApp\System.Net.WebSockets.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Numerics.dll">
+      <PackagePath>TestWPFApp\System.Numerics.dll</PackagePath>
+      <Modified>2019-03-03T08:45:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Numerics.Vectors.dll">
+      <PackagePath>TestWPFApp\System.Numerics.Vectors.dll</PackagePath>
+      <Modified>2019-03-03T08:45:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ObjectModel.dll">
+      <PackagePath>TestWPFApp\System.ObjectModel.dll</PackagePath>
+      <Modified>2019-03-03T08:45:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Private.DataContractSerialization.dll">
+      <PackagePath>TestWPFApp\System.Private.DataContractSerialization.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Private.Uri.dll">
+      <PackagePath>TestWPFApp\System.Private.Uri.dll</PackagePath>
+      <Modified>2019-03-03T08:45:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Private.Xml.dll">
+      <PackagePath>TestWPFApp\System.Private.Xml.dll</PackagePath>
+      <Modified>2019-03-03T08:45:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Private.Xml.Linq.dll">
+      <PackagePath>TestWPFApp\System.Private.Xml.Linq.dll</PackagePath>
+      <Modified>2019-03-03T08:45:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.DispatchProxy.dll">
+      <PackagePath>TestWPFApp\System.Reflection.DispatchProxy.dll</PackagePath>
+      <Modified>2019-03-03T08:45:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.dll">
+      <PackagePath>TestWPFApp\System.Reflection.dll</PackagePath>
+      <Modified>2019-03-03T08:45:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Emit.dll">
+      <PackagePath>TestWPFApp\System.Reflection.Emit.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Emit.ILGeneration.dll">
+      <PackagePath>TestWPFApp\System.Reflection.Emit.ILGeneration.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Emit.Lightweight.dll">
+      <PackagePath>TestWPFApp\System.Reflection.Emit.Lightweight.dll</PackagePath>
+      <Modified>2019-03-03T08:45:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Extensions.dll">
+      <PackagePath>TestWPFApp\System.Reflection.Extensions.dll</PackagePath>
+      <Modified>2019-03-03T08:45:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Metadata.dll">
+      <PackagePath>TestWPFApp\System.Reflection.Metadata.dll</PackagePath>
+      <Modified>2019-03-03T08:45:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Primitives.dll">
+      <PackagePath>TestWPFApp\System.Reflection.Primitives.dll</PackagePath>
+      <Modified>2019-03-03T08:45:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.TypeExtensions.dll">
+      <PackagePath>TestWPFApp\System.Reflection.TypeExtensions.dll</PackagePath>
+      <Modified>2019-03-03T08:45:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Resources.Reader.dll">
+      <PackagePath>TestWPFApp\System.Resources.Reader.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Resources.ResourceManager.dll">
+      <PackagePath>TestWPFApp\System.Resources.ResourceManager.dll</PackagePath>
+      <Modified>2019-03-03T08:45:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Resources.Writer.dll">
+      <PackagePath>TestWPFApp\System.Resources.Writer.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.CompilerServices.VisualC.dll">
+      <PackagePath>TestWPFApp\System.Runtime.CompilerServices.VisualC.dll</PackagePath>
+      <Modified>2019-03-03T08:45:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.dll">
+      <PackagePath>TestWPFApp\System.Runtime.dll</PackagePath>
+      <Modified>2019-03-03T08:45:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Extensions.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Extensions.dll</PackagePath>
+      <Modified>2019-03-03T08:45:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Handles.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Handles.dll</PackagePath>
+      <Modified>2019-03-03T08:45:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.InteropServices.dll">
+      <PackagePath>TestWPFApp\System.Runtime.InteropServices.dll</PackagePath>
+      <Modified>2019-03-03T08:45:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.InteropServices.RuntimeInformation.dll">
+      <PackagePath>TestWPFApp\System.Runtime.InteropServices.RuntimeInformation.dll</PackagePath>
+      <Modified>2019-03-03T08:45:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.InteropServices.WindowsRuntime.dll">
+      <PackagePath>TestWPFApp\System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
+      <Modified>2019-03-03T08:45:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Intrinsics.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Intrinsics.dll</PackagePath>
+      <Modified>2019-03-03T08:45:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Loader.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Loader.dll</PackagePath>
+      <Modified>2019-03-03T08:45:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Numerics.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Numerics.dll</PackagePath>
+      <Modified>2019-03-03T08:45:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Serialization.dll</PackagePath>
+      <Modified>2019-03-03T08:45:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.Formatters.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Serialization.Formatters.dll</PackagePath>
+      <Modified>2019-03-03T08:45:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.Json.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Serialization.Json.dll</PackagePath>
+      <Modified>2019-03-03T08:45:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.Primitives.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Serialization.Primitives.dll</PackagePath>
+      <Modified>2019-03-03T08:45:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.Xml.dll">
+      <PackagePath>TestWPFApp\System.Runtime.Serialization.Xml.dll</PackagePath>
+      <Modified>2019-03-03T08:45:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.AccessControl.dll">
+      <PackagePath>TestWPFApp\System.Security.AccessControl.dll</PackagePath>
+      <Modified>2019-03-03T08:45:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Claims.dll">
+      <PackagePath>TestWPFApp\System.Security.Claims.dll</PackagePath>
+      <Modified>2019-03-03T08:45:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Algorithms.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.Algorithms.dll</PackagePath>
+      <Modified>2019-03-03T08:45:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.Cng.dll</PackagePath>
+      <Modified>2019-03-03T08:46:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Csp.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.Csp.dll</PackagePath>
+      <Modified>2019-03-03T08:45:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Encoding.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.Encoding.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.OpenSsl.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.OpenSsl.dll</PackagePath>
+      <Modified>2019-03-03T08:45:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Primitives.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.Primitives.dll</PackagePath>
+      <Modified>2019-03-03T08:45:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.X509Certificates.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.X509Certificates.dll</PackagePath>
+      <Modified>2019-03-03T08:45:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.dll">
+      <PackagePath>TestWPFApp\System.Security.dll</PackagePath>
+      <Modified>2019-03-03T08:45:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Principal.dll">
+      <PackagePath>TestWPFApp\System.Security.Principal.dll</PackagePath>
+      <Modified>2019-03-03T08:45:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Principal.Windows.dll">
+      <PackagePath>TestWPFApp\System.Security.Principal.Windows.dll</PackagePath>
+      <Modified>2019-03-03T08:45:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.SecureString.dll">
+      <PackagePath>TestWPFApp\System.Security.SecureString.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ServiceModel.Web.dll">
+      <PackagePath>TestWPFApp\System.ServiceModel.Web.dll</PackagePath>
+      <Modified>2019-03-03T08:46:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ServiceProcess.dll">
+      <PackagePath>TestWPFApp\System.ServiceProcess.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Text.Encoding.dll">
+      <PackagePath>TestWPFApp\System.Text.Encoding.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Text.Encoding.Extensions.dll">
+      <PackagePath>TestWPFApp\System.Text.Encoding.Extensions.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Text.Json.dll">
+      <PackagePath>TestWPFApp\System.Text.Json.dll</PackagePath>
+      <Modified>2019-03-03T08:45:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Text.RegularExpressions.dll">
+      <PackagePath>TestWPFApp\System.Text.RegularExpressions.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.dll">
+      <PackagePath>TestWPFApp\System.Threading.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Overlapped.dll">
+      <PackagePath>TestWPFApp\System.Threading.Overlapped.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Tasks.Dataflow.dll">
+      <PackagePath>TestWPFApp\System.Threading.Tasks.Dataflow.dll</PackagePath>
+      <Modified>2019-03-03T08:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Tasks.dll">
+      <PackagePath>TestWPFApp\System.Threading.Tasks.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Tasks.Extensions.dll">
+      <PackagePath>TestWPFApp\System.Threading.Tasks.Extensions.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Tasks.Parallel.dll">
+      <PackagePath>TestWPFApp\System.Threading.Tasks.Parallel.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Thread.dll">
+      <PackagePath>TestWPFApp\System.Threading.Thread.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.ThreadPool.dll">
+      <PackagePath>TestWPFApp\System.Threading.ThreadPool.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Timer.dll">
+      <PackagePath>TestWPFApp\System.Threading.Timer.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Transactions.dll">
+      <PackagePath>TestWPFApp\System.Transactions.dll</PackagePath>
+      <Modified>2019-03-03T08:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Transactions.Local.dll">
+      <PackagePath>TestWPFApp\System.Transactions.Local.dll</PackagePath>
+      <Modified>2019-03-03T08:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ValueTuple.dll">
+      <PackagePath>TestWPFApp\System.ValueTuple.dll</PackagePath>
+      <Modified>2019-03-03T08:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Web.dll">
+      <PackagePath>TestWPFApp\System.Web.dll</PackagePath>
+      <Modified>2019-03-03T08:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Web.HttpUtility.dll">
+      <PackagePath>TestWPFApp\System.Web.HttpUtility.dll</PackagePath>
+      <Modified>2019-03-03T08:45:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.dll">
+      <PackagePath>TestWPFApp\System.Windows.dll</PackagePath>
+      <Modified>2019-03-03T08:45:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.dll">
+      <PackagePath>TestWPFApp\System.Xml.dll</PackagePath>
+      <Modified>2019-03-03T08:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.Linq.dll">
+      <PackagePath>TestWPFApp\System.Xml.Linq.dll</PackagePath>
+      <Modified>2019-03-03T08:45:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.ReaderWriter.dll">
+      <PackagePath>TestWPFApp\System.Xml.ReaderWriter.dll</PackagePath>
+      <Modified>2019-03-03T08:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.Serialization.dll">
+      <PackagePath>TestWPFApp\System.Xml.Serialization.dll</PackagePath>
+      <Modified>2019-03-03T08:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XDocument.dll">
+      <PackagePath>TestWPFApp\System.Xml.XDocument.dll</PackagePath>
+      <Modified>2019-03-03T08:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XmlDocument.dll">
+      <PackagePath>TestWPFApp\System.Xml.XmlDocument.dll</PackagePath>
+      <Modified>2019-03-03T08:45:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XmlSerializer.dll">
+      <PackagePath>TestWPFApp\System.Xml.XmlSerializer.dll</PackagePath>
+      <Modified>2019-03-03T08:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XPath.dll">
+      <PackagePath>TestWPFApp\System.Xml.XPath.dll</PackagePath>
+      <Modified>2019-03-03T08:45:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XPath.XDocument.dll">
+      <PackagePath>TestWPFApp\System.Xml.XPath.XDocument.dll</PackagePath>
+      <Modified>2019-03-03T08:45:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-console-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-console-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T16:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-datetime-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-datetime-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T16:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-debug-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-debug-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-errorhandling-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-errorhandling-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:55:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-file-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-file-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-file-l1-2-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-file-l1-2-0.dll</PackagePath>
+      <Modified>2018-04-19T15:55:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-file-l2-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-file-l2-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:55:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-handle-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-handle-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-heap-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-heap-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-interlocked-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-interlocked-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-libraryloader-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-libraryloader-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-localization-l1-2-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-localization-l1-2-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-memory-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-memory-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-namedpipe-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-namedpipe-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-processenvironment-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-processenvironment-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-processthreads-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-processthreads-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-processthreads-l1-1-1.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-processthreads-l1-1-1.dll</PackagePath>
+      <Modified>2018-04-19T15:56:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-profile-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-profile-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-rtlsupport-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-rtlsupport-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-string-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-string-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-synch-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-synch-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-synch-l1-2-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-synch-l1-2-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-sysinfo-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-sysinfo-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-timezone-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-timezone-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-util-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-core-util-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\API-MS-Win-core-xstate-l2-1-0.dll">
+      <PackagePath>TestWPFApp\API-MS-Win-core-xstate-l2-1-0.dll</PackagePath>
+      <Modified>2019-02-22T16:31:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-conio-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-conio-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-convert-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-convert-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-environment-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-environment-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-filesystem-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-filesystem-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-heap-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-heap-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-locale-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-locale-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-math-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-math-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-multibyte-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-multibyte-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-private-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-private-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-process-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-process-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-runtime-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-runtime-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-stdio-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-stdio-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-string-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-string-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-time-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-time-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-utility-l1-1-0.dll">
+      <PackagePath>TestWPFApp\api-ms-win-crt-utility-l1-1-0.dll</PackagePath>
+      <Modified>2018-04-19T15:56:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\clrcompression.dll">
+      <PackagePath>TestWPFApp\clrcompression.dll</PackagePath>
+      <Modified>2019-02-28T11:51:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\clretwrc.dll">
+      <PackagePath>TestWPFApp\clretwrc.dll</PackagePath>
+      <Modified>2019-02-22T16:31:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\clrjit.dll">
+      <PackagePath>TestWPFApp\clrjit.dll</PackagePath>
+      <Modified>2019-02-22T16:31:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\coreclr.dll">
+      <PackagePath>TestWPFApp\coreclr.dll</PackagePath>
+      <Modified>2019-02-22T16:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\dbgshim.dll">
+      <PackagePath>TestWPFApp\dbgshim.dll</PackagePath>
+      <Modified>2019-02-22T16:32:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\Microsoft.DiaSymReader.Native.x86.dll">
+      <PackagePath>TestWPFApp\Microsoft.DiaSymReader.Native.x86.dll</PackagePath>
+      <Modified>2017-12-04T09:36:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscordaccore.dll">
+      <PackagePath>TestWPFApp\mscordaccore.dll</PackagePath>
+      <Modified>2019-02-22T16:31:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscordaccore_x86_x86_4.6.27422.72.dll">
+      <PackagePath>TestWPFApp\mscordaccore_x86_x86_4.6.27422.72.dll</PackagePath>
+      <Modified>2019-02-22T16:31:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscordbi.dll">
+      <PackagePath>TestWPFApp\mscordbi.dll</PackagePath>
+      <Modified>2019-02-22T16:31:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscorrc.debug.dll">
+      <PackagePath>TestWPFApp\mscorrc.debug.dll</PackagePath>
+      <Modified>2019-02-22T16:31:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscorrc.dll">
+      <PackagePath>TestWPFApp\mscorrc.dll</PackagePath>
+      <Modified>2019-02-22T16:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\sos.dll">
+      <PackagePath>TestWPFApp\sos.dll</PackagePath>
+      <Modified>2019-02-22T16:31:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\sos_x86_x86_4.6.27422.72.dll">
+      <PackagePath>TestWPFApp\sos_x86_x86_4.6.27422.72.dll</PackagePath>
+      <Modified>2019-02-22T16:31:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\System.Private.CoreLib.dll">
+      <PackagePath>TestWPFApp\System.Private.CoreLib.dll</PackagePath>
+      <Modified>2019-02-22T16:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\ucrtbase.dll">
+      <PackagePath>TestWPFApp\ucrtbase.dll</PackagePath>
+      <Modified>2018-04-19T15:56:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.dotnethostresolver\3.0.0-preview3-27503-5\runtimes\win-x86\native\hostfxr.dll">
+      <PackagePath>TestWPFApp\hostfxr.dll</PackagePath>
+      <Modified>2019-03-03T08:45:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.dotnethostpolicy\3.0.0-preview3-27503-5\runtimes\win-x86\native\hostpolicy.dll">
+      <PackagePath>TestWPFApp\hostpolicy.dll</PackagePath>
+      <Modified>2019-03-03T08:45:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\Accessibility.dll">
+      <PackagePath>TestWPFApp\Accessibility.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\DirectWriteForwarder.dll">
+      <PackagePath>TestWPFApp\DirectWriteForwarder.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>TestWPFApp\Microsoft.Win32.SystemEvents.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationCore-CommonResources.dll">
+      <PackagePath>TestWPFApp\PresentationCore-CommonResources.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationCore.dll">
+      <PackagePath>TestWPFApp\PresentationCore.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemCore.dll">
+      <PackagePath>TestWPFApp\PresentationFramework-SystemCore.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemData.dll">
+      <PackagePath>TestWPFApp\PresentationFramework-SystemData.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemDrawing.dll">
+      <PackagePath>TestWPFApp\PresentationFramework-SystemDrawing.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemXml.dll">
+      <PackagePath>TestWPFApp\PresentationFramework-SystemXml.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemXmlLinq.dll">
+      <PackagePath>TestWPFApp\PresentationFramework-SystemXmlLinq.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Aero.dll">
+      <PackagePath>TestWPFApp\PresentationFramework.Aero.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Aero2.dll">
+      <PackagePath>TestWPFApp\PresentationFramework.Aero2.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.AeroLite.dll">
+      <PackagePath>TestWPFApp\PresentationFramework.AeroLite.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Classic.dll">
+      <PackagePath>TestWPFApp\PresentationFramework.Classic.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.dll">
+      <PackagePath>TestWPFApp\PresentationFramework.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Luna.dll">
+      <PackagePath>TestWPFApp\PresentationFramework.Luna.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Royale.dll">
+      <PackagePath>TestWPFApp\PresentationFramework.Royale.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationUI.dll">
+      <PackagePath>TestWPFApp\PresentationUI.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\ReachFramework.dll">
+      <PackagePath>TestWPFApp\ReachFramework.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.CodeDom.dll">
+      <PackagePath>TestWPFApp\System.CodeDom.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>TestWPFApp\System.Configuration.ConfigurationManager.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Design.dll">
+      <PackagePath>TestWPFApp\System.Design.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.EventLog.dll">
+      <PackagePath>TestWPFApp\System.Diagnostics.EventLog.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.DirectoryServices.dll">
+      <PackagePath>TestWPFApp\System.DirectoryServices.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Drawing.Common.dll">
+      <PackagePath>TestWPFApp\System.Drawing.Common.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Drawing.Design.dll">
+      <PackagePath>TestWPFApp\System.Drawing.Design.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Drawing.dll">
+      <PackagePath>TestWPFApp\System.Drawing.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Printing.dll">
+      <PackagePath>TestWPFApp\System.Printing.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.Pkcs.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.ProtectedData.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Xml.dll">
+      <PackagePath>TestWPFApp\System.Security.Cryptography.Xml.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Permissions.dll">
+      <PackagePath>TestWPFApp\System.Security.Permissions.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.AccessControl.dll">
+      <PackagePath>TestWPFApp\System.Threading.AccessControl.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Controls.Ribbon.dll">
+      <PackagePath>TestWPFApp\System.Windows.Controls.Ribbon.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Extensions.dll">
+      <PackagePath>TestWPFApp\System.Windows.Extensions.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Forms.Design.dll">
+      <PackagePath>TestWPFApp\System.Windows.Forms.Design.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Forms.Design.Editors.dll">
+      <PackagePath>TestWPFApp\System.Windows.Forms.Design.Editors.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Forms.dll">
+      <PackagePath>TestWPFApp\System.Windows.Forms.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Input.Manipulations.dll">
+      <PackagePath>TestWPFApp\System.Windows.Input.Manipulations.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Presentation.dll">
+      <PackagePath>TestWPFApp\System.Windows.Presentation.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Xaml.dll">
+      <PackagePath>TestWPFApp\System.Xaml.dll</PackagePath>
+      <Modified>2019-03-03T09:19:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\UIAutomationClient.dll">
+      <PackagePath>TestWPFApp\UIAutomationClient.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\UIAutomationClientSideProviders.dll">
+      <PackagePath>TestWPFApp\UIAutomationClientSideProviders.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\UIAutomationProvider.dll">
+      <PackagePath>TestWPFApp\UIAutomationProvider.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\UIAutomationTypes.dll">
+      <PackagePath>TestWPFApp\UIAutomationTypes.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\WindowsBase.dll">
+      <PackagePath>TestWPFApp\WindowsBase.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\WindowsFormsIntegration.dll">
+      <PackagePath>TestWPFApp\WindowsFormsIntegration.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\native\PenImc_cor3.dll">
+      <PackagePath>TestWPFApp\PenImc_cor3.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\native\PresentationNative_cor3.dll">
+      <PackagePath>TestWPFApp\PresentationNative_cor3.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\native\wpfgfx_cor3.dll">
+      <PackagePath>TestWPFApp\wpfgfx_cor3.dll</PackagePath>
+      <Modified>2019-03-03T09:19:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.exe">
+      <PackagePath>TestWPFApp\TestWPFApp.exe</PackagePath>
+      <Modified>2019-04-17T02:43:58.885</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.runtimeconfig.json">
+      <PackagePath>TestWPFApp\TestWPFApp.runtimeconfig.json</PackagePath>
+      <Modified>2019-04-17T02:35:12.473</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.dll">
+      <PackagePath>TestWPFApp\TestWPFApp.dll</PackagePath>
+      <Modified>2019-04-17T02:43:58.867</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

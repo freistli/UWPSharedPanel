@@ -45,3 +45,5 @@ D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\TestWPFApp.csproj.CoreCompileInputs
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\TestWPFApp.csproj.CopyComplete
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\TestWPFApp.exe
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\TestWPFApp.pdb
+D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\TestWPFApp.csprojAssemblyReference.cache
+D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\Windows.Foundation.FoundationContract.winmd

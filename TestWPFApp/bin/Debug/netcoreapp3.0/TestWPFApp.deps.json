@@ -1,0 +1,316 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": "3195b0d76cd8bdcca3d0d5d6444f7766198b0dca"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "TestWPFApp/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
+          "Microsoft.Toolkit.Wpf.UI.Controls": "6.0.0-preview3",
+          "Microsoft.WindowsDesktop.App": "3.0.0-preview3-27504-2",
+          "runtime.win-x64.Microsoft.AspNetCore.App": "3.0.0-preview3-19153-02",
+          "runtime.win-x64.Microsoft.NETCore.App": "3.0.0-preview3-27503-5",
+          "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5",
+          "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy": "3.0.0-preview3-27503-5",
+          "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5",
+          "runtime.win-x64.Microsoft.WindowsDesktop.App": "3.0.0-preview3-27504-2",
+          "runtime.win-x86.Microsoft.AspNetCore.App": "3.0.0-preview3-19153-02",
+          "runtime.win-x86.Microsoft.NETCore.App": "3.0.0-preview3-27503-5",
+          "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy": "3.0.0-preview3-27503-5",
+          "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5",
+          "runtime.win-x86.Microsoft.WindowsDesktop.App": "3.0.0-preview3-27504-2",
+          "Windows.Foundation.FoundationContract": "3.0.0.0",
+          "Windows": "255.255.255.255"
+        },
+        "runtime": {
+          "TestWPFApp.dll": {}
+        }
+      },
+      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {},
+      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {},
+      "Microsoft.NETCore.Targets/2.0.0": {},
+      "Microsoft.Toolkit.UI.XamlHost/6.0.0-preview3": {
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.6.0-preview3.19128.7",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0-preview3.19128.7"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Toolkit.Win32.UI.XamlHost.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.47"
+          }
+        }
+      },
+      "Microsoft.Toolkit.Wpf.UI.Controls/6.0.0-preview3": {
+        "dependencies": {
+          "Microsoft.Toolkit.Wpf.UI.XamlHost": "6.0.0-preview3",
+          "System.Runtime.WindowsRuntime": "4.6.0-preview3.19128.7",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0-preview3.19128.7"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Toolkit.Wpf.UI.Controls.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.47"
+          }
+        }
+      },
+      "Microsoft.Toolkit.Wpf.UI.XamlHost/6.0.0-preview3": {
+        "dependencies": {
+          "Microsoft.Toolkit.UI.XamlHost": "6.0.0-preview3",
+          "System.Runtime.WindowsRuntime": "4.6.0-preview3.19128.7",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0-preview3.19128.7"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Toolkit.Wpf.UI.XamlHost.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.47"
+          }
+        }
+      },
+      "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
+          "Microsoft.NETCore.Targets": "2.0.0"
+        }
+      },
+      "runtime.win-x64.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {},
+      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {},
+      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {},
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
+        }
+      },
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
+        }
+      },
+      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {},
+      "runtime.win-x86.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {},
+      "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {},
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
+        }
+      },
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
+        }
+      },
+      "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {},
+      "System.Runtime.WindowsRuntime/4.6.0-preview3.19128.7": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7"
+        },
+        "runtimeTargets": {
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0-preview3.19128.7": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
+          "System.Runtime.WindowsRuntime": "4.6.0-preview3.19128.7"
+        },
+        "runtimeTargets": {
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
+      "Windows.Foundation.FoundationContract/3.0.0.0": {
+        "runtime": {
+          "Windows.Foundation.FoundationContract.winmd": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "10.0.18362.1"
+          }
+        }
+      },
+      "Windows/255.255.255.255": {
+        "runtime": {
+          "Windows.winmd": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TestWPFApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FxlijBBTl0oVPSJGzQV+EQPCd7JTiC9r487ZDumm1EfbB3xzZcLe8W+tF7LK2UP76+bI6SouoT5VGexZCxMwRg==",
+      "path": "microsoft.netcore.dotnetapphost/3.0.0-preview3-27503-5",
+      "hashPath": "microsoft.netcore.dotnetapphost.3.0.0-preview3-27503-5.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D5VjK+8EotyKB6BHRHa+kkUticrL8yQ5hbU40NlXoWe623Kw0lGd8NTxJVETSQhJYGCqkLl6pazM3gZtGzr0fQ==",
+      "path": "microsoft.netcore.dotnethostresolver/3.0.0-preview3-27503-5",
+      "hashPath": "microsoft.netcore.dotnethostresolver.3.0.0-preview3-27503-5.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4/k52fBHvM1RNPoBMik0Y3wIovsUGaTadNGH75iLGjQCJPRq2UBivEkhYrYkIFnu+K9kTYJcmXCDF6SFzMBrqA==",
+      "path": "microsoft.netcore.platforms/3.0.0-preview3.19128.7",
+      "hashPath": "microsoft.netcore.platforms.3.0.0-preview3.19128.7.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
+      "path": "microsoft.netcore.targets/2.0.0",
+      "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Toolkit.UI.XamlHost/6.0.0-preview3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-scrIs32rJQGsV1V5MX/GcC5MjUzP/j0T+irxoZtTlc2iK3yK1E1iLiywzOf9VGpcjlknum+5iug15NK64hpOEg==",
+      "path": "microsoft.toolkit.ui.xamlhost/6.0.0-preview3",
+      "hashPath": "microsoft.toolkit.ui.xamlhost.6.0.0-preview3.nupkg.sha512"
+    },
+    "Microsoft.Toolkit.Wpf.UI.Controls/6.0.0-preview3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3B8G5nkpW4COpOlEpqZVwAl7Yso7I+xMQ7aX9D1uDxxCZ25GYH89HsVgbSwzWLEhOaAFEREU4gqdp5YkliBTaw==",
+      "path": "microsoft.toolkit.wpf.ui.controls/6.0.0-preview3",
+      "hashPath": "microsoft.toolkit.wpf.ui.controls.6.0.0-preview3.nupkg.sha512"
+    },
+    "Microsoft.Toolkit.Wpf.UI.XamlHost/6.0.0-preview3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lIVWubpiIoImd6E98v7XWkXsJMUvCMjl3ViZ1rJ5aImbOl1eQnDAhPjK/fHQYbSGaoRT+pQ1+88DA1dZA96vig==",
+      "path": "microsoft.toolkit.wpf.ui.xamlhost/6.0.0-preview3",
+      "hashPath": "microsoft.toolkit.wpf.ui.xamlhost.6.0.0-preview3.nupkg.sha512"
+    },
+    "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t7Iw6nkx03aOXgZ7L2ZJLN7hGY7FlUaxIyH6UbGhjHCJABxfV8Bx3xOe6E63xa1HVeoccCAdNPctTX2s2zj5SQ==",
+      "path": "microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
+      "hashPath": "microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ylYk+gCoEJehI1cRx2MPRPZHgiFigGjeSWap838BbMPQVYCSGCGdJtJrfEr/HIAraH7KMwRWDMcn9jbtclXgUQ==",
+      "path": "runtime.win-x64.microsoft.aspnetcore.app/3.0.0-preview3-19153-02",
+      "hashPath": "runtime.win-x64.microsoft.aspnetcore.app.3.0.0-preview3-19153-02.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KIcxA221ARdg7G0mqU+HRvomQFLhrc0XG/xeEX1uEnp0u1Avk3xsb1MBNb2WjPGLw+551upnefXN2MAgaBKOzQ==",
+      "path": "runtime.win-x64.microsoft.netcore.app/3.0.0-preview3-27503-5",
+      "hashPath": "runtime.win-x64.microsoft.netcore.app.3.0.0-preview3-27503-5.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9xq1NTCrWg3A4/6K/COActt25NJaw1a6bx0CTIkgbYv2TkpveKXZCCSFyDnT5Ff9nBvZkBq4Y4r/tZNIU5T8pg==",
+      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview3-27503-5",
+      "hashPath": "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview3-27503-5.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wm8MI6WHshnuMt/LUew3/u3MeE5yGbAI1zu/f7H2bNFFrtOCmILgcrXi1OH0AWCyUq+s4YOfoLcq6WegFG8HAQ==",
+      "path": "runtime.win-x64.microsoft.netcore.dotnethostpolicy/3.0.0-preview3-27503-5",
+      "hashPath": "runtime.win-x64.microsoft.netcore.dotnethostpolicy.3.0.0-preview3-27503-5.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AyqonWd7S9N0zsG+Snzi98TfdgKK+JW5GuQEtFNcCpXWk9u5xjlrf5YrVGz6FSj8kUA/P/Vb+wEPAD8+OuYU4A==",
+      "path": "runtime.win-x64.microsoft.netcore.dotnethostresolver/3.0.0-preview3-27503-5",
+      "hashPath": "runtime.win-x64.microsoft.netcore.dotnethostresolver.3.0.0-preview3-27503-5.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HuqJ2xbIIIKda+skWAX3FDFMwR/OCb7OtbL+De6cR99HEXeCSZ0wbhVf/YHEFI3XoSSZbk9AkNXheU1yuxN9OQ==",
+      "path": "runtime.win-x64.microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
+      "hashPath": "runtime.win-x64.microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512"
+    },
+    "runtime.win-x86.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DtMOgH/upJMWrQVJgL24CCM4oNR+tdZUVSQiIqesA7mVZE/YeVNkGwBK0pmwKKggea2LsofscY0NHWMjgBfYWA==",
+      "path": "runtime.win-x86.microsoft.aspnetcore.app/3.0.0-preview3-19153-02",
+      "hashPath": "runtime.win-x86.microsoft.aspnetcore.app.3.0.0-preview3-19153-02.nupkg.sha512"
+    },
+    "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Osus1oPI/91kV7lopRyPDoLveGOuNYyt1bZNmaiaI2DNGxs9ibVzmRfiqEsJHWZR9LrzyRuNLYMOiytloa2XZw==",
+      "path": "runtime.win-x86.microsoft.netcore.app/3.0.0-preview3-27503-5",
+      "hashPath": "runtime.win-x86.microsoft.netcore.app.3.0.0-preview3-27503-5.nupkg.sha512"
+    },
+    "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OICccDm2Cu0PqaAIUVC+0/pAQfBxYZf1PPOBmraywlCiPzGTb54uR0YGbMG8UlSL+0uZ2aZUcQ9XNOd6iEPcbA==",
+      "path": "runtime.win-x86.microsoft.netcore.dotnethostpolicy/3.0.0-preview3-27503-5",
+      "hashPath": "runtime.win-x86.microsoft.netcore.dotnethostpolicy.3.0.0-preview3-27503-5.nupkg.sha512"
+    },
+    "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MxKkcAnhfefEdiiaI7TAT1izGiWv6DDkEoPyILQvXDLTofEKg/IX8+g0+8ArZ37zuSE3Qdd5CGimBS+9WnO8aA==",
+      "path": "runtime.win-x86.microsoft.netcore.dotnethostresolver/3.0.0-preview3-27503-5",
+      "hashPath": "runtime.win-x86.microsoft.netcore.dotnethostresolver.3.0.0-preview3-27503-5.nupkg.sha512"
+    },
+    "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O9JX7jQszm+HvMDHlDz+h/eM5yeVT08QkLavFmcex8ryTjHMEdw0LCLe2H5e1vCxGXwNWyteEa4v+qntT+PSug==",
+      "path": "runtime.win-x86.microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
+      "hashPath": "runtime.win-x86.microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512"
+    },
+    "System.Runtime.WindowsRuntime/4.6.0-preview3.19128.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-riLwtGd4AqKq8WfP1J+hopWCsCPZNAIuuAUPaMvwUB+ieS6OO/OhQXHCKiF8tIc0hgOy5vybUjxUFBfVZTmifg==",
+      "path": "system.runtime.windowsruntime/4.6.0-preview3.19128.7",
+      "hashPath": "system.runtime.windowsruntime.4.6.0-preview3.19128.7.nupkg.sha512"
+    },
+    "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0-preview3.19128.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2bLAXMrBKxTqOqdR+T3vHTj6o42BNXLYfdC3CAVc3RWD73splqNuE9a6UR2IOYf6AyJ3nOGgJGXAfNdStNDd4g==",
+      "path": "system.runtime.windowsruntime.ui.xaml/4.6.0-preview3.19128.7",
+      "hashPath": "system.runtime.windowsruntime.ui.xaml.4.6.0-preview3.19128.7.nupkg.sha512"
+    },
+    "Windows.Foundation.FoundationContract/3.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Windows/255.255.255.255": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

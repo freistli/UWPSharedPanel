@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="UWPSharedPanel.RealEstateComponent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPSharedPanel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="5" >
+    <StackPanel Background="LightCyan">
+
+        <Grid Margin="10,20,20,20" Padding="5" VerticalAlignment="Stretch"  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" /> 
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0"   FontFamily="Segoe MDL2 Assets" Height="50" VerticalAlignment="Top">Client Rating</TextBlock>
+            <RatingControl x:ConnectionId='7' Grid.Row="1" Margin="15" x:Name="Home" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Home" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Home Rating"/>
+            <RatingControl x:ConnectionId='8' Grid.Row="2" Margin="15" x:Name="Location" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Location" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Location Rating"/>
+            <RatingControl x:ConnectionId='9' Grid.Row="3" Margin="15" x:Name="Convenience" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Convenience" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Convenience Rating"/>
+            <RatingControl x:ConnectionId='10' Grid.Row="4" Margin="15" x:Name="Total" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Total" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Total Rating"/>
+            <TextBlock Grid.Row="5" VerticalAlignment="Top" Height="30" HorizontalAlignment="Left" >Notes</TextBlock>
+        </Grid>
+        <Button x:ConnectionId='2' x:Name="AnalyzeButton" Margin="10" VerticalAlignment="Top"  HorizontalAlignment="Left"                             >Recognize</Button>
+        <TextBox x:ConnectionId='3' x:Name="recognitionResult" Margin="10,0,10,0"/>
+        <Grid x:ConnectionId='4' x:Name="outputGrid" Margin="10,20,10,20" Background="LightGray" Height="520">
+            <Canvas x:ConnectionId='5' x:Name="RecognitionCanvas"   Margin="15,5,5,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
+            <InkCanvas x:ConnectionId='6'  x:Name="InputCanvas"  Margin="15,5,5,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ></InkCanvas>            
+        </Grid>
+    </StackPanel>
+</Page>
+
