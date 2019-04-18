@@ -24,3 +24,4 @@ D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.csproj.Cop
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.dll
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.pdb
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.csprojAssemblyReference.cache
+D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\netcoreapp3.0\Windows.Foundation.UniversalApiContract.winmd

@@ -5,9 +5,14 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWPSharedPanel", "UWPSharedPanel\UWPSharedPanel.csproj", "{46762CD8-52D6-4031-BE16-1667E9945D61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWPFApp", "TestWPFApp\TestWPFApp.csproj", "{E7CB310D-E359-48A4-9A34-11E8C90AAAFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWPFApp", "TestWPFApp\TestWPFApp.csproj", "{E7CB310D-E359-48A4-9A34-11E8C90AAAFF}"
 EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "packageproject", "packageproject\packageproject.wapproj", "{C445247F-DAA6-4D4C-BFE4-106C7505D0F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11F8CE7B-5DE6-4372-AA85-6D00BAB28D4A}"
+	ProjectSection(SolutionItems) = preProject
+		Global.json = Global.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
