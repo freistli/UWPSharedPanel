@@ -44,10 +44,6 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.8, )"
-            },
-            "Microsoft.Windows.SDK.Contracts": {
-              "target": "Package",
-              "version": "[10.0.17763.144-preview, )"
             }
           },
           "imports": [
