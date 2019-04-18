@@ -147,15 +147,17 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[4];
             _typeNameTable[0] = "UWPSharedPanel.RealEstateComponent";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.TreeViewNode";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::UWPSharedPanel.RealEstateComponent);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.TreeViewNode);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -214,6 +216,10 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
                 break;
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  Windows.UI.Xaml.Controls.TreeViewNode
                 xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }

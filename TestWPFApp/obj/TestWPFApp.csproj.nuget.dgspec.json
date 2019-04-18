@@ -27,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\freistli\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.17763.144-preview": {},
           "D:\\Tools\\BlackBerry_Dynamics_for_MS_Windows_UWP-3.2.1.2607": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},

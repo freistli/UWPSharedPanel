@@ -31,7 +31,7 @@
     <AppXManifest Include="D:\repos\UWPSharedPanel\packageproject\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-18T12:18:25.401</Modified>
+      <Modified>2019-04-18T12:29:32.429</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -75,7 +75,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\TestWPFApp\UWPSharedPanel\RealEstateComponent.xbf">
       <PackagePath>TestWPFApp\UWPSharedPanel\RealEstateComponent.xbf</PackagePath>
-      <Modified>2019-04-18T11:46:08.395</Modified>
+      <Modified>2019-04-18T12:29:01.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
@@ -1159,15 +1159,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.exe">
       <PackagePath>TestWPFApp\TestWPFApp.exe</PackagePath>
-      <Modified>2019-04-18T12:18:22.887</Modified>
+      <Modified>2019-04-18T12:29:30.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.runtimeconfig.json">
       <PackagePath>TestWPFApp\TestWPFApp.runtimeconfig.json</PackagePath>
-      <Modified>2019-04-17T02:35:12.473</Modified>
+      <Modified>2019-04-18T12:29:30.917</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.dll">
       <PackagePath>TestWPFApp\TestWPFApp.dll</PackagePath>
-      <Modified>2019-04-18T12:18:22.857</Modified>
+      <Modified>2019-04-18T12:29:30.433</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
