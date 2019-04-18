@@ -31,11 +31,16 @@ namespace TestWPFApp
 
         private void SharedXamlHost_ChildChanged(object sender, EventArgs e)
         {
-            WindowsXamlHost windowsXamlHost = (WindowsXamlHost)sender;
+            if (EventSet == false)
+            {
+                WindowsXamlHost windowsXamlHost = (WindowsXamlHost)sender;
 
-            UWPSharedPanel.RealEstateComponent sharedPanel =
-                (UWPSharedPanel.RealEstateComponent)windowsXamlHost.Child;
-            sharedPanel.StringChanged += OnStringChanged;
+                UWPSharedPanel.RealEstateComponent sharedPanel =
+                    (UWPSharedPanel.RealEstateComponent)windowsXamlHost.Child;
+                sharedPanel.StringChanged += OnStringChanged;
+
+                EventSet = true;
+            }
 
         }
         private void Window_Closed(object sender, EventArgs e)

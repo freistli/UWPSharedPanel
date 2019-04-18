@@ -273,8 +273,6 @@ D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\WindowsFo
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\PenImc_cor3.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\PresentationNative_cor3.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\wpfgfx_cor3.dll
-D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\Windows.Foundation.FoundationContract.winmd
-D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\Windows.winmd
 D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\MainWindow.g.cs
 D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\App.g.cs
 D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp_MarkupCompile.cache
@@ -289,4 +287,3 @@ D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFAp
 D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.csproj.CopyComplete
 D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.dll
 D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.pdb
-D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\Windows.Foundation.UniversalApiContract.winmd

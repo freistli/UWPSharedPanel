@@ -7,8 +7,6 @@ D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\netcoreapp3.0\TestWPFApp.pdb
 D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\netcoreapp3.0\Microsoft.Toolkit.Win32.UI.XamlHost.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\netcoreapp3.0\Microsoft.Toolkit.Wpf.UI.Controls.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\netcoreapp3.0\Microsoft.Toolkit.Wpf.UI.XamlHost.dll
-D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\netcoreapp3.0\Windows.Foundation.FoundationContract.winmd
-D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\netcoreapp3.0\Windows.winmd
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\MainWindow.g.cs
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\App.g.cs
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp_MarkupCompile.cache
@@ -23,5 +21,3 @@ D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.AssemblyIn
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.csproj.CopyComplete
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.dll
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.pdb
-D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.csprojAssemblyReference.cache
-D:\repos\UWPSharedPanel\TestWPFApp\bin\Debug\netcoreapp3.0\Windows.Foundation.UniversalApiContract.winmd
