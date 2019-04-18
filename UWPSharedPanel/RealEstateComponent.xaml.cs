@@ -158,7 +158,9 @@ namespace UWPSharedPanel
                         Notes = recognitionResult.Text;
                         // Clear the ink canvas once recognition is complete.
                         InputCanvas.InkPresenter.StrokeContainer.Clear();
-                    }
+
+                        OnStringChanged(Notes);
+;                    }
                     else
                     {
                        recognitionResult.Text = "No recognition results.";
@@ -269,5 +271,44 @@ namespace UWPSharedPanel
         {
             await ConstrainedHandWriting();
         }
+
+        private EventRegistrationTokenTable<EventHandler<StringChangedEventArgs>> m_StringChangedTokenTable = null;
+
+        public event EventHandler<StringChangedEventArgs> StringChanged
+        {
+            add
+            {
+                 EventRegistrationTokenTable<EventHandler<StringChangedEventArgs>>
+                    .GetOrCreateEventRegistrationTokenTable(ref m_StringChangedTokenTable)
+                    .AddEventHandler(value);
+            }
+            remove
+            {
+                EventRegistrationTokenTable<EventHandler<StringChangedEventArgs>>
+                    .GetOrCreateEventRegistrationTokenTable(ref m_StringChangedTokenTable)
+                    .RemoveEventHandler(value);
+            }
+        }
+
+        internal void OnStringChanged(string s)
+        {
+            EventHandler<StringChangedEventArgs> temp =
+                EventRegistrationTokenTable<EventHandler<StringChangedEventArgs>>
+                .GetOrCreateEventRegistrationTokenTable(ref m_StringChangedTokenTable)
+                .InvocationList;
+            if (temp != null)
+            {
+                temp(this, new StringChangedEventArgs(s));
+            }
+        }
     }
+    public class StringChangedEventArgs : EventArgs
+    {
+        public string notes { get; set; }
+        public StringChangedEventArgs(string s)
+        {
+            notes = s;
+        }
+    }
+
 }

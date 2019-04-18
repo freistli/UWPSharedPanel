@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UWPSharedPanel;
 
 namespace TestWPFApp
 {
@@ -24,6 +25,7 @@ namespace TestWPFApp
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void SharedXamlHost_ChildChanged(object sender, EventArgs e)
@@ -31,11 +33,13 @@ namespace TestWPFApp
             WindowsXamlHost windowsXamlHost = (WindowsXamlHost)sender;
 
             UWPSharedPanel.RealEstateComponent sharedPanel =
-                (UWPSharedPanel.RealEstateComponent)windowsXamlHost.Child;        
-             
+                (UWPSharedPanel.RealEstateComponent)windowsXamlHost.Child;
+            sharedPanel.StringChanged += OnStringChanged;
+
         }
         private void Window_Closed(object sender, EventArgs e)
         {
+             
             SharedXamlHost.Dispose();
         }
 
@@ -47,6 +51,15 @@ namespace TestWPFApp
             sharedPanel.SetRating();
             sharedPanel.Notes = "This house is spacious and bright.";
             sharedPanel.SetNotes();
+
+        }
+
+        private void OnStringChanged(object sender, StringChangedEventArgs e)
+        {
+            var selectionIndex = Notes.SelectionStart;
+            Notes.Text = Notes.Text.Insert(selectionIndex, e.notes);
+            Notes.SelectionStart = selectionIndex + e.notes.Length;
+             
         }
     }
 }

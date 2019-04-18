@@ -31,7 +31,7 @@
     <AppXManifest Include="D:\repos\UWPSharedPanel\packageproject\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-17T02:44:01.717</Modified>
+      <Modified>2019-04-18T08:09:18.822</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -71,11 +71,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\TestWPFApp\UWPSharedPanel\RealEstateComponent.xaml">
       <PackagePath>TestWPFApp\UWPSharedPanel\RealEstateComponent.xaml</PackagePath>
-      <Modified>2019-04-12T09:52:35.141</Modified>
+      <Modified>2019-04-17T09:27:51.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\TestWPFApp\UWPSharedPanel\RealEstateComponent.xbf">
       <PackagePath>TestWPFApp\UWPSharedPanel\RealEstateComponent.xbf</PackagePath>
-      <Modified>2019-04-17T02:43:38.904</Modified>
+      <Modified>2019-04-18T08:06:24.908</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\packageproject\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
@@ -1159,7 +1159,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.exe">
       <PackagePath>TestWPFApp\TestWPFApp.exe</PackagePath>
-      <Modified>2019-04-17T02:43:58.885</Modified>
+      <Modified>2019-04-18T08:09:15.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.runtimeconfig.json">
       <PackagePath>TestWPFApp\TestWPFApp.runtimeconfig.json</PackagePath>
@@ -1167,7 +1167,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.dll">
       <PackagePath>TestWPFApp\TestWPFApp.dll</PackagePath>
-      <Modified>2019-04-17T02:43:58.867</Modified>
+      <Modified>2019-04-18T08:09:15.248</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
