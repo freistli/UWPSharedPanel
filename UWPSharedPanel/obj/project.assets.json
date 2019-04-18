@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "UAP,Version=v10.0.18362": {
+    "UAP,Version=v10.0.17763": {
       "Microsoft.Net.Native.Compiler/2.2.3": {
         "type": "package",
         "dependencies": {
@@ -308,7 +308,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.18362/win-x64": {
+    "UAP,Version=v10.0.17763/win-x64": {
       "Microsoft.Net.Native.Compiler/2.2.3": {
         "type": "package",
         "dependencies": {
@@ -615,7 +615,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.18362/win-x86": {
+    "UAP,Version=v10.0.17763/win-x86": {
       "Microsoft.Net.Native.Compiler/2.2.3": {
         "type": "package",
         "dependencies": {
@@ -4076,7 +4076,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "UAP,Version=v10.0.18362": [
+    "UAP,Version=v10.0.17763": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.8"
     ]
   },
@@ -4105,7 +4105,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "uap10.0.18362"
+        "uap10.0.17763"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -4113,13 +4113,13 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "uap10.0.18362": {
+        "uap10.0.17763": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "uap10.0.18362": {
+      "uap10.0.17763": {
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
