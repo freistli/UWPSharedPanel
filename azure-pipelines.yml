@@ -1,30 +1,89 @@
-# Universal Windows Platform
-# Build a Universal Windows Platform project using Visual Studio.
-# Add steps that test and distribute an app, save build artifacts, and more:
-# https://aka.ms/yaml
-
-trigger:
-- master
-
 pool:
-  vmImage: 'windows-2019'
 
-variables:
-  solution: '**/*.sln'
-  buildPlatform: 'x86|x64|ARM'
-  buildConfiguration: 'Release'
-  appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
+  name: Hosted Windows 2019 with VS2019
+
+  demands:
+
+  - msbuild
+
+  - visualstudio
+
+
+
+#Your build pipeline references an undefined variable named ‘Parameters.solution’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+
+#Your build pipeline references an undefined variable named ‘Parameters.solution’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+
+#Your build pipeline references the ‘BuildPlatform’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
+
+#Your build pipeline references the ‘BuildConfiguration’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
+
+
 
 steps:
+
+- task: DotNetCoreInstaller@0
+
+  displayName: 'Use .NET Core sdk 3.0.100-preview3-010431'
+
+  inputs:
+
+    version: '3.0.100-preview3-010431'
+
+
+
+- task: richardfennellBM.BM-VSTS-Versioning-Task.Version-APPX-Task.VersionAPPX@2
+
+  displayName: 'Version APPX'
+
+
+
 - task: NuGetToolInstaller@0
 
-- task: NuGetCommand@2
+  displayName: 'Use NuGet 4.4.1'
+
   inputs:
-    restoreSolution: '$(solution)'
+
+    versionSpec: 4.4.1
+
+
+
+- task: NuGetCommand@2
+
+  displayName: 'NuGet restore **\*.sln'
+
+  inputs:
+
+    restoreSolution: '$(Parameters.solution)'
+
+
 
 - task: VSBuild@1
+
+  displayName: 'UWPSharedPanel.sln'
+
   inputs:
-    platform: 'x86'
-    solution: '$(solution)'
-    configuration: '$(buildConfiguration)'
-    msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload'
+
+    solution: '$(Parameters.solution)'
+
+    vsVersion: 16.0
+
+    msbuildArgs: '/p:AppxBundlePlatforms="$(BuildPlatform)" /p:AppxPackageDir="$(Build.ArtifactStagingDirectory)\AppxPackages\\" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=SideloadOnly /p:AppxPackageSigningEnabled=false'
+
+    platform: x86
+
+    configuration: '$(BuildConfiguration)'
+
+
+
+- task: PublishBuildArtifacts@1
+
+  displayName: 'Publish artifact: drop'
+
+  inputs:
+
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)\AppxPackages'
+
+  condition: succeededOrFailed()
+
+
