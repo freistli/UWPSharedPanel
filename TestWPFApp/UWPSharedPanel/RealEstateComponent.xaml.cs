@@ -166,10 +166,10 @@ namespace UWPSharedPanel
                             }
                         }
                         // Display the recognition candidates.
-                        var selectionIndex = recognitionResult.SelectionStart;
-                        recognitionResult.Text = recognitionResult.Text.Insert(selectionIndex, str);
-                        recognitionResult.SelectionStart = selectionIndex + str.Length;
-                        Notes = recognitionResult.Text;
+                        //var selectionIndex = recognitionResult.SelectionStart;
+                        //recognitionResult.Text = recognitionResult.Text.Insert(selectionIndex, str);
+                        //recognitionResult.SelectionStart = selectionIndex + str.Length;
+                        Notes = recognitionResult.Text = str;
                         // Clear the ink canvas once recognition is complete.
                         InputCanvas.InkPresenter.StrokeContainer.Clear();
 
