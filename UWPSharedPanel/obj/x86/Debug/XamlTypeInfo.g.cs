@@ -147,17 +147,19 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "UWPSharedPanel.RealEstateComponent";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Windows.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[3] = "UWPSharedPanel.RealEstateViewMode";
+            _typeNameTable[4] = "Object";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::UWPSharedPanel.RealEstateComponent);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[3] = typeof(global::UWPSharedPanel.RealEstateViewMode);
+            _typeTable[4] = typeof(global::System.Object);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -193,6 +195,7 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
         }
 
         private object Activate_0_RealEstateComponent() { return new global::UWPSharedPanel.RealEstateComponent(); }
+        private object Activate_3_RealEstateViewMode() { return new global::UWPSharedPanel.RealEstateViewMode(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -207,6 +210,7 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
             case 0:   //  UWPSharedPanel.RealEstateComponent
                 userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_RealEstateComponent;
+                userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -219,7 +223,14 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
                 xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Windows.UI.Xaml.Controls.TreeViewNode
+            case 3:   //  UWPSharedPanel.RealEstateViewMode
+                userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Object
                 xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -227,11 +238,31 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
         }
 
 
+        private object get_0_RealEstateComponent_ViewModel(object instance)
+        {
+            var that = (global::UWPSharedPanel.RealEstateComponent)instance;
+            return that.ViewModel;
+        }
+        private void set_0_RealEstateComponent_ViewModel(object instance, object Value)
+        {
+            var that = (global::UWPSharedPanel.RealEstateComponent)instance;
+            that.ViewModel = (global::UWPSharedPanel.RealEstateViewMode)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "UWPSharedPanel.RealEstateComponent.ViewModel":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPSharedPanel.RealEstateComponent");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPSharedPanel.RealEstateViewMode");
+                xamlMember.Getter = get_0_RealEstateComponent_ViewModel;
+                xamlMember.Setter = set_0_RealEstateComponent_ViewModel;
+                break;
+            }
             return xamlMember;
         }
     }

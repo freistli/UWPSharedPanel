@@ -51,16 +51,23 @@ namespace TestWPFApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (EventSet == false)
-            {
+          
                 UWPSharedPanel.RealEstateComponent sharedPanel =
                     (UWPSharedPanel.RealEstateComponent)SharedXamlHost.Child;
-                sharedPanel.Ratings = new double[] { 5, 4, 3, 4 };
-                sharedPanel.SetRating();
-                sharedPanel.Notes = "This house is spacious and bright.";
-                sharedPanel.SetNotes();
-                EventSet = true;
-            }
+            Notes.Text = sharedPanel.ViewModel.CurrentRealEstate.TotalRating.ToString()+" "+ sharedPanel.ViewModel.CurrentRealEstate.Notes;
+
+            sharedPanel.ViewModel.CurrentRealEstate = new RealEstate
+            {
+                ConvenieceRating = 4,
+                HomeRating = 5,
+                LocationRating = 3,
+                TotalRating = 2,
+                Notes = "Sent from WPF " + DateTime.Now.ToString()
+            };
+            
+
+            //Notes.Text = sharedPanel.ViewModel.CurrentRealEstate.Notes;
+
         }
 
         private void OnStringChanged(object sender, StringChangedEventArgs e)

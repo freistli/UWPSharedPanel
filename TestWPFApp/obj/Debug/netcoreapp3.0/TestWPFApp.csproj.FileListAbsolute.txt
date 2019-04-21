@@ -21,3 +21,4 @@ D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.AssemblyIn
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.csproj.CopyComplete
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.dll
 D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.pdb
+D:\repos\UWPSharedPanel\TestWPFApp\obj\Debug\netcoreapp3.0\TestWPFApp.csprojAssemblyReference.cache

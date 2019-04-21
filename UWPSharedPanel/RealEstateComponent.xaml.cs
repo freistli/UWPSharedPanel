@@ -29,6 +29,8 @@ namespace UWPSharedPanel
         public double[] Ratings = new double[] { 5, 5, 5, 5 };
         public string Notes = "";
 
+        public RealEstateViewMode ViewModel { get; set; }
+
         InkAnalyzer inkAnalyzer = new InkAnalyzer();
         IReadOnlyList<InkStroke> inkStrokes = null;
         InkAnalysisResult inkAnalysisResults = null;
@@ -36,6 +38,18 @@ namespace UWPSharedPanel
         {            
             this.InitializeComponent();
 
+            this.ViewModel = new RealEstateViewMode
+            {
+                CurrentRealEstate = new RealEstate
+                {
+                    ConvenieceRating = 5,
+                    HomeRating = 5,
+                    LocationRating = 4,
+                    TotalRating = 5,
+                    Notes = "Write something"
+                }
+            };
+            
             InputCanvas.InkPresenter.InputDeviceTypes =
                 Windows.UI.Core.CoreInputDeviceTypes.Mouse |
                 Windows.UI.Core.CoreInputDeviceTypes.Touch |
@@ -47,7 +61,7 @@ namespace UWPSharedPanel
             drawingAttributes.FitToCurve = true;
             InputCanvas.InkPresenter.UpdateDefaultDrawingAttributes(drawingAttributes);            
 
-            SetRating();
+            //SetRating();
         }
 
         public void SetRating()

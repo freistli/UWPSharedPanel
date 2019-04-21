@@ -4128,7 +4128,6 @@
           }
         },
         "imports": [
-          "uap10.0.17763",
           "net461"
         ],
         "assetTargetFallback": true,

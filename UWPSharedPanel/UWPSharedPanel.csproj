@@ -121,7 +121,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="RealEstate.cs" />
+    <Compile Include="RealEstateViewMode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RealEstateComponent.xaml.cs">
       <DependentUpon>RealEstateComponent.xaml</DependentUpon>
