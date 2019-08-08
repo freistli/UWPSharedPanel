@@ -42,10 +42,10 @@
                 <RowDefinition Height="Auto" /> 
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0"   FontFamily="Segoe MDL2 Assets" Height="50" VerticalAlignment="Top" Style="{StaticResource Header}">Client Rating</TextBlock>
-            <RatingControl Grid.Row="1" Margin="15" x:Name="Home" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Home" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Home Rating" PlaceholderValue="{x:Bind ViewModel.CurrentRealEstate.HomeRating,Mode=TwoWay}"/>
-            <RatingControl Grid.Row="2" Margin="15" x:Name="Location" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Location" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Location Rating" PlaceholderValue="{x:Bind ViewModel.CurrentRealEstate.LocationRating,Mode=TwoWay}"/>
-            <RatingControl Grid.Row="3" Margin="15" x:Name="Convenience" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Convenience" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Convenience Rating" PlaceholderValue="{x:Bind ViewModel.CurrentRealEstate.ConvenieceRating,Mode=TwoWay}"/>
-            <RatingControl Grid.Row="4" Margin="15" x:Name="Total" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Total" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Total Rating" PlaceholderValue="{x:Bind ViewModel.CurrentRealEstate.TotalRating,Mode=TwoWay}"/>
+            <RatingControl Grid.Row="1" Margin="15" x:Name="Home" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Home" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Home Rating" Value="{x:Bind ViewModel.CurrentRealEstate.HomeRating,Mode=TwoWay}"/>
+            <RatingControl Grid.Row="2" Margin="15" x:Name="Location" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Location" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Location Rating" Value="{x:Bind ViewModel.CurrentRealEstate.LocationRating,Mode=TwoWay}"/>
+            <RatingControl Grid.Row="3" Margin="15" x:Name="Convenience" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Convenience" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Convenience Rating" Value="{x:Bind ViewModel.CurrentRealEstate.ConvenieceRating,Mode=TwoWay}"/>
+            <RatingControl Grid.Row="4" Margin="15" x:Name="Total" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Total" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Total Rating" Value="{x:Bind ViewModel.CurrentRealEstate.TotalRating,Mode=TwoWay}"/>
             <TextBlock Grid.Row="5" VerticalAlignment="Top" Height="30" HorizontalAlignment="Left" Style="{StaticResource Header}">Notes</TextBlock>
         </Grid>
         <Button x:Name="AnalyzeButton" Margin="10" VerticalAlignment="Top"  HorizontalAlignment="Left" Click="AnalyzeButton_Click"  >
@@ -56,7 +56,7 @@
             Recognize
         </Button>
         <TextBox x:Name="recognitionResult" Margin="10,0,10,0" Text="{x:Bind ViewModel.CurrentRealEstate.Notes, Mode=TwoWay}" />
-        
+
         <Grid x:Name="outputGrid" Margin="10,20,10,20" Background="LightGray" Height="520" BorderThickness="5" BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}">
             <Canvas x:Name="RecognitionCanvas"   Margin="15,5,5,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
             <InkCanvas  x:Name="InputCanvas"  Margin="15,5,5,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ></InkCanvas>            

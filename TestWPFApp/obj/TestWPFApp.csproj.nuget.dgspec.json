@@ -14,7 +14,7 @@
         "outputPath": "D:\\repos\\UWPSharedPanel\\TestWPFApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "D:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
@@ -27,9 +27,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\freistli\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.17763.144-preview": {},
+          "D:\\Projects\\MemoryTrendV10.0.18362 - TTT.10.0.16173\\MemoryTrend\\bin\\Release": {},
           "D:\\Tools\\BlackBerry_Dynamics_for_MS_Windows_UWP-3.2.1.2607": {},
           "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/uwpcommunitytoolkit/api/v3/index.json": {},
           "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
           "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
           "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
@@ -51,10 +52,24 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.App.Runtime.win-x64": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview4-19216-03, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.App.Runtime.win-x86": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview4-19216-03, )",
+              "autoReferenced": true
+            },
             "Microsoft.NETCore.Platforms": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3.19128.7, )",
+              "version": "[3.0.0-preview4.19212.13, )",
               "autoReferenced": true
             },
             "Microsoft.Toolkit.Wpf.UI.Controls": {
@@ -65,88 +80,67 @@
               "target": "Package",
               "version": "[10.0.17763.144-preview, )"
             },
-            "Microsoft.WindowsDesktop.App": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview3-27504-2, )",
-              "autoReferenced": true
-            },
-            "runtime.win-x64.Microsoft.AspNetCore.App": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview3-19153-02, )",
-              "autoReferenced": true
-            },
             "runtime.win-x64.Microsoft.NETCore.App": {
               "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3-27503-5, )",
-              "autoReferenced": true
-            },
-            "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview3-27503-5, )",
+              "version": "[3.0.0-preview4-27615-11, )",
               "autoReferenced": true
             },
             "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy": {
               "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3-27503-5, )",
+              "version": "[3.0.0-preview4-27615-11, )",
               "autoReferenced": true
             },
             "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver": {
               "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3-27503-5, )",
+              "version": "[3.0.0-preview4-27615-11, )",
               "autoReferenced": true
             },
             "runtime.win-x64.Microsoft.WindowsDesktop.App": {
               "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3-27504-2, )",
-              "autoReferenced": true
-            },
-            "runtime.win-x86.Microsoft.AspNetCore.App": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview3-19153-02, )",
+              "version": "[3.0.0-preview4-27613-28, )",
               "autoReferenced": true
             },
             "runtime.win-x86.Microsoft.NETCore.App": {
               "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3-27503-5, )",
+              "version": "[3.0.0-preview4-27615-11, )",
+              "autoReferenced": true
+            },
+            "runtime.win-x86.Microsoft.NETCore.DotNetAppHost": {
+              "include": "None",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview4-27615-11, )",
               "autoReferenced": true
             },
             "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy": {
               "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3-27503-5, )",
+              "version": "[3.0.0-preview4-27615-11, )",
               "autoReferenced": true
             },
             "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver": {
               "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3-27503-5, )",
+              "version": "[3.0.0-preview4-27615-11, )",
               "autoReferenced": true
             },
             "runtime.win-x86.Microsoft.WindowsDesktop.App": {
               "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3-27504-2, )",
+              "version": "[3.0.0-preview4-27613-28, )",
               "autoReferenced": true
             }
           },
@@ -155,7 +149,11 @@
             "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": [
+            "Microsoft.NETCore.App",
+            "Microsoft.WindowsDesktop.App"
+          ]
         }
       },
       "runtimes": {

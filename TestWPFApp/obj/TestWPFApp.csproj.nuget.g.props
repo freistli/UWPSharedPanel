@@ -3,11 +3,11 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
-    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">D:\repos\UWPSharedPanel\TestWPFApp\obj\project.assets.json</ProjectAssetsFile>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\freistli\.nuget\packages\;C:\ProgramData\Xamarin\NuGet\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\freistli\.nuget\packages\;D:\Microsoft\Xamarin\NuGet\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.0.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.1.0</NuGetToolVersion>
   </PropertyGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -16,8 +16,8 @@
     <Import Project="$(NuGetPackageRoot)microsoft.windows.sdk.contracts\10.0.17763.144-preview\build\Microsoft.Windows.SDK.Contracts.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.sdk.contracts\10.0.17763.144-preview\build\Microsoft.Windows.SDK.Contracts.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkgruntime_win-x86_Microsoft_NETCore_App Condition=" '$(Pkgruntime_win-x86_Microsoft_NETCore_App)' == '' ">C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5</Pkgruntime_win-x86_Microsoft_NETCore_App>
-    <Pkgruntime_win-x64_Microsoft_NETCore_App Condition=" '$(Pkgruntime_win-x64_Microsoft_NETCore_App)' == '' ">C:\Users\freistli\.nuget\packages\runtime.win-x64.microsoft.netcore.app\3.0.0-preview3-27503-5</Pkgruntime_win-x64_Microsoft_NETCore_App>
+    <Pkgruntime_win-x86_Microsoft_NETCore_App Condition=" '$(Pkgruntime_win-x86_Microsoft_NETCore_App)' == '' ">C:\Users\freistli\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview4-27615-11</Pkgruntime_win-x86_Microsoft_NETCore_App>
+    <Pkgruntime_win-x64_Microsoft_NETCore_App Condition=" '$(Pkgruntime_win-x64_Microsoft_NETCore_App)' == '' ">C:\Users\freistli\.nuget\packages\runtime.win-x64.microsoft.netcore.app\3.0.0-preview4-27615-11</Pkgruntime_win-x64_Microsoft_NETCore_App>
     <PkgMicrosoft_Toolkit_Wpf_UI_XamlHost Condition=" '$(PkgMicrosoft_Toolkit_Wpf_UI_XamlHost)' == '' ">C:\Users\freistli\.nuget\packages\microsoft.toolkit.wpf.ui.xamlhost\6.0.0-preview3</PkgMicrosoft_Toolkit_Wpf_UI_XamlHost>
     <PkgMicrosoft_Toolkit_Wpf_UI_Controls Condition=" '$(PkgMicrosoft_Toolkit_Wpf_UI_Controls)' == '' ">C:\Users\freistli\.nuget\packages\microsoft.toolkit.wpf.ui.controls\6.0.0-preview3</PkgMicrosoft_Toolkit_Wpf_UI_Controls>
   </PropertyGroup>

@@ -2,25 +2,42 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
+      "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview4-19216-03": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x64/lib/netcoreapp3.0/_._": {
+            "assetType": "runtime",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/_._": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.App.Runtime.win-x86/3.0.0-preview4-19216-03": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x86/lib/netcoreapp3.0/_._": {
+            "assetType": "runtime",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/_._": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
         "type": "package"
       },
-      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
         }
       },
-      "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.NETCore.Targets/2.0.0": {
+      "Microsoft.NETCore.Platforms/3.0.0-preview4.19212.13": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -168,20 +185,7 @@
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
         }
       },
-      "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "Microsoft.NETCore.Targets": "2.0.0"
-        },
-        "compile": {
-          "ref/netcoreapp3.0/_._": {}
-        },
-        "build": {
-          "build/netcoreapp3.0/_._": {}
-        }
-      },
-      "runtime.win-x64.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
+      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -197,7 +201,31 @@
           }
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/_._": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/_._": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -207,53 +235,8 @@
             "assetType": "runtime",
             "rid": "win-x64"
           },
-          "runtimes/win-x64/native/_._": {
-            "assetType": "native",
-            "rid": "win-x64"
-          }
-        }
-      },
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "runtimeTargets": {
-          "runtimes/win-x64/native/_._": {
-            "assetType": "native",
-            "rid": "win-x64"
-          }
-        }
-      },
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
-        },
-        "runtimeTargets": {
-          "runtimes/win-x64/native/_._": {
-            "assetType": "native",
-            "rid": "win-x64"
-          }
-        }
-      },
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
-        },
-        "runtimeTargets": {
-          "runtimes/win-x64/native/_._": {
-            "assetType": "native",
-            "rid": "win-x64"
-          }
-        }
-      },
-      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win-x64/lib/netcoreapp3.0/_._": {
-            "assetType": "runtime",
+          "runtimes/win-x64/lib/netcoreapp3.0/cs/_._": {
+            "assetType": "resource",
             "rid": "win-x64"
           },
           "runtimes/win-x64/native/_._": {
@@ -262,7 +245,7 @@
           }
         }
       },
-      "runtime.win-x86.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
+      "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -278,7 +261,40 @@
           }
         }
       },
-      "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
+      "runtime.win-x86.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x86/native/_._": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
+        },
+        "runtimeTargets": {
+          "runtimes/win-x86/native/_._": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
+        },
+        "runtimeTargets": {
+          "runtimes/win-x86/native/_._": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -288,44 +304,8 @@
             "assetType": "runtime",
             "rid": "win-x86"
           },
-          "runtimes/win-x86/native/_._": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
-        },
-        "runtimeTargets": {
-          "runtimes/win-x86/native/_._": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
-        },
-        "runtimeTargets": {
-          "runtimes/win-x86/native/_._": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win-x86/lib/netcoreapp3.0/_._": {
-            "assetType": "runtime",
+          "runtimes/win-x86/lib/netcoreapp3.0/cs/_._": {
+            "assetType": "resource",
             "rid": "win-x86"
           },
           "runtimes/win-x86/native/_._": {
@@ -373,29 +353,32 @@
       }
     },
     ".NETCoreApp,Version=v3.0/win-x64": {
-      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
+      "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview4-19216-03": {
         "type": "package",
-        "dependencies": {
-          "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
-        }
-      },
-      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5",
-          "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
-        }
-      },
-      "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
         "runtime": {
-          "lib/netstandard1.0/_._": {}
+          "runtimes/win-x64/lib/netcoreapp3.0/_._": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/2.0.0": {
+      "Microsoft.AspNetCore.App.Runtime.win-x86/3.0.0-preview4-19216-03": {
+        "type": "package"
+      },
+      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
+        }
+      },
+      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11",
+          "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.0.0-preview4.19212.13": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -543,21 +526,7 @@
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
         }
       },
-      "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "Microsoft.NETCore.Targets": "2.0.0",
-          "runtime.win-x64.Microsoft.WindowsDesktop.App": "3.0.0-preview3-27504-2"
-        },
-        "compile": {
-          "ref/netcoreapp3.0/_._": {}
-        },
-        "build": {
-          "build/netcoreapp3.0/_._": {}
-        }
-      },
-      "runtime.win-x64.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
+      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -569,7 +538,31 @@
           "runtimes/win-x64/native/_._": {}
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
+      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/_._": {}
+        }
+      },
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
+        },
+        "native": {
+          "runtimes/win-x64/native/_._": {}
+        }
+      },
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
+        },
+        "native": {
+          "runtimes/win-x64/native/_._": {}
+        }
+      },
+      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -581,67 +574,28 @@
           "runtimes/win-x64/native/_._": {}
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "native": {
-          "runtimes/win-x64/native/_._": {}
-        }
-      },
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
-        },
-        "native": {
-          "runtimes/win-x64/native/_._": {}
-        }
-      },
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
-        },
-        "native": {
-          "runtimes/win-x64/native/_._": {}
-        }
-      },
-      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard/_._": {}
-        },
-        "runtime": {
-          "runtimes/win-x64/lib/netcoreapp3.0/_._": {}
-        },
-        "native": {
-          "runtimes/win-x64/native/_._": {}
-        }
-      },
-      "runtime.win-x86.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
+      "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
         }
       },
-      "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard/_._": {}
-        }
+      "runtime.win-x86.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+        "type": "package"
       },
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
+          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
         }
       },
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
         }
       },
-      "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
+      "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -674,29 +628,32 @@
       }
     },
     ".NETCoreApp,Version=v3.0/win-x86": {
-      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "runtime.win-x86.Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
-        }
+      "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview4-19216-03": {
+        "type": "package"
       },
-      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+      "Microsoft.AspNetCore.App.Runtime.win-x86/3.0.0-preview4-19216-03": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5",
-          "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
-        }
-      },
-      "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
         "runtime": {
-          "lib/netstandard1.0/_._": {}
+          "runtimes/win-x86/lib/netcoreapp3.0/_._": {}
+        },
+        "native": {
+          "runtimes/win-x86/native/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/2.0.0": {
+      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "runtime.win-x86.Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
+        }
+      },
+      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11",
+          "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.0.0-preview4.19212.13": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -844,54 +801,31 @@
           "build/Microsoft.Windows.SDK.Contracts.targets": {}
         }
       },
-      "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "Microsoft.NETCore.Targets": "2.0.0",
-          "runtime.win-x86.Microsoft.WindowsDesktop.App": "3.0.0-preview3-27504-2"
-        },
-        "compile": {
-          "ref/netcoreapp3.0/_._": {}
-        },
-        "build": {
-          "build/netcoreapp3.0/_._": {}
-        }
-      },
-      "runtime.win-x64.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
+      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
+        }
+      },
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
+        }
+      },
+      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
-        "type": "package"
-      },
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
-        }
-      },
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
-        }
-      },
-      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard/_._": {}
-        }
-      },
-      "runtime.win-x86.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
+      "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -903,43 +837,31 @@
           "runtimes/win-x86/native/_._": {}
         }
       },
-      "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard/_._": {}
-        },
-        "runtime": {
-          "runtimes/win-x86/lib/netcoreapp3.0/_._": {}
-        },
-        "native": {
-          "runtimes/win-x86/native/_._": {}
-        }
-      },
-      "runtime.win-x86.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
+      "runtime.win-x86.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
         "type": "package",
         "native": {
           "runtimes/win-x86/native/_._": {}
         }
       },
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview3-27503-5"
+          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
         },
         "native": {
           "runtimes/win-x86/native/_._": {}
         }
       },
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5"
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
         },
         "native": {
           "runtimes/win-x86/native/_._": {}
         }
       },
-      "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
+      "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
         "type": "package",
         "compile": {
           "ref/netstandard/_._": {}
@@ -979,62 +901,330 @@
     }
   },
   "libraries": {
-    "Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
-      "sha512": "FxlijBBTl0oVPSJGzQV+EQPCd7JTiC9r487ZDumm1EfbB3xzZcLe8W+tF7LK2UP76+bI6SouoT5VGexZCxMwRg==",
+    "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview4-19216-03": {
+      "sha512": "JzX7DjV/NoAGfCts13B4NjZWH39EeImJudyfd3TpJBV1Xet8HtUwkFm8mTz5vSzqVZgUtKcbZPWs03I8CCBu4A==",
       "type": "package",
-      "path": "microsoft.netcore.dotnetapphost/3.0.0-preview3-27503-5",
+      "path": "microsoft.aspnetcore.app.runtime.win-x64/3.0.0-preview4-19216-03",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "microsoft.aspnetcore.app.runtime.win-x64.3.0.0-preview4-19216-03.nupkg.sha512",
+        "microsoft.aspnetcore.app.runtime.win-x64.nuspec",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Antiforgery.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.App.deps.json",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.App.runtimeconfig.json",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Cookies.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Core.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.OAuth.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.Policy.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Browser.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Server.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.CookiePolicy.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Cors.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Extensions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.HostFiltering.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Html.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Extensions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Features.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpOverrides.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpsPolicy.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Identity.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.Routing.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Components.Prerendering.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Core.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Cors.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Localization.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Razor.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.RazorPages.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.Runtime.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCompression.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Rewrite.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.HttpSys.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IIS.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IISIntegration.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Session.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Common.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Core.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.StaticFiles.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.WebSockets.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.WebUtilities.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.CommandLine.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Ini.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.KeyPerFile.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Xml.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.DependencyModel.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Composite.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Http.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Core.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Stores.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Localization.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Configuration.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Console.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Debug.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.EventSource.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.TraceSource.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.ObjectPool.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Options.DataAnnotations.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Options.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.WebEncoders.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.JSInterop.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Net.Http.Headers.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/Newtonsoft.Json.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/System.IO.Pipelines.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/System.Security.Cryptography.Xml.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/System.Security.Permissions.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/System.Threading.Channels.dll",
+        "runtimes/win-x64/native/aspnetcorev2_inprocess.dll"
+      ]
+    },
+    "Microsoft.AspNetCore.App.Runtime.win-x86/3.0.0-preview4-19216-03": {
+      "sha512": "wCDe2ECC7bYsWHghM2b0v740o11LwLq40IffkSnZkzxX4OvZv0g8XXXX9NZJCswsCkVd8undIcyohO7ifVMcYw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.app.runtime.win-x86/3.0.0-preview4-19216-03",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "microsoft.aspnetcore.app.runtime.win-x86.3.0.0-preview4-19216-03.nupkg.sha512",
+        "microsoft.aspnetcore.app.runtime.win-x86.nuspec",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Antiforgery.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.App.deps.json",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.App.runtimeconfig.json",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Cookies.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Core.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.OAuth.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.Policy.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Browser.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Server.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.CookiePolicy.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cors.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Extensions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HostFiltering.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Html.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Extensions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Features.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpOverrides.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpsPolicy.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Identity.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.Routing.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Components.Prerendering.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Core.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Cors.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Localization.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Razor.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.RazorPages.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.Runtime.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCompression.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Rewrite.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.HttpSys.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IIS.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IISIntegration.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Session.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Common.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Core.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.StaticFiles.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.WebSockets.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.WebUtilities.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.CommandLine.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Ini.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.KeyPerFile.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Xml.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyModel.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Composite.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Http.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Core.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Stores.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Localization.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Configuration.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Console.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Debug.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.EventSource.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.TraceSource.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.ObjectPool.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.DataAnnotations.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.WebEncoders.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.JSInterop.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Net.Http.Headers.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/Newtonsoft.Json.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/System.IO.Pipelines.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Cryptography.Xml.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Permissions.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/System.Threading.Channels.dll",
+        "runtimes/win-x86/native/aspnetcorev2_inprocess.dll"
+      ]
+    },
+    "Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+      "sha512": "n4mjbXltERDqgsytnBMYlwkHq5qNO9ImyshY0fRhYBAPEA9HDEPyCOVVTD2QWaz36JAxUvaWp1KDEJG0NcwdkQ==",
+      "type": "package",
+      "path": "microsoft.netcore.dotnetapphost/3.0.0-preview4-27615-11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "microsoft.netcore.dotnetapphost.3.0.0-preview3-27503-5.nupkg.sha512",
+        "microsoft.netcore.dotnetapphost.3.0.0-preview4-27615-11.nupkg.sha512",
         "microsoft.netcore.dotnetapphost.nuspec",
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
-      "sha512": "D5VjK+8EotyKB6BHRHa+kkUticrL8yQ5hbU40NlXoWe623Kw0lGd8NTxJVETSQhJYGCqkLl6pazM3gZtGzr0fQ==",
+    "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+      "sha512": "+y/jtQhy56oCi+8lCEjJowVOWyZ+rhX7yAGi7agyvVnROw7cxBeCaeK5BM0KXKnYDFnETXXYN1TyXsjmLJOegA==",
       "type": "package",
-      "path": "microsoft.netcore.dotnethostresolver/3.0.0-preview3-27503-5",
+      "path": "microsoft.netcore.dotnethostresolver/3.0.0-preview4-27615-11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "microsoft.netcore.dotnethostresolver.3.0.0-preview3-27503-5.nupkg.sha512",
+        "microsoft.netcore.dotnethostresolver.3.0.0-preview4-27615-11.nupkg.sha512",
         "microsoft.netcore.dotnethostresolver.nuspec",
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
-      "sha512": "4/k52fBHvM1RNPoBMik0Y3wIovsUGaTadNGH75iLGjQCJPRq2UBivEkhYrYkIFnu+K9kTYJcmXCDF6SFzMBrqA==",
+    "Microsoft.NETCore.Platforms/3.0.0-preview4.19212.13": {
+      "sha512": "cBcFp3iIi/c6AK9F/aZxbZaNhWGOLSJD071L9tO8JbyODp38NDKsJ38Xq/KJUCt1EUIlqnyF6PdqOngFuCvD1Q==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/3.0.0-preview3.19128.7",
+      "path": "microsoft.netcore.platforms/3.0.0-preview4.19212.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.3.0.0-preview3.19128.7.nupkg.sha512",
+        "microsoft.netcore.platforms.3.0.0-preview4.19212.13.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
-        "runtime.json",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "Microsoft.NETCore.Targets/2.0.0": {
-      "sha512": "odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
-      "type": "package",
-      "path": "microsoft.netcore.targets/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.2.0.0.nupkg.sha512",
-        "microsoft.netcore.targets.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1267,214 +1457,10 @@
         "ref/netstandard2.0/windows.winmd"
       ]
     },
-    "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-      "sha512": "t7Iw6nkx03aOXgZ7L2ZJLN7hGY7FlUaxIyH6UbGhjHCJABxfV8Bx3xOe6E63xa1HVeoccCAdNPctTX2s2zj5SQ==",
+    "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
+      "sha512": "dX+aiNXlXvwRtOW70eaZXk7Xk2a+qgOd58qJGoVamj2khdYwvCGMqoUAfpywpW6ewk4jokTybn3HH+TAzjxO+A==",
       "type": "package",
-      "path": "microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "build/netcoreapp3.0/Microsoft.WindowsDesktop.App.targets",
-        "build/netcoreapp3.0/ref-mscorlib/System.ComponentModel.dll",
-        "build/netcoreapp3.0/ref-mscorlib/System.Runtime.CompilerServices.VisualC.dll",
-        "build/netcoreapp3.0/ref-mscorlib/System.Runtime.dll",
-        "build/netcoreapp3.0/ref-mscorlib/mscorlib.dll",
-        "microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512",
-        "microsoft.windowsdesktop.app.nuspec",
-        "ref/netcoreapp3.0/Accessibility.dll",
-        "ref/netcoreapp3.0/Microsoft.Win32.Registry.dll",
-        "ref/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
-        "ref/netcoreapp3.0/PresentationCore-CommonResources.dll",
-        "ref/netcoreapp3.0/PresentationCore.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Aero.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Aero2.dll",
-        "ref/netcoreapp3.0/PresentationFramework.AeroLite.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Classic.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Luna.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Royale.dll",
-        "ref/netcoreapp3.0/PresentationFramework.dll",
-        "ref/netcoreapp3.0/PresentationUI.dll",
-        "ref/netcoreapp3.0/ReachFramework.dll",
-        "ref/netcoreapp3.0/System.CodeDom.dll",
-        "ref/netcoreapp3.0/System.Configuration.ConfigurationManager.dll",
-        "ref/netcoreapp3.0/System.Design.dll",
-        "ref/netcoreapp3.0/System.Drawing.Common.dll",
-        "ref/netcoreapp3.0/System.Drawing.Design.dll",
-        "ref/netcoreapp3.0/System.Drawing.dll",
-        "ref/netcoreapp3.0/System.Printing.dll",
-        "ref/netcoreapp3.0/System.Security.AccessControl.dll",
-        "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
-        "ref/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
-        "ref/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netcoreapp3.0/System.Security.Cryptography.Xml.dll",
-        "ref/netcoreapp3.0/System.Security.Permissions.dll",
-        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
-        "ref/netcoreapp3.0/System.Windows.Controls.Ribbon.dll",
-        "ref/netcoreapp3.0/System.Windows.Extensions.dll",
-        "ref/netcoreapp3.0/System.Windows.Forms.Design.Editors.dll",
-        "ref/netcoreapp3.0/System.Windows.Forms.Design.dll",
-        "ref/netcoreapp3.0/System.Windows.Forms.dll",
-        "ref/netcoreapp3.0/System.Windows.Input.Manipulations.dll",
-        "ref/netcoreapp3.0/System.Windows.Presentation.dll",
-        "ref/netcoreapp3.0/System.Xaml.dll",
-        "ref/netcoreapp3.0/UIAutomationClient.dll",
-        "ref/netcoreapp3.0/UIAutomationClientSideProviders.dll",
-        "ref/netcoreapp3.0/UIAutomationProvider.dll",
-        "ref/netcoreapp3.0/UIAutomationTypes.dll",
-        "ref/netcoreapp3.0/WindowsBase.dll",
-        "ref/netcoreapp3.0/WindowsFormsIntegration.dll",
-        "runtime.json",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "runtime.win-x64.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
-      "sha512": "ylYk+gCoEJehI1cRx2MPRPZHgiFigGjeSWap838BbMPQVYCSGCGdJtJrfEr/HIAraH7KMwRWDMcn9jbtclXgUQ==",
-      "type": "package",
-      "path": "runtime.win-x64.microsoft.aspnetcore.app/3.0.0-preview3-19153-02",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ref/netstandard/_._",
-        "runtime.win-x64.microsoft.aspnetcore.app.3.0.0-preview3-19153-02.nupkg.sha512",
-        "runtime.win-x64.microsoft.aspnetcore.app.nuspec",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Antiforgery.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Cookies.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Core.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.OAuth.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.Policy.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Browser.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.CookiePolicy.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Cors.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Extensions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.HostFiltering.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Html.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Extensions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Features.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpOverrides.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpsPolicy.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Identity.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.Routing.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Core.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Cors.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Localization.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Razor.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.RazorPages.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.Runtime.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCompression.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Rewrite.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.HttpSys.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IIS.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IISIntegration.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.Session.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Common.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Core.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.StaticFiles.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.WebSockets.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.WebUtilities.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.AspNetCore.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.DotNet.PlatformAbstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Binder.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.CommandLine.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Ini.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.KeyPerFile.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.UserSecrets.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Xml.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.DependencyModel.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Composite.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Physical.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.FileSystemGlobbing.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Http.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Core.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Stores.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Localization.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Localization.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Configuration.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Console.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Debug.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.EventSource.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.TraceSource.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Logging.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.ObjectPool.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Options.DataAnnotations.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Options.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Extensions.WebEncoders.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.JSInterop.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.Net.Http.Headers.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/Newtonsoft.Json.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/System.IO.Pipelines.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/System.Security.Cryptography.Xml.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/System.Security.Permissions.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0/System.Threading.Channels.dll",
-        "runtimes/win-x64/native/aspnetcorev2_inprocess.dll"
-      ]
-    },
-    "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
-      "sha512": "KIcxA221ARdg7G0mqU+HRvomQFLhrc0XG/xeEX1uEnp0u1Avk3xsb1MBNb2WjPGLw+551upnefXN2MAgaBKOzQ==",
-      "type": "package",
-      "path": "runtime.win-x64.microsoft.netcore.app/3.0.0-preview3-27503-5",
+      "path": "runtime.win-x64.microsoft.netcore.app/3.0.0-preview4-27615-11",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1483,7 +1469,7 @@
         "Microsoft.NETCore.App.versions.txt",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win-x64.microsoft.netcore.app.3.0.0-preview3-27503-5.nupkg.sha512",
+        "runtime.win-x64.microsoft.netcore.app.3.0.0-preview4-27615-11.nupkg.sha512",
         "runtime.win-x64.microsoft.netcore.app.nuspec",
         "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.CSharp.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/Microsoft.VisualBasic.Core.dll",
@@ -1508,6 +1494,7 @@
         "runtimes/win-x64/lib/netcoreapp3.0/System.Console.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Core.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Data.Common.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/System.Data.DataSetExtensions.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Data.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Diagnostics.Contracts.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Diagnostics.Debug.dll",
@@ -1581,6 +1568,7 @@
         "runtimes/win-x64/lib/netcoreapp3.0/System.Resources.Reader.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Resources.ResourceManager.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Resources.Writer.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/System.Runtime.CompilerServices.Unsafe.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Runtime.CompilerServices.VisualC.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Runtime.Extensions.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Runtime.Handles.dll",
@@ -1693,73 +1681,75 @@
         "runtimes/win-x64/native/coreclr.dll",
         "runtimes/win-x64/native/dbgshim.dll",
         "runtimes/win-x64/native/mscordaccore.dll",
-        "runtimes/win-x64/native/mscordaccore_amd64_amd64_4.6.27422.72.dll",
+        "runtimes/win-x64/native/mscordaccore_amd64_amd64_4.6.27615.73.dll",
         "runtimes/win-x64/native/mscordbi.dll",
         "runtimes/win-x64/native/mscorrc.debug.dll",
         "runtimes/win-x64/native/mscorrc.dll",
         "runtimes/win-x64/native/sos.dll",
-        "runtimes/win-x64/native/sos_amd64_amd64_4.6.27422.72.dll",
+        "runtimes/win-x64/native/sos_amd64_amd64_4.6.27615.73.dll",
         "runtimes/win-x64/native/ucrtbase.dll",
         "tools/crossgen.exe"
       ]
     },
-    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
-      "sha512": "9xq1NTCrWg3A4/6K/COActt25NJaw1a6bx0CTIkgbYv2TkpveKXZCCSFyDnT5Ff9nBvZkBq4Y4r/tZNIU5T8pg==",
+    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+      "sha512": "J4YSTnKz4p9+2dGau8a9SOkp57ypLvtz1wQpeS3VC8LDY8DUSmh3hH1yFOB5sIHORIiV21CwuebVAf1co4yrgw==",
       "type": "package",
-      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview3-27503-5",
+      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview4-27615-11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview3-27503-5.nupkg.sha512",
+        "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview4-27615-11.nupkg.sha512",
         "runtime.win-x64.microsoft.netcore.dotnetapphost.nuspec",
         "runtimes/win-x64/native/apphost.exe",
         "runtimes/win-x64/native/comhost.dll",
+        "runtimes/win-x64/native/ijwhost.dll",
+        "runtimes/win-x64/native/ijwhost.lib",
         "version.txt"
       ]
     },
-    "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
-      "sha512": "wm8MI6WHshnuMt/LUew3/u3MeE5yGbAI1zu/f7H2bNFFrtOCmILgcrXi1OH0AWCyUq+s4YOfoLcq6WegFG8HAQ==",
+    "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
+      "sha512": "Kd5FoGGj6/MT6whO3AxCH0gjOAVeQ5a5mgmpjq06VS4OJlisvgCdAbB4w5AXiWGxVKRupwiTGDV/MHusxlZI8g==",
       "type": "package",
-      "path": "runtime.win-x64.microsoft.netcore.dotnethostpolicy/3.0.0-preview3-27503-5",
+      "path": "runtime.win-x64.microsoft.netcore.dotnethostpolicy/3.0.0-preview4-27615-11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.win-x64.microsoft.netcore.dotnethostpolicy.3.0.0-preview3-27503-5.nupkg.sha512",
+        "runtime.win-x64.microsoft.netcore.dotnethostpolicy.3.0.0-preview4-27615-11.nupkg.sha512",
         "runtime.win-x64.microsoft.netcore.dotnethostpolicy.nuspec",
         "runtimes/win-x64/native/hostpolicy.dll",
         "version.txt"
       ]
     },
-    "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
-      "sha512": "AyqonWd7S9N0zsG+Snzi98TfdgKK+JW5GuQEtFNcCpXWk9u5xjlrf5YrVGz6FSj8kUA/P/Vb+wEPAD8+OuYU4A==",
+    "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+      "sha512": "CinlDQQTY4p9/50ifPQa3WjgFU562U/rYXfTzd0GsgNh1wLeXYDc4Wi34OukDS3KCGv4oIqbNqYbANiuBpmuyg==",
       "type": "package",
-      "path": "runtime.win-x64.microsoft.netcore.dotnethostresolver/3.0.0-preview3-27503-5",
+      "path": "runtime.win-x64.microsoft.netcore.dotnethostresolver/3.0.0-preview4-27615-11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.win-x64.microsoft.netcore.dotnethostresolver.3.0.0-preview3-27503-5.nupkg.sha512",
+        "runtime.win-x64.microsoft.netcore.dotnethostresolver.3.0.0-preview4-27615-11.nupkg.sha512",
         "runtime.win-x64.microsoft.netcore.dotnethostresolver.nuspec",
         "runtimes/win-x64/native/hostfxr.dll",
         "version.txt"
       ]
     },
-    "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-      "sha512": "HuqJ2xbIIIKda+skWAX3FDFMwR/OCb7OtbL+De6cR99HEXeCSZ0wbhVf/YHEFI3XoSSZbk9AkNXheU1yuxN9OQ==",
+    "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
+      "sha512": "RDWosgTuU877h6TxLZnTmBgu0raQpTLIN+UTY/oPLKFkfM+Ay5knrT0AuiZcX/8cEnKJvTV+xsda0DvdpJd9zw==",
       "type": "package",
-      "path": "runtime.win-x64.microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
+      "path": "runtime.win-x64.microsoft.windowsdesktop.app/3.0.0-preview4-27613-28",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win-x64.microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512",
+        "runtime.win-x64.microsoft.windowsdesktop.app.3.0.0-preview4-27613-28.nupkg.sha512",
         "runtime.win-x64.microsoft.windowsdesktop.app.nuspec",
         "runtimes/win-x64/lib/netcoreapp3.0/Accessibility.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/DirectWriteForwarder.dll",
@@ -1790,6 +1780,7 @@
         "runtimes/win-x64/lib/netcoreapp3.0/System.Drawing.Design.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Drawing.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/System.IO.Packaging.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Printing.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Security.AccessControl.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
@@ -1813,197 +1804,240 @@
         "runtimes/win-x64/lib/netcoreapp3.0/UIAutomationTypes.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/WindowsBase.dll",
         "runtimes/win-x64/lib/netcoreapp3.0/WindowsFormsIntegration.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0cs/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0cs/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0cs/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0de/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0de/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0de/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0es/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0es/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0es/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0fr/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0fr/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0fr/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0it/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0it/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0it/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0ja/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0ja/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0ja/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0ko/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0ko/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0ko/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0pl/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0pl/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0pl/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0pt-BR/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0pt-BR/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0pt-BR/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0ru/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0ru/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0ru/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0tr/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0tr/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0tr/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0zh-Hans/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0zh-Hans/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0zh-Hans/System.Windows.Forms.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0zh-Hant/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0zh-Hant/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x64/lib/netcoreapp3.0zh-Hant/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/cs/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/de/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/es/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/fr/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/it/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ja/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ko/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pl/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/pt-BR/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/ru/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/tr/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hans/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/PresentationCore.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/PresentationFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/PresentationUI.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/ReachFramework.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/System.Printing.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/System.Windows.Forms.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/System.Xaml.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/UIAutomationClient.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/UIAutomationProvider.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/UIAutomationTypes.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/WindowsBase.resources.dll",
+        "runtimes/win-x64/lib/netcoreapp3.0/zh-Hant/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x64/native/D3DCompiler_47_cor3.dll",
         "runtimes/win-x64/native/PenImc_cor3.dll",
         "runtimes/win-x64/native/PresentationNative_cor3.dll",
+        "runtimes/win-x64/native/vcruntime140_cor3.dll",
         "runtimes/win-x64/native/wpfgfx_cor3.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
     },
-    "runtime.win-x86.Microsoft.AspNetCore.App/3.0.0-preview3-19153-02": {
-      "sha512": "DtMOgH/upJMWrQVJgL24CCM4oNR+tdZUVSQiIqesA7mVZE/YeVNkGwBK0pmwKKggea2LsofscY0NHWMjgBfYWA==",
+    "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
+      "sha512": "sS4MGwFVgW5j5fkuwe+mdx/lncJKt7ceHE8BOVzOe1a7AtYpqG6LFzbIXBg2xd2j7cPpqUnZwU3iw3cY3YwIhg==",
       "type": "package",
-      "path": "runtime.win-x86.microsoft.aspnetcore.app/3.0.0-preview3-19153-02",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ref/netstandard/_._",
-        "runtime.win-x86.microsoft.aspnetcore.app.3.0.0-preview3-19153-02.nupkg.sha512",
-        "runtime.win-x86.microsoft.aspnetcore.app.nuspec",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Antiforgery.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Cookies.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.OAuth.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.Policy.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Authorization.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.Browser.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Components.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.CookiePolicy.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cors.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.Extensions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.DataProtection.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Diagnostics.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HostFiltering.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Hosting.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Html.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Connections.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Extensions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.Features.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Http.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpOverrides.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.HttpsPolicy.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Identity.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.Routing.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Localization.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Cors.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Localization.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Razor.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.RazorPages.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.Runtime.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Razor.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCaching.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.ResponseCompression.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Rewrite.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Routing.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.HttpSys.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IIS.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.IISIntegration.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Server.Kestrel.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.Session.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Common.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.SignalR.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.StaticFiles.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.WebSockets.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.WebUtilities.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.AspNetCore.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.DotNet.PlatformAbstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Binder.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.CommandLine.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Ini.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Json.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.KeyPerFile.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.UserSecrets.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.Xml.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Configuration.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.DependencyModel.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Composite.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Physical.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.FileSystemGlobbing.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Hosting.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Http.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Core.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Identity.Stores.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Localization.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Localization.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Configuration.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Console.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.Debug.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.EventSource.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.TraceSource.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Logging.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.ObjectPool.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.DataAnnotations.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Options.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Extensions.WebEncoders.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.JSInterop.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.Net.Http.Headers.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/Newtonsoft.Json.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.IO.Pipelines.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Cryptography.Xml.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Permissions.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0/System.Threading.Channels.dll",
-        "runtimes/win-x86/native/aspnetcorev2_inprocess.dll"
-      ]
-    },
-    "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview3-27503-5": {
-      "sha512": "Osus1oPI/91kV7lopRyPDoLveGOuNYyt1bZNmaiaI2DNGxs9ibVzmRfiqEsJHWZR9LrzyRuNLYMOiytloa2XZw==",
-      "type": "package",
-      "path": "runtime.win-x86.microsoft.netcore.app/3.0.0-preview3-27503-5",
+      "path": "runtime.win-x86.microsoft.netcore.app/3.0.0-preview4-27615-11",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2012,7 +2046,7 @@
         "Microsoft.NETCore.App.versions.txt",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win-x86.microsoft.netcore.app.3.0.0-preview3-27503-5.nupkg.sha512",
+        "runtime.win-x86.microsoft.netcore.app.3.0.0-preview4-27615-11.nupkg.sha512",
         "runtime.win-x86.microsoft.netcore.app.nuspec",
         "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.CSharp.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/Microsoft.VisualBasic.Core.dll",
@@ -2037,6 +2071,7 @@
         "runtimes/win-x86/lib/netcoreapp3.0/System.Console.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Core.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Data.Common.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/System.Data.DataSetExtensions.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Data.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Diagnostics.Contracts.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Diagnostics.Debug.dll",
@@ -2110,6 +2145,7 @@
         "runtimes/win-x86/lib/netcoreapp3.0/System.Resources.Reader.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Resources.ResourceManager.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Resources.Writer.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/System.Runtime.CompilerServices.Unsafe.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Runtime.CompilerServices.VisualC.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Runtime.Extensions.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Runtime.Handles.dll",
@@ -2223,73 +2259,75 @@
         "runtimes/win-x86/native/coreclr.dll",
         "runtimes/win-x86/native/dbgshim.dll",
         "runtimes/win-x86/native/mscordaccore.dll",
-        "runtimes/win-x86/native/mscordaccore_x86_x86_4.6.27422.72.dll",
+        "runtimes/win-x86/native/mscordaccore_x86_x86_4.6.27615.73.dll",
         "runtimes/win-x86/native/mscordbi.dll",
         "runtimes/win-x86/native/mscorrc.debug.dll",
         "runtimes/win-x86/native/mscorrc.dll",
         "runtimes/win-x86/native/sos.dll",
-        "runtimes/win-x86/native/sos_x86_x86_4.6.27422.72.dll",
+        "runtimes/win-x86/native/sos_x86_x86_4.6.27615.73.dll",
         "runtimes/win-x86/native/ucrtbase.dll",
         "tools/crossgen.exe"
       ]
     },
-    "runtime.win-x86.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
-      "sha512": "5eh2xXMaE52a0fpkEyni8w0JdDxl+y+CfmyuVOa7MwT18RfyoznjlcOZDrGKcNp/EdJywrSPv3rflbERgW9+GQ==",
+    "runtime.win-x86.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+      "sha512": "um+s61CxR3CW6IUrxH2QclvxLvj5nxhKWGIWCPLT/Ck6tV4rq5ObZNhZ569Mn2aBKLYVm4m+XlbvYyLcRITYRA==",
       "type": "package",
-      "path": "runtime.win-x86.microsoft.netcore.dotnetapphost/3.0.0-preview3-27503-5",
+      "path": "runtime.win-x86.microsoft.netcore.dotnetapphost/3.0.0-preview4-27615-11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.win-x86.microsoft.netcore.dotnetapphost.3.0.0-preview3-27503-5.nupkg.sha512",
+        "runtime.win-x86.microsoft.netcore.dotnetapphost.3.0.0-preview4-27615-11.nupkg.sha512",
         "runtime.win-x86.microsoft.netcore.dotnetapphost.nuspec",
         "runtimes/win-x86/native/apphost.exe",
         "runtimes/win-x86/native/comhost.dll",
+        "runtimes/win-x86/native/ijwhost.dll",
+        "runtimes/win-x86/native/ijwhost.lib",
         "version.txt"
       ]
     },
-    "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview3-27503-5": {
-      "sha512": "OICccDm2Cu0PqaAIUVC+0/pAQfBxYZf1PPOBmraywlCiPzGTb54uR0YGbMG8UlSL+0uZ2aZUcQ9XNOd6iEPcbA==",
+    "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
+      "sha512": "ieaj/NobgooGSYJrzz2evSiliiWOGdktX6uUHQlnDILZtWFd8pDCh8+zuwR7PjBlnv+EtVNHqcO4KrWxUtt3nw==",
       "type": "package",
-      "path": "runtime.win-x86.microsoft.netcore.dotnethostpolicy/3.0.0-preview3-27503-5",
+      "path": "runtime.win-x86.microsoft.netcore.dotnethostpolicy/3.0.0-preview4-27615-11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.win-x86.microsoft.netcore.dotnethostpolicy.3.0.0-preview3-27503-5.nupkg.sha512",
+        "runtime.win-x86.microsoft.netcore.dotnethostpolicy.3.0.0-preview4-27615-11.nupkg.sha512",
         "runtime.win-x86.microsoft.netcore.dotnethostpolicy.nuspec",
         "runtimes/win-x86/native/hostpolicy.dll",
         "version.txt"
       ]
     },
-    "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview3-27503-5": {
-      "sha512": "MxKkcAnhfefEdiiaI7TAT1izGiWv6DDkEoPyILQvXDLTofEKg/IX8+g0+8ArZ37zuSE3Qdd5CGimBS+9WnO8aA==",
+    "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+      "sha512": "QZWxPWZeKu7N9o5iMcL+NnxpNz2StlIzH5jCcm51P6PRqZaZyht4U4q5ZqsEFp+5DzJJib9KLslmZv64Sn7KrQ==",
       "type": "package",
-      "path": "runtime.win-x86.microsoft.netcore.dotnethostresolver/3.0.0-preview3-27503-5",
+      "path": "runtime.win-x86.microsoft.netcore.dotnethostresolver/3.0.0-preview4-27615-11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.win-x86.microsoft.netcore.dotnethostresolver.3.0.0-preview3-27503-5.nupkg.sha512",
+        "runtime.win-x86.microsoft.netcore.dotnethostresolver.3.0.0-preview4-27615-11.nupkg.sha512",
         "runtime.win-x86.microsoft.netcore.dotnethostresolver.nuspec",
         "runtimes/win-x86/native/hostfxr.dll",
         "version.txt"
       ]
     },
-    "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-      "sha512": "O9JX7jQszm+HvMDHlDz+h/eM5yeVT08QkLavFmcex8ryTjHMEdw0LCLe2H5e1vCxGXwNWyteEa4v+qntT+PSug==",
+    "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
+      "sha512": "uEKtL4V5i18i9WL+RL3rTh6YQFicugq3i4yXKLeMObD34+rpbhVGpW26IFuxzweleGNYylhcfKqzx31Tc/42ug==",
       "type": "package",
-      "path": "runtime.win-x86.microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
+      "path": "runtime.win-x86.microsoft.windowsdesktop.app/3.0.0-preview4-27613-28",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "ref/netstandard/_._",
-        "runtime.win-x86.microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512",
+        "runtime.win-x86.microsoft.windowsdesktop.app.3.0.0-preview4-27613-28.nupkg.sha512",
         "runtime.win-x86.microsoft.windowsdesktop.app.nuspec",
         "runtimes/win-x86/lib/netcoreapp3.0/Accessibility.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/DirectWriteForwarder.dll",
@@ -2320,6 +2358,7 @@
         "runtimes/win-x86/lib/netcoreapp3.0/System.Drawing.Design.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Drawing.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/System.IO.Packaging.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Printing.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Security.AccessControl.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
@@ -2343,47 +2382,231 @@
         "runtimes/win-x86/lib/netcoreapp3.0/UIAutomationTypes.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/WindowsBase.dll",
         "runtimes/win-x86/lib/netcoreapp3.0/WindowsFormsIntegration.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0cs/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0cs/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0cs/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0de/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0de/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0de/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0es/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0es/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0es/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0fr/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0fr/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0fr/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0it/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0it/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0it/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0ja/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0ja/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0ja/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0ko/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0ko/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0ko/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0pl/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0pl/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0pl/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0pt-BR/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0pt-BR/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0pt-BR/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0ru/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0ru/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0ru/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0tr/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0tr/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0tr/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0zh-Hans/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0zh-Hans/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0zh-Hans/System.Windows.Forms.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0zh-Hant/System.Windows.Forms.Design.Editors.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0zh-Hant/System.Windows.Forms.Design.resources.dll",
-        "runtimes/win-x86/lib/netcoreapp3.0zh-Hant/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/cs/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/de/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/es/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/fr/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/it/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ja/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ko/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pl/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/pt-BR/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/ru/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/tr/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hans/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/PresentationCore.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/PresentationFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/PresentationUI.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/ReachFramework.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/System.Printing.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/System.Windows.Controls.Ribbon.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/System.Windows.Forms.Design.Editors.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/System.Windows.Forms.Design.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/System.Windows.Forms.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/System.Windows.Input.Manipulations.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/System.Xaml.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/UIAutomationClient.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/UIAutomationClientSideProviders.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/UIAutomationProvider.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/UIAutomationTypes.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/WindowsBase.resources.dll",
+        "runtimes/win-x86/lib/netcoreapp3.0/zh-Hant/WindowsFormsIntegration.resources.dll",
+        "runtimes/win-x86/native/D3DCompiler_47_cor3.dll",
         "runtimes/win-x86/native/PenImc_cor3.dll",
         "runtimes/win-x86/native/PresentationNative_cor3.dll",
+        "runtimes/win-x86/native/vcruntime140_cor3.dll",
         "runtimes/win-x86/native/wpfgfx_cor3.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -2527,26 +2750,25 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "Microsoft.NETCore.Platforms >= 3.0.0-preview3.19128.7",
+      "Microsoft.AspNetCore.App.Runtime.win-x64 >= 3.0.0-preview4-19216-03",
+      "Microsoft.AspNetCore.App.Runtime.win-x86 >= 3.0.0-preview4-19216-03",
+      "Microsoft.NETCore.Platforms >= 3.0.0-preview4.19212.13",
       "Microsoft.Toolkit.Wpf.UI.Controls >= 6.0.0-preview3",
       "Microsoft.Windows.SDK.Contracts >= 10.0.17763.144-preview",
-      "Microsoft.WindowsDesktop.App >= 3.0.0-preview3-27504-2",
-      "runtime.win-x64.Microsoft.AspNetCore.App >= 3.0.0-preview3-19153-02",
-      "runtime.win-x64.Microsoft.NETCore.App >= 3.0.0-preview3-27503-5",
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost >= 3.0.0-preview3-27503-5",
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy >= 3.0.0-preview3-27503-5",
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver >= 3.0.0-preview3-27503-5",
-      "runtime.win-x64.Microsoft.WindowsDesktop.App >= 3.0.0-preview3-27504-2",
-      "runtime.win-x86.Microsoft.AspNetCore.App >= 3.0.0-preview3-19153-02",
-      "runtime.win-x86.Microsoft.NETCore.App >= 3.0.0-preview3-27503-5",
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy >= 3.0.0-preview3-27503-5",
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver >= 3.0.0-preview3-27503-5",
-      "runtime.win-x86.Microsoft.WindowsDesktop.App >= 3.0.0-preview3-27504-2"
+      "runtime.win-x64.Microsoft.NETCore.App >= 3.0.0-preview4-27615-11",
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy >= 3.0.0-preview4-27615-11",
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver >= 3.0.0-preview4-27615-11",
+      "runtime.win-x64.Microsoft.WindowsDesktop.App >= 3.0.0-preview4-27613-28",
+      "runtime.win-x86.Microsoft.NETCore.App >= 3.0.0-preview4-27615-11",
+      "runtime.win-x86.Microsoft.NETCore.DotNetAppHost >= 3.0.0-preview4-27615-11",
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy >= 3.0.0-preview4-27615-11",
+      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver >= 3.0.0-preview4-27615-11",
+      "runtime.win-x86.Microsoft.WindowsDesktop.App >= 3.0.0-preview4-27613-28"
     ]
   },
   "packageFolders": {
     "C:\\Users\\freistli\\.nuget\\packages\\": {},
-    "C:\\ProgramData\\Xamarin\\NuGet\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -2559,7 +2781,7 @@
       "outputPath": "D:\\repos\\UWPSharedPanel\\TestWPFApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\ProgramData\\Xamarin\\NuGet\\",
+        "D:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
@@ -2572,9 +2794,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\freistli\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.17763.144-preview": {},
+        "D:\\Projects\\MemoryTrendV10.0.18362 - TTT.10.0.16173\\MemoryTrend\\bin\\Release": {},
         "D:\\Tools\\BlackBerry_Dynamics_for_MS_Windows_UWP-3.2.1.2607": {},
         "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/uwpcommunitytoolkit/api/v3/index.json": {},
         "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
         "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
         "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
@@ -2596,10 +2819,24 @@
     "frameworks": {
       "netcoreapp3.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.App.Runtime.win-x64": {
+            "include": "None",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.0-preview4-19216-03, )",
+            "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.App.Runtime.win-x86": {
+            "include": "None",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.0-preview4-19216-03, )",
+            "autoReferenced": true
+          },
           "Microsoft.NETCore.Platforms": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3.19128.7, )",
+            "version": "[3.0.0-preview4.19212.13, )",
             "autoReferenced": true
           },
           "Microsoft.Toolkit.Wpf.UI.Controls": {
@@ -2610,88 +2847,67 @@
             "target": "Package",
             "version": "[10.0.17763.144-preview, )"
           },
-          "Microsoft.WindowsDesktop.App": {
-            "include": "None",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[3.0.0-preview3-27504-2, )",
-            "autoReferenced": true
-          },
-          "runtime.win-x64.Microsoft.AspNetCore.App": {
-            "include": "None",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[3.0.0-preview3-19153-02, )",
-            "autoReferenced": true
-          },
           "runtime.win-x64.Microsoft.NETCore.App": {
             "include": "None",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3-27503-5, )",
-            "autoReferenced": true
-          },
-          "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": {
-            "include": "None",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[3.0.0-preview3-27503-5, )",
+            "version": "[3.0.0-preview4-27615-11, )",
             "autoReferenced": true
           },
           "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy": {
             "include": "None",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3-27503-5, )",
+            "version": "[3.0.0-preview4-27615-11, )",
             "autoReferenced": true
           },
           "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver": {
             "include": "None",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3-27503-5, )",
+            "version": "[3.0.0-preview4-27615-11, )",
             "autoReferenced": true
           },
           "runtime.win-x64.Microsoft.WindowsDesktop.App": {
             "include": "None",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3-27504-2, )",
-            "autoReferenced": true
-          },
-          "runtime.win-x86.Microsoft.AspNetCore.App": {
-            "include": "None",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[3.0.0-preview3-19153-02, )",
+            "version": "[3.0.0-preview4-27613-28, )",
             "autoReferenced": true
           },
           "runtime.win-x86.Microsoft.NETCore.App": {
             "include": "None",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3-27503-5, )",
+            "version": "[3.0.0-preview4-27615-11, )",
+            "autoReferenced": true
+          },
+          "runtime.win-x86.Microsoft.NETCore.DotNetAppHost": {
+            "include": "None",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.0-preview4-27615-11, )",
             "autoReferenced": true
           },
           "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy": {
             "include": "None",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3-27503-5, )",
+            "version": "[3.0.0-preview4-27615-11, )",
             "autoReferenced": true
           },
           "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver": {
             "include": "None",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3-27503-5, )",
+            "version": "[3.0.0-preview4-27615-11, )",
             "autoReferenced": true
           },
           "runtime.win-x86.Microsoft.WindowsDesktop.App": {
             "include": "None",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3-27504-2, )",
+            "version": "[3.0.0-preview4-27613-28, )",
             "autoReferenced": true
           }
         },
@@ -2700,7 +2916,11 @@
           "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "frameworkReferences": [
+          "Microsoft.NETCore.App",
+          "Microsoft.WindowsDesktop.App"
+        ]
       }
     },
     "runtimes": {

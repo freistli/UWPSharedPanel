@@ -15,4 +15,7 @@
     <DebuggerFlavor>AppHostLocalDebugger</DebuggerFlavor>
     <RemoteDebugEnabled>False</RemoteDebugEnabled>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <DebuggerFlavor>AppHostRemoteDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>

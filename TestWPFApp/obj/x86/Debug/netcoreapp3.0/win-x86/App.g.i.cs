@@ -10,6 +10,7 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Automation;
 using System.Windows.Controls;
@@ -45,7 +46,7 @@ namespace TestWPFApp {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.8.27504.2")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.8.0.0")]
         public void InitializeComponent() {
             
             #line 5 "..\..\..\..\..\App.xaml"
@@ -60,7 +61,7 @@ namespace TestWPFApp {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.8.27504.2")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.8.0.0")]
         public static void Main() {
             TestWPFApp.App app = new TestWPFApp.App();
             app.InitializeComponent();

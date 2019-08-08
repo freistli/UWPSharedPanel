@@ -14,7 +14,7 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
     /// <summary>
     /// Main class for providing metadata for the app or library
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class XamlMetaDataProvider : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
@@ -57,7 +57,7 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal partial class XamlTypeInfoProvider
     {
@@ -147,15 +147,19 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "UWPSharedPanel.RealEstateComponent";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "UWPSharedPanel.RealEstateViewMode";
+            _typeNameTable[4] = "Object";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::UWPSharedPanel.RealEstateComponent);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::UWPSharedPanel.RealEstateViewMode);
+            _typeTable[4] = typeof(global::System.Object);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -191,6 +195,7 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
         }
 
         private object Activate_0_RealEstateComponent() { return new global::UWPSharedPanel.RealEstateComponent(); }
+        private object Activate_3_RealEstateViewMode() { return new global::UWPSharedPanel.RealEstateViewMode(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -205,6 +210,7 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
             case 0:   //  UWPSharedPanel.RealEstateComponent
                 userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_RealEstateComponent;
+                userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -216,21 +222,52 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  UWPSharedPanel.RealEstateViewMode
+                userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Object
+                xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_RealEstateComponent_ViewModel(object instance)
+        {
+            var that = (global::UWPSharedPanel.RealEstateComponent)instance;
+            return that.ViewModel;
+        }
+        private void set_0_RealEstateComponent_ViewModel(object instance, object Value)
+        {
+            var that = (global::UWPSharedPanel.RealEstateComponent)instance;
+            that.ViewModel = (global::UWPSharedPanel.RealEstateViewMode)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "UWPSharedPanel.RealEstateComponent.ViewModel":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPSharedPanel.RealEstateComponent");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPSharedPanel.RealEstateViewMode");
+                xamlMember.Getter = get_0_RealEstateComponent_ViewModel;
+                xamlMember.Setter = set_0_RealEstateComponent_ViewModel;
+                break;
+            }
             return xamlMember;
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlSystemBaseType : global::Windows.UI.Xaml.Markup.IXamlType
     {
@@ -279,7 +316,7 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
     internal delegate object CreateFromStringMethod(string args);
     internal delegate object BoxInstanceMethod(object instance);
 
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlUserType : global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType
         , global::Windows.UI.Xaml.Markup.IXamlType2
@@ -510,7 +547,7 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
     internal delegate object Getter(object instance);
     internal delegate void Setter(object instance, object value);
 
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {

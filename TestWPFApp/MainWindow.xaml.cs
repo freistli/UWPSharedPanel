@@ -52,7 +52,7 @@ namespace TestWPFApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
           
-                UWPSharedPanel.RealEstateComponent sharedPanel =
+            UWPSharedPanel.RealEstateComponent sharedPanel =
                     (UWPSharedPanel.RealEstateComponent)SharedXamlHost.Child;
             Notes.Text = sharedPanel.ViewModel.CurrentRealEstate.TotalRating.ToString()+" "+ sharedPanel.ViewModel.CurrentRealEstate.Notes;
 

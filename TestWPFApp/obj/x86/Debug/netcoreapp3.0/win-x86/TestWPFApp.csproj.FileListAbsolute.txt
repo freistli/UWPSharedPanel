@@ -213,12 +213,10 @@ D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\coreclr.d
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\dbgshim.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\Microsoft.DiaSymReader.Native.x86.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\mscordaccore.dll
-D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\mscordaccore_x86_x86_4.6.27422.72.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\mscordbi.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\mscorrc.debug.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\mscorrc.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\sos.dll
-D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\sos_x86_x86_4.6.27422.72.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\System.Private.CoreLib.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\ucrtbase.dll
 D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\hostfxr.dll
@@ -287,3 +285,10 @@ D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFAp
 D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.csproj.CopyComplete
 D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.dll
 D:\repos\UWPSharedPanel\TestWPFApp\obj\x86\Debug\netcoreapp3.0\win-x86\TestWPFApp.pdb
+D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\System.Data.DataSetExtensions.dll
+D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\System.Runtime.CompilerServices.Unsafe.dll
+D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\mscordaccore_x86_x86_4.6.27615.73.dll
+D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\sos_x86_x86_4.6.27615.73.dll
+D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\System.IO.Packaging.dll
+D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\D3DCompiler_47_cor3.dll
+D:\repos\UWPSharedPanel\TestWPFApp\bin\x86\Debug\netcoreapp3.0\win-x86\vcruntime140_cor3.dll
