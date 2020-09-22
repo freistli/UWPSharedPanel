@@ -16,3 +16,4 @@ D:\repos\UWPSharedPanel\packageproject\obj\ARM\Debug\qualifiers.txt
 D:\repos\UWPSharedPanel\packageproject\obj\ARM\Debug\qualifiers.txt.intermediate
 D:\repos\UWPSharedPanel\packageproject\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\repos\UWPSharedPanel\packageproject\obj\ARM\Debug\ProjectArchitectures.txt
+D:\repos\UWPSharedPanel\packageproject\obj\ARM\Debug\packageproject.wapprojAssemblyReference.cache

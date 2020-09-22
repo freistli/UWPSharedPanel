@@ -1,0 +1,151 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\repos\\UWPSharedPanel\\UWPApp\\UWPApp.csproj": {}
+  },
+  "projects": {
+    "D:\\repos\\UWPSharedPanel\\UWPApp\\UWPApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repos\\UWPSharedPanel\\UWPApp\\UWPApp.csproj",
+        "projectName": "UWPApp",
+        "projectPath": "D:\\repos\\UWPSharedPanel\\UWPApp\\UWPApp.csproj",
+        "packagesPath": "C:\\Users\\freistli\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\UWPSharedPanel\\UWPApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\freistli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.18362"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\customer\\Morgan_mike\\Insider-Preview": {},
+          "C:\\repos\\SceneLoader\\SceneLoader\\NugetPackager": {},
+          "C:\\repos\\Xaml-Islands-Samples\\libs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.18362": {
+            "projectReferences": {
+              "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj": {
+                "projectPath": "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.18362": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.10, )"
+            },
+            "Microsoft.Toolkit.Win32.UI.XamlApplication": {
+              "target": "Package",
+              "version": "[6.1.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj",
+        "projectName": "UWPSharedPanel",
+        "projectPath": "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\UWPSharedPanel.csproj",
+        "packagesPath": "C:\\Users\\freistli\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\UWPSharedPanel\\UWPSharedPanel\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\freistli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.18362"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\customer\\Morgan_mike\\Insider-Preview": {},
+          "C:\\repos\\SceneLoader\\SceneLoader\\NugetPackager": {},
+          "C:\\repos\\Xaml-Islands-Samples\\libs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.18362": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.18362": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.10, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

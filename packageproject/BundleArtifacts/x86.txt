@@ -1,0 +1,2 @@
+MainPackage=D:\repos\UWPSharedPanel\packageproject\bin\x86\Debug\packageproject_1.0.4.0_x86_Debug.msix
+SymbolPackage=D:\repos\UWPSharedPanel\packageproject\obj\x86\Debug\Symbols\packageproject_1.0.4.0_x86_Debug.appxsym

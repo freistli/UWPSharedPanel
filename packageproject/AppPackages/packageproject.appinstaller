@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///d:/temp/packageproject.appinstaller"
+	Version="1.0.4.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="ed7df091-9db6-4712-af0a-72e469b0026c"
+		Version="1.0.4.0"
+		Publisher="CN=freistli"
+		Uri="file:///d:/temp/packageproject_1.0.4.0_Debug_Test/packageproject_1.0.4.0_x86_Debug.msixbundle" />
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>

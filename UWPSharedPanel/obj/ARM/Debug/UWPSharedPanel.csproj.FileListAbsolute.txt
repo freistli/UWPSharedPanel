@@ -10,7 +10,6 @@ D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\XamlTypeInfo.g.cs
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\RealEstateComponent.xaml
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\RealEstateComponent.xbf
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\XamlSaveStateFile.xml
-D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\UWPSharedPanel.csproj.CoreCompileInputs.cache
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\UWPSharedPanel.dll
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\UWPSharedPanel.pdb
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\priconfig.xml
@@ -28,3 +27,5 @@ D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\pri.resfiles.intermediate
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\qualifiers.txt
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\qualifiers.txt.intermediate
 D:\repos\UWPSharedPanel\UWPSharedPanel\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\repos\UWPSharedPanel\UWPSharedPanel\bin\ARM\Debug\UWPSharedPanel\RealEstateComponent.xbf
+D:\repos\UWPSharedPanel\UWPSharedPanel\bin\ARM\Debug\UWPSharedPanel\UWPSharedPanel.xr.xml

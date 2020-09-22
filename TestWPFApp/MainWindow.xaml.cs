@@ -33,13 +33,15 @@ namespace TestWPFApp
         {
             if (EventSet == false)
             {
-                WindowsXamlHost windowsXamlHost = (WindowsXamlHost)sender;
+                 
+                WindowsXamlHost windowsXamlHost =  sender as Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost; ;
 
                 UWPSharedPanel.RealEstateComponent sharedPanel =
-                    (UWPSharedPanel.RealEstateComponent)windowsXamlHost.Child;
+                     windowsXamlHost.GetUwpInternalObject() as UWPSharedPanel.RealEstateComponent;
                 sharedPanel.StringChanged += OnStringChanged;
 
                 EventSet = true;
+                 
             }
 
         }
@@ -53,7 +55,8 @@ namespace TestWPFApp
         {
           
             UWPSharedPanel.RealEstateComponent sharedPanel =
-                    (UWPSharedPanel.RealEstateComponent)SharedXamlHost.Child;
+                    SharedXamlHost.GetUwpInternalObject() as UWPSharedPanel.RealEstateComponent;
+
             Notes.Text = sharedPanel.ViewModel.CurrentRealEstate.TotalRating.ToString()+" "+ sharedPanel.ViewModel.CurrentRealEstate.Notes;
 
             sharedPanel.ViewModel.CurrentRealEstate = new RealEstate

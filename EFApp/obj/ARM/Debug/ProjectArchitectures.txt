@@ -1,1 +1,0 @@
-D:\repos\UWPSharedPanel\EFApp\EFApp.csproj;arm

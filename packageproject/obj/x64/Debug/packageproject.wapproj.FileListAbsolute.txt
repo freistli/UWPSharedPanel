@@ -1,0 +1,1 @@
+D:\repos\UWPSharedPanel\packageproject\obj\x64\Debug\packageproject.wapprojAssemblyReference.cache

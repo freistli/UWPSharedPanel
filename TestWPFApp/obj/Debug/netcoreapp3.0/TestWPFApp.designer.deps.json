@@ -6,32 +6,70 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview4-19216-03": {},
-      "Microsoft.AspNetCore.App.Runtime.win-x86/3.0.0-preview4-19216-03": {},
-      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {},
-      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+      "Microsoft.NETCore.Platforms/3.0.0": {},
+      "Microsoft.Toolkit.UI.XamlHost/6.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
-        }
-      },
-      "Microsoft.NETCore.Platforms/3.0.0-preview4.19212.13": {},
-      "Microsoft.Toolkit.UI.XamlHost/6.0.0-preview3": {
-        "dependencies": {
-          "System.Runtime.WindowsRuntime": "4.6.0-preview3.19128.7",
-          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0-preview3.19128.7"
+          "Microsoft.Toolkit.Win32.UI.SDK": "6.0.0",
+          "Microsoft.Toolkit.Win32.UI.XamlApplication": "6.0.0",
+          "Microsoft.Windows.SDK.Contracts": "10.0.18362.2005"
         },
         "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Toolkit.Win32.UI.XamlHost.dll": {
+          "lib/netcoreapp3.0/Microsoft.Toolkit.Win32.UI.XamlHost.Managed.dll": {
             "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.0.47"
+            "fileVersion": "6.0.0.220"
+          }
+        }
+      },
+      "Microsoft.Toolkit.Win32.UI.SDK/6.0.0": {},
+      "Microsoft.Toolkit.Win32.UI.XamlApplication/6.0.0": {
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/Microsoft.Toolkit.Win32.UI.XamlHost.dll": {
+            "rid": "win10-arm",
+            "assetType": "native",
+            "fileVersion": "6.0.0.220"
+          },
+          "runtimes/win10-arm/native/Microsoft.Toolkit.Win32.UI.XamlHost.pri": {
+            "rid": "win10-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/Microsoft.Toolkit.Win32.UI.XamlHost.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "6.0.0.220"
+          },
+          "runtimes/win10-arm64/native/Microsoft.Toolkit.Win32.UI.XamlHost.pri": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/Microsoft.Toolkit.Win32.UI.XamlHost.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/Microsoft.Toolkit.Win32.UI.XamlHost.pri": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/Microsoft.Toolkit.Win32.UI.XamlHost.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "6.0.0.220"
+          },
+          "runtimes/win10-x86/native/Microsoft.Toolkit.Win32.UI.XamlHost.pri": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
           }
         }
       },
       "Microsoft.Toolkit.Wpf.UI.Controls/6.0.0-preview3": {
         "dependencies": {
-          "Microsoft.Toolkit.Wpf.UI.XamlHost": "6.0.0-preview3",
-          "System.Runtime.WindowsRuntime": "4.6.0-preview3.19128.7",
-          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0-preview3.19128.7"
+          "Microsoft.Toolkit.Wpf.UI.XamlHost": "6.0.0",
+          "System.Runtime.WindowsRuntime": "4.6.0",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0"
         },
         "runtime": {
           "lib/netcoreapp3.0/Microsoft.Toolkit.Wpf.UI.Controls.dll": {
@@ -40,105 +78,348 @@
           }
         }
       },
-      "Microsoft.Toolkit.Wpf.UI.XamlHost/6.0.0-preview3": {
+      "Microsoft.Toolkit.Wpf.UI.XamlHost/6.0.0": {
         "dependencies": {
-          "Microsoft.Toolkit.UI.XamlHost": "6.0.0-preview3",
-          "System.Runtime.WindowsRuntime": "4.6.0-preview3.19128.7",
-          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0-preview3.19128.7"
+          "Microsoft.Toolkit.UI.XamlHost": "6.0.0",
+          "Microsoft.Toolkit.Win32.UI.XamlApplication": "6.0.0",
+          "Microsoft.Windows.SDK.Contracts": "10.0.18362.2005"
         },
         "runtime": {
           "lib/netcoreapp3.0/Microsoft.Toolkit.Wpf.UI.XamlHost.dll": {
             "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.0.47"
+            "fileVersion": "6.0.0.220"
           }
         }
       },
-      "Microsoft.Windows.SDK.Contracts/10.0.17763.144-preview": {
-        "dependencies": {
-          "System.Runtime.WindowsRuntime": "4.6.0-preview3.19128.7",
-          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0-preview3.19128.7"
+      "Microsoft.VCRTForwarders.140/1.0.2-rc": {
+        "runtimeTargets": {
+          "runtimes/win10-arm64/native/debug/concrt140d_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/debug/msvcp140_1d_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/debug/msvcp140_2d_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/debug/msvcp140d_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/debug/vcamp140d_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/debug/vccorlib140d_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/debug/vcomp140d_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/debug/vcruntime140d_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/release/concrt140_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/release/msvcp140_1_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/release/msvcp140_2_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/release/msvcp140_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/release/vcamp140_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/release/vccorlib140_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/release/vcomp140_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-arm64/native/release/vcruntime140_app.dll": {
+            "rid": "win10-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/debug/concrt140d_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/debug/msvcp140_1d_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/debug/msvcp140_2d_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/debug/msvcp140d_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/debug/vcamp140d_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/debug/vccorlib140d_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/debug/vcomp140d_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/debug/vcruntime140_1d_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/debug/vcruntime140d_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/release/concrt140_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/release/msvcp140_1_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/release/msvcp140_2_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/release/msvcp140_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/release/vcamp140_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/release/vccorlib140_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/release/vcomp140_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/release/vcruntime140_1_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x64/native/release/vcruntime140_app.dll": {
+            "rid": "win10-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/debug/concrt140d_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/debug/msvcp140_1d_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/debug/msvcp140_2d_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/debug/msvcp140d_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/debug/vcamp140d_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/debug/vccorlib140d_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/debug/vcomp140d_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/debug/vcruntime140d_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/release/concrt140_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/release/msvcp140_1_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/release/msvcp140_2_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/release/msvcp140_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/release/vcamp140_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/release/vccorlib140_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/release/vcomp140_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win10-x86/native/release/vcruntime140_app.dll": {
+            "rid": "win10-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {},
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {},
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
+      "Microsoft.Windows.SDK.Contracts/10.0.18362.2005": {
         "dependencies": {
-          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
+          "System.Runtime.WindowsRuntime": "4.6.0",
+          "System.Runtime.WindowsRuntime.UI.Xaml": "4.6.0"
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+      "System.Runtime.WindowsRuntime/4.6.0": {
         "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
+          "Microsoft.NETCore.Platforms": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.WindowsRuntime.dll": {
+            "assemblyVersion": "4.0.14.0",
+            "fileVersion": "4.700.19.46214"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.14.0",
+            "fileVersion": "4.700.19.46214"
+          }
         }
       },
-      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {},
-      "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {},
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0": {
         "dependencies": {
-          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview4-27615-11"
-        }
-      },
-      "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
-        "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11"
-        }
-      },
-      "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {},
-      "System.Runtime.WindowsRuntime/4.6.0-preview3.19128.7": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13"
-        }
-      },
-      "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0-preview3.19128.7": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
-          "System.Runtime.WindowsRuntime": "4.6.0-preview3.19128.7"
+          "Microsoft.NETCore.Platforms": "3.0.0",
+          "System.Runtime.WindowsRuntime": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.WindowsRuntime.UI.Xaml.dll": {
+            "assemblyVersion": "4.0.4.0",
+            "fileVersion": "4.700.19.46214"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.UI.Xaml.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.4.0",
+            "fileVersion": "4.700.19.46214"
+          }
         }
       }
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview4-19216-03": {
+    "Microsoft.NETCore.Platforms/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JzX7DjV/NoAGfCts13B4NjZWH39EeImJudyfd3TpJBV1Xet8HtUwkFm8mTz5vSzqVZgUtKcbZPWs03I8CCBu4A==",
-      "path": "microsoft.aspnetcore.app.runtime.win-x64/3.0.0-preview4-19216-03",
-      "hashPath": "microsoft.aspnetcore.app.runtime.win-x64.3.0.0-preview4-19216-03.nupkg.sha512"
+      "sha512": "sha512-TsETIgVJb/AKoYfSP+iCxkuly5d3inZjTdx/ItZLk2CxY85v8083OBS3uai84kK3/baLnS5/b5XGs6zR7SuuHQ==",
+      "path": "microsoft.netcore.platforms/3.0.0",
+      "hashPath": "microsoft.netcore.platforms.3.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.App.Runtime.win-x86/3.0.0-preview4-19216-03": {
+    "Microsoft.Toolkit.UI.XamlHost/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wCDe2ECC7bYsWHghM2b0v740o11LwLq40IffkSnZkzxX4OvZv0g8XXXX9NZJCswsCkVd8undIcyohO7ifVMcYw==",
-      "path": "microsoft.aspnetcore.app.runtime.win-x86/3.0.0-preview4-19216-03",
-      "hashPath": "microsoft.aspnetcore.app.runtime.win-x86.3.0.0-preview4-19216-03.nupkg.sha512"
+      "sha512": "sha512-BUf+NIwdswWhf9jb8SpAlHKqYRu4GJImAdcBBVezEYIT3+NJopdBpUvwzZaE1mfJWS2dCWcyWjEcu2x3Cs3Rug==",
+      "path": "microsoft.toolkit.ui.xamlhost/6.0.0",
+      "hashPath": "microsoft.toolkit.ui.xamlhost.6.0.0.nupkg.sha512"
     },
-    "Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+    "Microsoft.Toolkit.Win32.UI.SDK/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-n4mjbXltERDqgsytnBMYlwkHq5qNO9ImyshY0fRhYBAPEA9HDEPyCOVVTD2QWaz36JAxUvaWp1KDEJG0NcwdkQ==",
-      "path": "microsoft.netcore.dotnetapphost/3.0.0-preview4-27615-11",
-      "hashPath": "microsoft.netcore.dotnetapphost.3.0.0-preview4-27615-11.nupkg.sha512"
+      "sha512": "sha512-8IaW569NRq2heCnKrKIK3kWdFbwZXQE8JMM0XagK55qH0FiwSS7isrw8WPxYdkcvN98w66qNW9DiLWwNbcjrOA==",
+      "path": "microsoft.toolkit.win32.ui.sdk/6.0.0",
+      "hashPath": "microsoft.toolkit.win32.ui.sdk.6.0.0.nupkg.sha512"
     },
-    "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
+    "Microsoft.Toolkit.Win32.UI.XamlApplication/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+y/jtQhy56oCi+8lCEjJowVOWyZ+rhX7yAGi7agyvVnROw7cxBeCaeK5BM0KXKnYDFnETXXYN1TyXsjmLJOegA==",
-      "path": "microsoft.netcore.dotnethostresolver/3.0.0-preview4-27615-11",
-      "hashPath": "microsoft.netcore.dotnethostresolver.3.0.0-preview4-27615-11.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Platforms/3.0.0-preview4.19212.13": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cBcFp3iIi/c6AK9F/aZxbZaNhWGOLSJD071L9tO8JbyODp38NDKsJ38Xq/KJUCt1EUIlqnyF6PdqOngFuCvD1Q==",
-      "path": "microsoft.netcore.platforms/3.0.0-preview4.19212.13",
-      "hashPath": "microsoft.netcore.platforms.3.0.0-preview4.19212.13.nupkg.sha512"
-    },
-    "Microsoft.Toolkit.UI.XamlHost/6.0.0-preview3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-scrIs32rJQGsV1V5MX/GcC5MjUzP/j0T+irxoZtTlc2iK3yK1E1iLiywzOf9VGpcjlknum+5iug15NK64hpOEg==",
-      "path": "microsoft.toolkit.ui.xamlhost/6.0.0-preview3",
-      "hashPath": "microsoft.toolkit.ui.xamlhost.6.0.0-preview3.nupkg.sha512"
+      "sha512": "sha512-/WHIske3Z1YNaaCFFuzq2pa9Vl4o6lon9EVm9z1YqSMBb7Uee1yFeD4irgBABsHOpDvjc/ZCNb6lTWL5AY3ZTw==",
+      "path": "microsoft.toolkit.win32.ui.xamlapplication/6.0.0",
+      "hashPath": "microsoft.toolkit.win32.ui.xamlapplication.6.0.0.nupkg.sha512"
     },
     "Microsoft.Toolkit.Wpf.UI.Controls/6.0.0-preview3": {
       "type": "package",
@@ -147,96 +428,40 @@
       "path": "microsoft.toolkit.wpf.ui.controls/6.0.0-preview3",
       "hashPath": "microsoft.toolkit.wpf.ui.controls.6.0.0-preview3.nupkg.sha512"
     },
-    "Microsoft.Toolkit.Wpf.UI.XamlHost/6.0.0-preview3": {
+    "Microsoft.Toolkit.Wpf.UI.XamlHost/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lIVWubpiIoImd6E98v7XWkXsJMUvCMjl3ViZ1rJ5aImbOl1eQnDAhPjK/fHQYbSGaoRT+pQ1+88DA1dZA96vig==",
-      "path": "microsoft.toolkit.wpf.ui.xamlhost/6.0.0-preview3",
-      "hashPath": "microsoft.toolkit.wpf.ui.xamlhost.6.0.0-preview3.nupkg.sha512"
+      "sha512": "sha512-XdFRsjWQZ7T/AYaKblgaQ0jZTHUaoO+3JRqLFv52vhb/VGW0GlFwAll4bjtFcmNPS418HYYWQmXAoqlDKuiB2g==",
+      "path": "microsoft.toolkit.wpf.ui.xamlhost/6.0.0",
+      "hashPath": "microsoft.toolkit.wpf.ui.xamlhost.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Windows.SDK.Contracts/10.0.17763.144-preview": {
+    "Microsoft.VCRTForwarders.140/1.0.2-rc": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zC7YevT8/1XVE0bgTIPF9Bd9S/BvCa9CBpFj7SiYUwE6JNdjed4QeRaVKH7/Ev//OV7X43ef87YuXs93xLNb/w==",
-      "path": "microsoft.windows.sdk.contracts/10.0.17763.144-preview",
-      "hashPath": "microsoft.windows.sdk.contracts.10.0.17763.144-preview.nupkg.sha512"
+      "sha512": "sha512-/r+sjtEeCIGyDhobIZ5hSmYhC/dSyGZxf1SxYJpElUhB0LMCktOMFs9gXrauXypIFECpVynNyVjAmJt6hjJ5oQ==",
+      "path": "microsoft.vcrtforwarders.140/1.0.2-rc",
+      "hashPath": "microsoft.vcrtforwarders.140.1.0.2-rc.nupkg.sha512"
     },
-    "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
+    "Microsoft.Windows.SDK.Contracts/10.0.18362.2005": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dX+aiNXlXvwRtOW70eaZXk7Xk2a+qgOd58qJGoVamj2khdYwvCGMqoUAfpywpW6ewk4jokTybn3HH+TAzjxO+A==",
-      "path": "runtime.win-x64.microsoft.netcore.app/3.0.0-preview4-27615-11",
-      "hashPath": "runtime.win-x64.microsoft.netcore.app.3.0.0-preview4-27615-11.nupkg.sha512"
+      "sha512": "sha512-3R3uDDGRSdeRdHpor1SyN3qg/VmseKjcKFIAQJ0iRnzoCPvnlCcnSGaNsjqVSzHQHbBSBtSKVBxBS2GyEw8qhw==",
+      "path": "microsoft.windows.sdk.contracts/10.0.18362.2005",
+      "hashPath": "microsoft.windows.sdk.contracts.10.0.18362.2005.nupkg.sha512"
     },
-    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+    "System.Runtime.WindowsRuntime/4.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-J4YSTnKz4p9+2dGau8a9SOkp57ypLvtz1wQpeS3VC8LDY8DUSmh3hH1yFOB5sIHORIiV21CwuebVAf1co4yrgw==",
-      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview4-27615-11",
-      "hashPath": "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview4-27615-11.nupkg.sha512"
+      "sha512": "sha512-IWrs1TmbxP65ZZjIglNyvDkFNoV5q2Pofg5WO7I8RKQOpLdFprQSh3xesOoClBqR4JHr4nEB1Xk1MqLPW1jPuQ==",
+      "path": "system.runtime.windowsruntime/4.6.0",
+      "hashPath": "system.runtime.windowsruntime.4.6.0.nupkg.sha512"
     },
-    "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
+    "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Kd5FoGGj6/MT6whO3AxCH0gjOAVeQ5a5mgmpjq06VS4OJlisvgCdAbB4w5AXiWGxVKRupwiTGDV/MHusxlZI8g==",
-      "path": "runtime.win-x64.microsoft.netcore.dotnethostpolicy/3.0.0-preview4-27615-11",
-      "hashPath": "runtime.win-x64.microsoft.netcore.dotnethostpolicy.3.0.0-preview4-27615-11.nupkg.sha512"
-    },
-    "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-CinlDQQTY4p9/50ifPQa3WjgFU562U/rYXfTzd0GsgNh1wLeXYDc4Wi34OukDS3KCGv4oIqbNqYbANiuBpmuyg==",
-      "path": "runtime.win-x64.microsoft.netcore.dotnethostresolver/3.0.0-preview4-27615-11",
-      "hashPath": "runtime.win-x64.microsoft.netcore.dotnethostresolver.3.0.0-preview4-27615-11.nupkg.sha512"
-    },
-    "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-RDWosgTuU877h6TxLZnTmBgu0raQpTLIN+UTY/oPLKFkfM+Ay5knrT0AuiZcX/8cEnKJvTV+xsda0DvdpJd9zw==",
-      "path": "runtime.win-x64.microsoft.windowsdesktop.app/3.0.0-preview4-27613-28",
-      "hashPath": "runtime.win-x64.microsoft.windowsdesktop.app.3.0.0-preview4-27613-28.nupkg.sha512"
-    },
-    "runtime.win-x86.Microsoft.NETCore.App/3.0.0-preview4-27615-11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-sS4MGwFVgW5j5fkuwe+mdx/lncJKt7ceHE8BOVzOe1a7AtYpqG6LFzbIXBg2xd2j7cPpqUnZwU3iw3cY3YwIhg==",
-      "path": "runtime.win-x86.microsoft.netcore.app/3.0.0-preview4-27615-11",
-      "hashPath": "runtime.win-x86.microsoft.netcore.app.3.0.0-preview4-27615-11.nupkg.sha512"
-    },
-    "runtime.win-x86.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview4-27615-11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ieaj/NobgooGSYJrzz2evSiliiWOGdktX6uUHQlnDILZtWFd8pDCh8+zuwR7PjBlnv+EtVNHqcO4KrWxUtt3nw==",
-      "path": "runtime.win-x86.microsoft.netcore.dotnethostpolicy/3.0.0-preview4-27615-11",
-      "hashPath": "runtime.win-x86.microsoft.netcore.dotnethostpolicy.3.0.0-preview4-27615-11.nupkg.sha512"
-    },
-    "runtime.win-x86.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview4-27615-11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QZWxPWZeKu7N9o5iMcL+NnxpNz2StlIzH5jCcm51P6PRqZaZyht4U4q5ZqsEFp+5DzJJib9KLslmZv64Sn7KrQ==",
-      "path": "runtime.win-x86.microsoft.netcore.dotnethostresolver/3.0.0-preview4-27615-11",
-      "hashPath": "runtime.win-x86.microsoft.netcore.dotnethostresolver.3.0.0-preview4-27615-11.nupkg.sha512"
-    },
-    "runtime.win-x86.Microsoft.WindowsDesktop.App/3.0.0-preview4-27613-28": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uEKtL4V5i18i9WL+RL3rTh6YQFicugq3i4yXKLeMObD34+rpbhVGpW26IFuxzweleGNYylhcfKqzx31Tc/42ug==",
-      "path": "runtime.win-x86.microsoft.windowsdesktop.app/3.0.0-preview4-27613-28",
-      "hashPath": "runtime.win-x86.microsoft.windowsdesktop.app.3.0.0-preview4-27613-28.nupkg.sha512"
-    },
-    "System.Runtime.WindowsRuntime/4.6.0-preview3.19128.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-riLwtGd4AqKq8WfP1J+hopWCsCPZNAIuuAUPaMvwUB+ieS6OO/OhQXHCKiF8tIc0hgOy5vybUjxUFBfVZTmifg==",
-      "path": "system.runtime.windowsruntime/4.6.0-preview3.19128.7",
-      "hashPath": "system.runtime.windowsruntime.4.6.0-preview3.19128.7.nupkg.sha512"
-    },
-    "System.Runtime.WindowsRuntime.UI.Xaml/4.6.0-preview3.19128.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2bLAXMrBKxTqOqdR+T3vHTj6o42BNXLYfdC3CAVc3RWD73splqNuE9a6UR2IOYf6AyJ3nOGgJGXAfNdStNDd4g==",
-      "path": "system.runtime.windowsruntime.ui.xaml/4.6.0-preview3.19128.7",
-      "hashPath": "system.runtime.windowsruntime.ui.xaml.4.6.0-preview3.19128.7.nupkg.sha512"
+      "sha512": "sha512-r4tNw5v5kqRJ9HikWpcyNf3suGw7DjX93svj9iBjtdeLqL8jt9Z+7f+s4wrKZJr84u8IMsrIjt8K6jYvkRqMSg==",
+      "path": "system.runtime.windowsruntime.ui.xaml/4.6.0",
+      "hashPath": "system.runtime.windowsruntime.ui.xaml.4.6.0.nupkg.sha512"
     }
   }
 }

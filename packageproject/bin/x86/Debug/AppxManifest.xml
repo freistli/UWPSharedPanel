@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="ed7df091-9db6-4712-af0a-72e469b0026c" Publisher="CN=freistli" Version="1.0.1.0" ProcessorArchitecture="x86" />
+  <Identity Name="ed7df091-9db6-4712-af0a-72e469b0026c" Publisher="CN=freistli" Version="1.0.4.0" ProcessorArchitecture="x86" />
   <Properties>
     <DisplayName>packageproject</DisplayName>
     <PublisherDisplayName>freistli</PublisherDisplayName>

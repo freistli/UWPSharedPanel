@@ -28,3 +28,4 @@ D:\repos\UWPSharedPanel\packageproject\obj\x86\Debug\qualifiers.txt.intermediate
 D:\repos\UWPSharedPanel\packageproject\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\repos\UWPSharedPanel\packageproject\obj\x86\Debug\ProjectArchitectures.txt
 D:\repos\UWPSharedPanel\packageproject\obj\x86\Debug\packageproject.wapproj.LastBuild.txt
+D:\repos\UWPSharedPanel\packageproject\obj\x86\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.pri.xml
