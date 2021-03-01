@@ -1,2 +1,0 @@
-D:\repos\UWPSharedPanel\UWPApp\UWPApp.csproj;x86
-D:\repos\UWPSharedPanel\UWPSharedPanel\UWPSharedPanel.csproj;x86
