@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mhcAcrv/pAA9YwiPH0Sx7oeEYUf/qS5bmKP36WBxk0VMLX+D0ZVE4GW+xP1q7fq0+liNQ+DnTRQziknu0fLuHQ==",
+  "dgSpecHash": "U8UU28RlHcjYgw7ExFCNjQAhPS3J0pPpGqmGYDTkcz1WoLkg/vuvmNd0CuxsNS+inrNqruMi3T0L/nGrev4NRA==",
   "success": true,
   "projectFilePath": "D:\\repos\\UWPSharedPanel\\UWPApp\\UWPApp.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Users\\freistli\\.nuget\\packages\\microsoft.netcore.universalwindowsplatform\\6.2.10\\microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
     "C:\\Users\\freistli\\.nuget\\packages\\microsoft.toolkit.win32.ui.xamlapplication\\6.1.2\\microsoft.toolkit.win32.ui.xamlapplication.6.1.2.nupkg.sha512",
+    "C:\\Users\\freistli\\.nuget\\packages\\microsoft.ui.xaml\\2.5.0-prerelease.200812001\\microsoft.ui.xaml.2.5.0-prerelease.200812001.nupkg.sha512",
     "C:\\Users\\freistli\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\freistli\\.nuget\\packages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
     "C:\\Users\\freistli\\.nuget\\packages\\runtime.win10-arm.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-arm.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",

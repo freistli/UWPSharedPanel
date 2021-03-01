@@ -250,6 +250,68 @@
           }
         }
       },
+      "Microsoft.UI.Xaml/2.5.0-prerelease.200812001": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/Microsoft.UI.Xaml.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.UI.Xaml.pri": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm64/native/Microsoft.UI.Xaml.dll": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-arm64/native/Microsoft.UI.Xaml.pri": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-arm64/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-x64/native/Microsoft.UI.Xaml.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/Microsoft.UI.Xaml.pri": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/Microsoft.UI.Xaml.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/Microsoft.UI.Xaml.pri": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -358,7 +420,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.18362",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10",
+          "Microsoft.UI.Xaml": "2.5.0-prerelease.200812001"
         },
         "compile": {
           "bin/placeholder/UWPSharedPanel.dll": {}
@@ -586,6 +649,23 @@
         "build": {
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.props": {},
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.5.0-prerelease.200812001": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/Microsoft.UI.Xaml.dll": {},
+          "runtimes/win10-arm/native/Microsoft.UI.Xaml.pri": {},
+          "runtimes/win10-arm/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.targets": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -874,7 +954,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.18362",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10",
+          "Microsoft.UI.Xaml": "2.5.0-prerelease.200812001"
         },
         "compile": {
           "bin/placeholder/UWPSharedPanel.dll": {}
@@ -1102,6 +1183,23 @@
         "build": {
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.props": {},
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.5.0-prerelease.200812001": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/Microsoft.UI.Xaml.dll": {},
+          "runtimes/win10-arm/native/Microsoft.UI.Xaml.pri": {},
+          "runtimes/win10-arm/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.targets": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -1391,7 +1489,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.18362",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10",
+          "Microsoft.UI.Xaml": "2.5.0-prerelease.200812001"
         },
         "compile": {
           "bin/placeholder/UWPSharedPanel.dll": {}
@@ -1619,6 +1718,23 @@
         "build": {
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.props": {},
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.5.0-prerelease.200812001": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm64/native/Microsoft.UI.Xaml.dll": {},
+          "runtimes/win10-arm64/native/Microsoft.UI.Xaml.pri": {},
+          "runtimes/win10-arm64/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.targets": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -1908,7 +2024,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.18362",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10",
+          "Microsoft.UI.Xaml": "2.5.0-prerelease.200812001"
         },
         "compile": {
           "bin/placeholder/UWPSharedPanel.dll": {}
@@ -2136,6 +2253,23 @@
         "build": {
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.props": {},
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.5.0-prerelease.200812001": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/Microsoft.UI.Xaml.dll": {},
+          "runtimes/win10-x64/native/Microsoft.UI.Xaml.pri": {},
+          "runtimes/win10-x64/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.targets": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -2424,7 +2558,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.18362",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10",
+          "Microsoft.UI.Xaml": "2.5.0-prerelease.200812001"
         },
         "compile": {
           "bin/placeholder/UWPSharedPanel.dll": {}
@@ -2652,6 +2787,23 @@
         "build": {
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.props": {},
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.5.0-prerelease.200812001": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/Microsoft.UI.Xaml.dll": {},
+          "runtimes/win10-x64/native/Microsoft.UI.Xaml.pri": {},
+          "runtimes/win10-x64/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.targets": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -2941,7 +3093,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.18362",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10",
+          "Microsoft.UI.Xaml": "2.5.0-prerelease.200812001"
         },
         "compile": {
           "bin/placeholder/UWPSharedPanel.dll": {}
@@ -3169,6 +3322,23 @@
         "build": {
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.props": {},
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.5.0-prerelease.200812001": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/Microsoft.UI.Xaml.dll": {},
+          "runtimes/win10-x86/native/Microsoft.UI.Xaml.pri": {},
+          "runtimes/win10-x86/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.targets": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -3457,7 +3627,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.18362",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10",
+          "Microsoft.UI.Xaml": "2.5.0-prerelease.200812001"
         },
         "compile": {
           "bin/placeholder/UWPSharedPanel.dll": {}
@@ -3685,6 +3856,23 @@
         "build": {
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.props": {},
           "build/Microsoft.Toolkit.Win32.UI.XamlApplication.targets": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.5.0-prerelease.200812001": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/Microsoft.UI.Xaml.dll": {},
+          "runtimes/win10-x86/native/Microsoft.UI.Xaml.pri": {},
+          "runtimes/win10-x86/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.targets": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -3974,7 +4162,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.18362",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.10",
+          "Microsoft.UI.Xaml": "2.5.0-prerelease.200812001"
         },
         "compile": {
           "bin/placeholder/UWPSharedPanel.dll": {}
@@ -4390,6 +4579,40 @@
         "runtimes/win10-x64/native/Microsoft.Toolkit.Win32.UI.XamlHost.pri",
         "runtimes/win10-x86/native/Microsoft.Toolkit.Win32.UI.XamlHost.dll",
         "runtimes/win10-x86/native/Microsoft.Toolkit.Win32.UI.XamlHost.pri"
+      ]
+    },
+    "Microsoft.UI.Xaml/2.5.0-prerelease.200812001": {
+      "sha512": "miKEN627Et7O+cNAQzS9qkruj1VyihYHEwo3iRysdbk+0lpFuJaNVjQvCeZOEJJMhyG7c8MTLEgn0jfOD6vhow==",
+      "type": "package",
+      "path": "microsoft.ui.xaml/2.5.0-prerelease.200812001",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.UI.Xaml.targets",
+        "build/native/Microsoft.UI.Xaml.targets",
+        "buildTransitive/Microsoft.UI.Xaml.targets",
+        "lib/uap10.0/Design/Microsoft.UI.Xaml.Design.dll",
+        "lib/uap10.0/Microsoft.UI.Xaml.winmd",
+        "lib/uap10.0/Microsoft.UI.Xaml.xml",
+        "lib/uap10.0/Microsoft.UI.Xaml/Themes/Generic.xaml",
+        "license.txt",
+        "microsoft.ui.xaml.2.5.0-prerelease.200812001.nupkg.sha512",
+        "microsoft.ui.xaml.nuspec",
+        "readme.txt",
+        "runtimes/win10-arm/native/Microsoft.UI.Xaml.dll",
+        "runtimes/win10-arm/native/Microsoft.UI.Xaml.pri",
+        "runtimes/win10-arm/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png",
+        "runtimes/win10-arm64/native/Microsoft.UI.Xaml.dll",
+        "runtimes/win10-arm64/native/Microsoft.UI.Xaml.pri",
+        "runtimes/win10-arm64/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png",
+        "runtimes/win10-x64/native/Microsoft.UI.Xaml.dll",
+        "runtimes/win10-x64/native/Microsoft.UI.Xaml.pri",
+        "runtimes/win10-x64/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png",
+        "runtimes/win10-x86/native/Microsoft.UI.Xaml.dll",
+        "runtimes/win10-x86/native/Microsoft.UI.Xaml.pri",
+        "runtimes/win10-x86/native/Microsoft.UI.Xaml/Assets/NoiseAsset_256x256_PNG.png",
+        "tools/VisualStudioToolsManifest.xml"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -8449,11 +8672,13 @@
     "UAP,Version=v10.0.18362": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.10",
       "Microsoft.Toolkit.Win32.UI.XamlApplication >= 6.1.2",
+      "Microsoft.UI.Xaml >= 2.5.0-prerelease.200812001",
       "UWPSharedPanel >= 1.0.0"
     ]
   },
   "packageFolders": {
     "C:\\Users\\freistli\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
@@ -8468,11 +8693,13 @@
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
         "C:\\Users\\freistli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -8480,12 +8707,7 @@
         "uap10.0.18362"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\customer\\Morgan_mike\\Insider-Preview": {},
-        "C:\\repos\\SceneLoader\\SceneLoader\\NugetPackager": {},
-        "C:\\repos\\Xaml-Islands-Samples\\libs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "uap10.0.18362": {
@@ -8507,6 +8729,10 @@
           "Microsoft.Toolkit.Win32.UI.XamlApplication": {
             "target": "Package",
             "version": "[6.1.2, )"
+          },
+          "Microsoft.UI.Xaml": {
+            "target": "Package",
+            "version": "[2.5.0-prerelease.200812001, )"
           }
         },
         "imports": [

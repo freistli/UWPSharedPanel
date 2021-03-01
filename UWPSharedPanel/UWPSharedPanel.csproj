@@ -132,6 +132,9 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.5.0-prerelease.200812001</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Page Include="RealEstateComponent.xaml">

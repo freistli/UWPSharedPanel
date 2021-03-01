@@ -5,6 +5,7 @@
     xmlns:local="using:UWPSharedPanel"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:winui="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="5" >
 
@@ -39,14 +40,16 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" /> 
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0"   FontFamily="Segoe MDL2 Assets" Height="50" VerticalAlignment="Top" Style="{StaticResource Header}">Client Rating</TextBlock>
             <RatingControl Grid.Row="1" Margin="15" x:Name="Home" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Home" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Home Rating" Value="{x:Bind ViewModel.CurrentRealEstate.HomeRating,Mode=TwoWay}"/>
             <RatingControl Grid.Row="2" Margin="15" x:Name="Location" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Location" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Location Rating" Value="{x:Bind ViewModel.CurrentRealEstate.LocationRating,Mode=TwoWay}"/>
             <RatingControl Grid.Row="3" Margin="15" x:Name="Convenience" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Convenience" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Convenience Rating" Value="{x:Bind ViewModel.CurrentRealEstate.ConvenieceRating,Mode=TwoWay}"/>
             <RatingControl Grid.Row="4" Margin="15" x:Name="Total" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="Total" UseLayoutRounding="True" HorizontalContentAlignment="Center" AutomationProperties.HelpText="Total Rating" Value="{x:Bind ViewModel.CurrentRealEstate.TotalRating,Mode=TwoWay}"/>
-            <TextBlock Grid.Row="5" VerticalAlignment="Top" Height="30" HorizontalAlignment="Left" Style="{StaticResource Header}">Notes</TextBlock>
+            <winui:RatingControl Grid.Row="5" Margin="15" HorizontalAlignment="Left"   VerticalAlignment="Top" Caption="WinUI 2.5 Pre-release" />
+            <TextBlock Grid.Row="6" VerticalAlignment="Top" Height="30" HorizontalAlignment="Left" Style="{StaticResource Header}">Notes</TextBlock>
         </Grid>
         <Button x:Name="AnalyzeButton" Margin="10" VerticalAlignment="Top"  HorizontalAlignment="Left" Click="AnalyzeButton_Click"  >
             <Button.Resources>

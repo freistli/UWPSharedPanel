@@ -376,6 +376,9 @@
         }
       },
       "UWPApp/1.0.0": {
+        "dependencies": {
+          "Microsoft.UI.Xaml": "255.255.255.255"
+        },
         "runtime": {
           "UWPApp.exe": {}
         }
@@ -388,6 +391,14 @@
       "Microsoft.Toolkit.Win32.UI.XamlHost/255.255.255.255": {
         "runtime": {
           "Microsoft.Toolkit.Win32.UI.XamlHost.winmd": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Microsoft.UI.Xaml.Reference/255.255.255.255": {
+        "runtime": {
+          "Microsoft.UI.Xaml.winmd": {
             "assemblyVersion": "255.255.255.255",
             "fileVersion": "0.0.0.0"
           }
@@ -482,6 +493,11 @@
       "sha512": ""
     },
     "Microsoft.Toolkit.Win32.UI.XamlHost/255.255.255.255": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.UI.Xaml.Reference/255.255.255.255": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

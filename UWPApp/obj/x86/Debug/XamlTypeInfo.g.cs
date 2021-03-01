@@ -223,21 +223,35 @@ namespace UWPApp.UWPApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
+            _typeNameTable = new string[13];
             _typeNameTable[0] = "Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Boolean";
             _typeNameTable[3] = "System.IDisposable";
             _typeNameTable[4] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.Markup.IXamlMetadataProvider>";
             _typeNameTable[5] = "Windows.UI.Xaml.Markup.IXamlMetadataProvider";
+            _typeNameTable[6] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
+            _typeNameTable[7] = "Windows.UI.Xaml.ResourceDictionary";
+            _typeNameTable[8] = "Object";
+            _typeNameTable[9] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[10] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[11] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[12] = "Int32";
 
-            _typeTable = new global::System.Type[6];
+            _typeTable = new global::System.Type[13];
             _typeTable[0] = typeof(global::Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::System.Boolean);
             _typeTable[3] = typeof(global::System.IDisposable);
             _typeTable[4] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>);
             _typeTable[5] = typeof(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider);
+            _typeTable[6] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
+            _typeTable[8] = typeof(global::System.Object);
+            _typeTable[9] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[11] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[12] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -272,10 +286,25 @@ namespace UWPApp.UWPApp_XamlTypeInfo
             return -1;
         }
 
+        private object Activate_6_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
+        private object Activate_9_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void VectorAdd_4_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>)instance;
             var newItem = (global::Windows.UI.Xaml.Markup.IXamlMetadataProvider)item;
+            collection.Add(newItem);
+        }
+        private void MapAdd_6_XamlControlsResources(object instance, object key, object item)
+        {
+            var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
+            var newKey = (global::System.Object)key;
+            var newItem = (global::System.Object)item;
+            collection.Add(newKey, newItem);
+        }
+        private void VectorAdd_11_IList(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
+            var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
             collection.Add(newItem);
         }
 
@@ -321,6 +350,51 @@ namespace UWPApp.UWPApp_XamlTypeInfo
             case 5:   //  Windows.UI.Xaml.Markup.IXamlMetadataProvider
                 xamlType = new global::UWPApp.UWPApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 6:   //  Microsoft.UI.Xaml.Controls.XamlControlsResources
+                userType = new global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.ResourceDictionary"));
+                userType.Activator = Activate_6_XamlControlsResources;
+                userType.DictionaryAdd = MapAdd_6_XamlControlsResources;
+                userType.AddMemberName("UseCompactResources");
+                xamlType = userType;
+                break;
+
+            case 7:   //  Windows.UI.Xaml.ResourceDictionary
+                xamlType = new global::UWPApp.UWPApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  Object
+                xamlType = new global::UWPApp.UWPApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+                userType = new global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_9_TreeViewNode;
+                userType.AddMemberName("IsExpanded");
+                userType.AddMemberName("HasUnrealizedChildren");
+                userType.AddMemberName("Content");
+                userType.AddMemberName("Children");
+                userType.AddMemberName("Depth");
+                userType.AddMemberName("HasChildren");
+                userType.AddMemberName("Parent");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::UWPApp.UWPApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+                userType = new global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_11_IList;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Int32
+                xamlType = new global::UWPApp.UWPApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
             }
             return xamlType;
         }
@@ -334,6 +408,8 @@ namespace UWPApp.UWPApp_XamlTypeInfo
                 {
                     var otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
+                    provider = new global::Microsoft.UI.Xaml.XamlTypeInfo.XamlControlsXamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
                     provider = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 
                     _otherProviders = otherProviders;
@@ -395,6 +471,66 @@ namespace UWPApp.UWPApp_XamlTypeInfo
             var that = (global::Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication)instance;
             return that.MetadataProviders;
         }
+        private object get_3_XamlControlsResources_UseCompactResources(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.XamlControlsResources)instance;
+            return that.UseCompactResources;
+        }
+        private void set_3_XamlControlsResources_UseCompactResources(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.XamlControlsResources)instance;
+            that.UseCompactResources = (global::System.Boolean)Value;
+        }
+        private object get_4_TreeViewNode_IsExpanded(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.IsExpanded;
+        }
+        private void set_4_TreeViewNode_IsExpanded(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            that.IsExpanded = (global::System.Boolean)Value;
+        }
+        private object get_5_TreeViewNode_HasUnrealizedChildren(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.HasUnrealizedChildren;
+        }
+        private void set_5_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            that.HasUnrealizedChildren = (global::System.Boolean)Value;
+        }
+        private object get_6_TreeViewNode_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.Content;
+        }
+        private void set_6_TreeViewNode_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            that.Content = (global::System.Object)Value;
+        }
+        private object get_7_TreeViewNode_Children(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.Children;
+        }
+        private object get_8_TreeViewNode_Depth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.Depth;
+        }
+        private object get_9_TreeViewNode_HasChildren(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.HasChildren;
+        }
+        private object get_10_TreeViewNode_Parent(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.Parent;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -419,6 +555,59 @@ namespace UWPApp.UWPApp_XamlTypeInfo
                 userType = (global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication");
                 xamlMember = new global::UWPApp.UWPApp_XamlTypeInfo.XamlMember(this, "MetadataProviders", "System.Collections.Generic.IList`1<Windows.UI.Xaml.Markup.IXamlMetadataProvider>");
                 xamlMember.Getter = get_2_XamlApplication_MetadataProviders;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.XamlControlsResources.UseCompactResources":
+                userType = (global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.XamlControlsResources");
+                xamlMember = new global::UWPApp.UWPApp_XamlTypeInfo.XamlMember(this, "UseCompactResources", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_XamlControlsResources_UseCompactResources;
+                xamlMember.Setter = set_3_XamlControlsResources_UseCompactResources;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
+                userType = (global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPApp.UWPApp_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_4_TreeViewNode_IsExpanded;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
+                userType = (global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPApp.UWPApp_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
+                xamlMember.Getter = get_5_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_5_TreeViewNode_HasUnrealizedChildren;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
+                userType = (global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPApp.UWPApp_XamlTypeInfo.XamlMember(this, "Content", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_6_TreeViewNode_Content;
+                xamlMember.Setter = set_6_TreeViewNode_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
+                userType = (global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPApp.UWPApp_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
+                xamlMember.Getter = get_7_TreeViewNode_Children;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
+                userType = (global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPApp.UWPApp_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_8_TreeViewNode_Depth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
+                userType = (global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPApp.UWPApp_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_9_TreeViewNode_HasChildren;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
+                userType = (global::UWPApp.UWPApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPApp.UWPApp_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember.Getter = get_10_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

@@ -75,6 +75,18 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
                 {
                     xamlType = CreateXamlType(typeIndex);
                 }
+                var userXamlType = xamlType as global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType;
+                if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
+                {
+                    global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
+                    if (libXamlType != null)
+                    {
+                        if(libXamlType.IsConstructible || xamlType == null)
+                        {
+                            xamlType = libXamlType;
+                        }
+                    }
+                }
                 if (xamlType != null)
                 {
                     _xamlTypeCacheByName.Add(xamlType.FullName, xamlType);
@@ -101,6 +113,18 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
                 if(typeIndex != -1)
                 {
                     xamlType = CreateXamlType(typeIndex);
+                }
+                var userXamlType = xamlType as global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType;
+                if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
+                {
+                    global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
+                    if (libXamlType != null)
+                    {
+                        if(libXamlType.IsConstructible || xamlType == null)
+                        {
+                            xamlType = libXamlType;
+                        }
+                    }
                 }
                 if (xamlType != null)
                 {
@@ -147,19 +171,39 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "UWPSharedPanel.RealEstateComponent";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "UWPSharedPanel.RealEstateViewMode";
-            _typeNameTable[4] = "Object";
+            _typeNameTable = new string[15];
+            _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.RatingControl";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[2] = "String";
+            _typeNameTable[3] = "Double";
+            _typeNameTable[4] = "Int32";
+            _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.RatingItemInfo";
+            _typeNameTable[6] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[7] = "Boolean";
+            _typeNameTable[8] = "UWPSharedPanel.RealEstateComponent";
+            _typeNameTable[9] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[11] = "UWPSharedPanel.RealEstateViewMode";
+            _typeNameTable[12] = "Object";
+            _typeNameTable[13] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[14] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::UWPSharedPanel.RealEstateComponent);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::UWPSharedPanel.RealEstateViewMode);
-            _typeTable[4] = typeof(global::System.Object);
+            _typeTable = new global::System.Type[15];
+            _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.RatingControl);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[2] = typeof(global::System.String);
+            _typeTable[3] = typeof(global::System.Double);
+            _typeTable[4] = typeof(global::System.Int32);
+            _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.RatingItemInfo);
+            _typeTable[6] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[7] = typeof(global::System.Boolean);
+            _typeTable[8] = typeof(global::UWPSharedPanel.RealEstateComponent);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[11] = typeof(global::UWPSharedPanel.RealEstateViewMode);
+            _typeTable[12] = typeof(global::System.Object);
+            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[14] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -194,8 +238,17 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_RealEstateComponent() { return new global::UWPSharedPanel.RealEstateComponent(); }
-        private object Activate_3_RealEstateViewMode() { return new global::UWPSharedPanel.RealEstateViewMode(); }
+        private object Activate_0_RatingControl() { return new global::Microsoft.UI.Xaml.Controls.RatingControl(); }
+        private object Activate_5_RatingItemInfo() { return new global::Microsoft.UI.Xaml.Controls.RatingItemInfo(); }
+        private object Activate_8_RealEstateComponent() { return new global::UWPSharedPanel.RealEstateComponent(); }
+        private object Activate_11_RealEstateViewMode() { return new global::UWPSharedPanel.RealEstateViewMode(); }
+        private object Activate_13_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private void VectorAdd_14_IList(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
+            var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -207,46 +260,295 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  UWPSharedPanel.RealEstateComponent
+            case 0:   //  Microsoft.UI.Xaml.Controls.RatingControl
+                userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_0_RatingControl;
+                userType.AddMemberName("Caption");
+                userType.AddMemberName("Value");
+                userType.AddMemberName("PlaceholderValue");
+                userType.AddMemberName("MaxRating");
+                userType.AddMemberName("ItemInfo");
+                userType.AddMemberName("IsReadOnly");
+                userType.AddMemberName("IsClearEnabled");
+                userType.AddMemberName("InitialSetValue");
+                xamlType = userType;
+                break;
+
+            case 1:   //  Windows.UI.Xaml.Controls.Control
+                xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  String
+                xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  Double
+                xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  Int32
+                xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Microsoft.UI.Xaml.Controls.RatingItemInfo
+                userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 6:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  Boolean
+                xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  UWPSharedPanel.RealEstateComponent
                 userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_RealEstateComponent;
+                userType.Activator = Activate_8_RealEstateComponent;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 9:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+            case 10:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  UWPSharedPanel.RealEstateViewMode
+            case 11:   //  UWPSharedPanel.RealEstateViewMode
                 userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Object
+            case 12:   //  Object
                 xamlType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+                userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_13_TreeViewNode;
+                userType.AddMemberName("IsExpanded");
+                userType.AddMemberName("HasUnrealizedChildren");
+                userType.AddMemberName("Content");
+                userType.AddMemberName("Children");
+                userType.AddMemberName("Depth");
+                userType.AddMemberName("HasChildren");
+                userType.AddMemberName("Parent");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case 14:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+                userType = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_14_IList;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
                 break;
             }
             return xamlType;
         }
 
+        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> _otherProviders;
+        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> OtherProviders
+        {
+            get
+            {
+                if(_otherProviders == null)
+                {
+                    var otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
+                    global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
+                    provider = new global::Microsoft.UI.Xaml.XamlTypeInfo.XamlControlsXamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    _otherProviders = otherProviders;
+                }
+                return _otherProviders;
+            }
+        }
 
-        private object get_0_RealEstateComponent_ViewModel(object instance)
+        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForName(string typeName)
+        {
+            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
+            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
+            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
+            {
+                xamlType = xmp.GetXamlType(typeName);
+                if(xamlType != null)
+                {
+                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
+                    {
+                        return xamlType;
+                    }
+                    foundXamlType = xamlType;
+                }
+            }
+            return foundXamlType;
+        }
+
+        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForType(global::System.Type type)
+        {
+            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
+            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
+            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
+            {
+                xamlType = xmp.GetXamlType(type);
+                if(xamlType != null)
+                {
+                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
+                    {
+                        return xamlType;
+                    }
+                    foundXamlType = xamlType;
+                }
+            }
+            return foundXamlType;
+        }
+
+        private object get_0_RatingControl_Caption(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            return that.Caption;
+        }
+        private void set_0_RatingControl_Caption(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            that.Caption = (global::System.String)Value;
+        }
+        private object get_1_RatingControl_Value(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            return that.Value;
+        }
+        private void set_1_RatingControl_Value(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            that.Value = (global::System.Double)Value;
+        }
+        private object get_2_RatingControl_PlaceholderValue(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            return that.PlaceholderValue;
+        }
+        private void set_2_RatingControl_PlaceholderValue(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            that.PlaceholderValue = (global::System.Double)Value;
+        }
+        private object get_3_RatingControl_MaxRating(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            return that.MaxRating;
+        }
+        private void set_3_RatingControl_MaxRating(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            that.MaxRating = (global::System.Int32)Value;
+        }
+        private object get_4_RatingControl_ItemInfo(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            return that.ItemInfo;
+        }
+        private void set_4_RatingControl_ItemInfo(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            that.ItemInfo = (global::Microsoft.UI.Xaml.Controls.RatingItemInfo)Value;
+        }
+        private object get_5_RatingControl_IsReadOnly(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            return that.IsReadOnly;
+        }
+        private void set_5_RatingControl_IsReadOnly(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            that.IsReadOnly = (global::System.Boolean)Value;
+        }
+        private object get_6_RatingControl_IsClearEnabled(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            return that.IsClearEnabled;
+        }
+        private void set_6_RatingControl_IsClearEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            that.IsClearEnabled = (global::System.Boolean)Value;
+        }
+        private object get_7_RatingControl_InitialSetValue(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            return that.InitialSetValue;
+        }
+        private void set_7_RatingControl_InitialSetValue(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.RatingControl)instance;
+            that.InitialSetValue = (global::System.Int32)Value;
+        }
+        private object get_8_RealEstateComponent_ViewModel(object instance)
         {
             var that = (global::UWPSharedPanel.RealEstateComponent)instance;
             return that.ViewModel;
         }
-        private void set_0_RealEstateComponent_ViewModel(object instance, object Value)
+        private void set_8_RealEstateComponent_ViewModel(object instance, object Value)
         {
             var that = (global::UWPSharedPanel.RealEstateComponent)instance;
             that.ViewModel = (global::UWPSharedPanel.RealEstateViewMode)Value;
+        }
+        private object get_9_TreeViewNode_IsExpanded(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.IsExpanded;
+        }
+        private void set_9_TreeViewNode_IsExpanded(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            that.IsExpanded = (global::System.Boolean)Value;
+        }
+        private object get_10_TreeViewNode_HasUnrealizedChildren(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.HasUnrealizedChildren;
+        }
+        private void set_10_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            that.HasUnrealizedChildren = (global::System.Boolean)Value;
+        }
+        private object get_11_TreeViewNode_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.Content;
+        }
+        private void set_11_TreeViewNode_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            that.Content = (global::System.Object)Value;
+        }
+        private object get_12_TreeViewNode_Children(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.Children;
+        }
+        private object get_13_TreeViewNode_Depth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.Depth;
+        }
+        private object get_14_TreeViewNode_HasChildren(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.HasChildren;
+        }
+        private object get_15_TreeViewNode_Parent(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
+            return that.Parent;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -256,11 +558,113 @@ namespace UWPSharedPanel.UWPSharedPanel_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "Microsoft.UI.Xaml.Controls.RatingControl.Caption":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RatingControl");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "Caption", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_0_RatingControl_Caption;
+                xamlMember.Setter = set_0_RatingControl_Caption;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RatingControl.Value":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RatingControl");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "Value", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_RatingControl_Value;
+                xamlMember.Setter = set_1_RatingControl_Value;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RatingControl.PlaceholderValue":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RatingControl");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "PlaceholderValue", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_RatingControl_PlaceholderValue;
+                xamlMember.Setter = set_2_RatingControl_PlaceholderValue;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RatingControl.MaxRating":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RatingControl");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "MaxRating", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_RatingControl_MaxRating;
+                xamlMember.Setter = set_3_RatingControl_MaxRating;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RatingControl.ItemInfo":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RatingControl");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "ItemInfo", "Microsoft.UI.Xaml.Controls.RatingItemInfo");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_RatingControl_ItemInfo;
+                xamlMember.Setter = set_4_RatingControl_ItemInfo;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RatingControl.IsReadOnly":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RatingControl");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "IsReadOnly", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_RatingControl_IsReadOnly;
+                xamlMember.Setter = set_5_RatingControl_IsReadOnly;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RatingControl.IsClearEnabled":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RatingControl");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "IsClearEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_6_RatingControl_IsClearEnabled;
+                xamlMember.Setter = set_6_RatingControl_IsClearEnabled;
+                break;
+            case "Microsoft.UI.Xaml.Controls.RatingControl.InitialSetValue":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.RatingControl");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "InitialSetValue", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_7_RatingControl_InitialSetValue;
+                xamlMember.Setter = set_7_RatingControl_InitialSetValue;
+                break;
             case "UWPSharedPanel.RealEstateComponent.ViewModel":
                 userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UWPSharedPanel.RealEstateComponent");
                 xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "ViewModel", "UWPSharedPanel.RealEstateViewMode");
-                xamlMember.Getter = get_0_RealEstateComponent_ViewModel;
-                xamlMember.Setter = set_0_RealEstateComponent_ViewModel;
+                xamlMember.Getter = get_8_RealEstateComponent_ViewModel;
+                xamlMember.Setter = set_8_RealEstateComponent_ViewModel;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_9_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_9_TreeViewNode_IsExpanded;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
+                xamlMember.Getter = get_10_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_10_TreeViewNode_HasUnrealizedChildren;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "Content", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_11_TreeViewNode_Content;
+                xamlMember.Setter = set_11_TreeViewNode_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
+                xamlMember.Getter = get_12_TreeViewNode_Children;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_13_TreeViewNode_Depth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_14_TreeViewNode_HasChildren;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
+                userType = (global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::UWPSharedPanel.UWPSharedPanel_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember.Getter = get_15_TreeViewNode_Parent;
+                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;

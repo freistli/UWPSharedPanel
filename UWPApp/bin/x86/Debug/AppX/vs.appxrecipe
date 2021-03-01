@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\repos\UWPSharedPanel\UWPApp\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>39570D35670D9B9A8A3F6382E063EE24F5759DD1941077188490D84EC5A5D6B1</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>490D31E2A209282BD195CA80C7F205FBB4ED7DE00712241A504DC246C686D345</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e42c136f-95de-4e3c-a2ea-c15a9325686a_1.0.0.0_x86__2dhr6hz02r3tt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e42c136f-95de-4e3c-a2ea-c15a9325686a_2dhr6hz02r3tt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e42c136f-95de-4e3c-a2ea-c15a9325686a</RegisteredPackageID>
@@ -30,17 +30,21 @@
     <AppXManifest Include="D:\repos\UWPSharedPanel\UWPApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-22T08:52:10.547</Modified>
+      <Modified>2021-03-01T09:07:21.345</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\UWPApp\bin\x86\Debug\UWPApp.exe">
       <PackagePath>entrypoint\UWPApp.exe</PackagePath>
-      <Modified>2020-09-22T08:52:09.044</Modified>
+      <Modified>2021-03-01T09:07:18.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\microsoft.toolkit.win32.ui.xamlapplication\6.1.2\runtimes\win10-x86\native\Microsoft.Toolkit.Win32.UI.XamlHost.dll">
       <PackagePath>Microsoft.Toolkit.Win32.UI.XamlHost.dll</PackagePath>
       <Modified>2020-08-11T10:02:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\microsoft.ui.xaml\2.5.0-prerelease.200812001\runtimes\win10-x86\native\Microsoft.UI.Xaml.dll">
+      <PackagePath>Microsoft.UI.Xaml.dll</PackagePath>
+      <Modified>2020-08-12T14:48:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -48,19 +52,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\UWPSharedPanel\bin\x86\Debug\UWPSharedPanel.dll">
       <PackagePath>UWPSharedPanel.dll</PackagePath>
-      <Modified>2020-09-22T08:52:03.477</Modified>
+      <Modified>2021-03-01T09:07:12.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\microsoft.toolkit.win32.ui.xamlapplication\6.1.2\lib\uap10.0\Microsoft.Toolkit.Win32.UI.XamlHost.winmd">
       <PackagePath>Microsoft.Toolkit.Win32.UI.XamlHost.winmd</PackagePath>
       <Modified>2020-08-11T10:02:40.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\microsoft.ui.xaml\2.5.0-prerelease.200812001\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
+      <Modified>2020-08-12T14:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\microsoft.ui.xaml\2.5.0-prerelease.200812001\runtimes\win10-x86\native\Microsoft.UI.Xaml\Assets\NoiseAsset_256x256_PNG.png">
+      <PackagePath>NoiseAsset_256x256_PNG.png</PackagePath>
+      <Modified>2020-08-12T14:48:12.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\UWPSharedPanel\bin\x86\Debug\UWPSharedPanel\RealEstateComponent.xbf">
       <PackagePath>UWPSharedPanel\RealEstateComponent.xbf</PackagePath>
-      <Modified>2020-09-22T08:52:03.283</Modified>
+      <Modified>2021-03-01T09:07:11.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\UWPSharedPanel\bin\x86\Debug\UWPSharedPanel\UWPSharedPanel.xr.xml">
       <PackagePath>UWPSharedPanel\UWPSharedPanel.xr.xml</PackagePath>
-      <Modified>2019-04-21T07:04:59.620</Modified>
+      <Modified>2020-09-22T09:15:31.421</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\freistli\.nuget\packages\microsoft.ui.xaml\2.5.0-prerelease.200812001\runtimes\win10-x86\native\Microsoft.UI.Xaml\Assets\NoiseAsset_256X256_PNG.png">
+      <PackagePath>Microsoft.UI.Xaml\Assets\NoiseAsset_256X256_PNG.png</PackagePath>
+      <Modified>2020-08-12T14:48:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\UWPApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -102,11 +118,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\UWPApp\bin\x86\Debug\UWPApp.xr.xml">
       <PackagePath>UWPApp.xr.xml</PackagePath>
-      <Modified>2020-09-22T08:31:31.451</Modified>
+      <Modified>2020-09-22T09:13:50.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\UWPApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-09-22T08:52:08.896</Modified>
+      <Modified>2021-03-01T09:07:17.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -114,11 +130,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\UWPApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-09-22T08:52:09.402</Modified>
+      <Modified>2021-03-01T09:07:19.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repos\UWPSharedPanel\UWPApp\bin\x86\Debug\Core\UWPApp.exe">
       <PackagePath>UWPApp.exe</PackagePath>
-      <Modified>2020-09-22T08:52:10.523</Modified>
+      <Modified>2021-03-01T09:07:21.320</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -178,36 +194,36 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27810.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27810.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27810.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.27810.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

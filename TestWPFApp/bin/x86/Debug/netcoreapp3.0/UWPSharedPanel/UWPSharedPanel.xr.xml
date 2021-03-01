@@ -94,6 +94,12 @@
       <RootMethod Name="GetHelpText" />
       <RootMethod Name="SetHelpText" />
     </RootType>
+    <RootType FullName="Microsoft.UI.Xaml.Controls.RatingControl">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Caption" />
+    </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="UWPSharedPanel.RealEstateComponent" />
   </Roots.RootTypes>
